@@ -2,7 +2,7 @@
 
 'use strict'
 
-let cssnext = broc('cssnext')
+let cssnext = broc('cssnext-single')
 let funnel  = broc('funnel')
 let merge   = broc('merge-trees')
 
@@ -14,14 +14,9 @@ let fonts = funnel('assets/fonts', {
   destDir: 'fonts'
 })
 
-let css = funnel('css', {
-  destDir: 'css',
-  files: [ 'adcssy.css' ]
-})
-css = cssnext(css, {
+let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   compress:  false,
   sourcemap: true,
-  from:      'css/adcssy.css',
   url:       false
 })
 
