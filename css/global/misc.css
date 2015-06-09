@@ -1,0 +1,16 @@
+.link-prefix::before {
+  content: '>';
+  vertical-align: 6%;
+  padding: 0 0.2em 0 0;
+  transition: padding 0.1s;
+  /* Chrome ~= 43 wants inline block */
+  display: inline-block;
+}
+
+.link-prefix::before {
+  background-color: var(--body-background-color);
+}
+
+.link-prefix:matches(:hover, :focus)::before {
+  padding: 0 0.1em 0 0.1em;
+}

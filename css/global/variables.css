@@ -1,0 +1,94 @@
+/* Screen sizes */
+:root {
+ --screen-xs-min: 30rem;
+ --screen-sm-min: 48rem;
+ --screen-md-min: 62rem;
+ --screen-lg-min: 75rem;
+}
+
+@custom-media --xs-viewport only screen and (min-width: 30rem);
+@custom-media --sm-viewport only screen and (min-width: 48rem);
+@custom-media --md-viewport only screen and (min-width: 62rem);
+@custom-media --lg-viewport only screen and (min-width: 75rem);
+
+/* Colors */
+:root {
+  --color-main:      rgb( 91, 142, 219);
+  --color-secondary: rgb(162, 155, 150);
+  --color-ternary:   rgb(134, 127, 124);
+  --color-border:    rgb(225, 225, 225);
+  --color-menu:      rgb(246, 246, 246);
+}
+
+/* Grid */
+:root {
+ --gutter-width: 1rem;
+ --gutter-compensation: -1rem;
+}
+
+/* Grid Page */
+:root {
+  --page-padding: 2em
+}
+
+/* Global Fonts */
+:root {
+  --font-family-sans-serif: 'TheSansOffice Regular', 'Open Sans', sans-serif;
+  --font-family-serif: 'Merriweather', 'Times New Roman', serif;
+  --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --font-family-base: var(--font-family-sans-serif);
+  --font-size-base: 16px;
+  --font-size-large: calc(1.25 * var(--font-size-base));
+  --font-size-small: calc(0.85 * var(--font-size-base));
+}
+
+/* Body */
+:root {
+  --body-background-color: #fff;
+  --body-color: rgb(61, 61, 61);
+  --body-font-family: var(--font-family-base);
+  --body-font-size: var(--font-size-base);
+}
+
+/* Nav */
+:root {
+  --nav-font-size: var(--font-size-small);
+  --nav-item-border-radius: 3px;
+}
+
+/* Links */
+:root {
+  --link-color:           var(--color-main);
+  --link-color-highlight: color(var(--link-color) l(+10%));
+  --link-color-visited:   color(var(--link-color) l(-10%));
+}
+
+/* Headings */
+:root {
+  --headings-color: #000;
+  --headings-font-family: var(--font-family-base);
+  --headings-font-feature-settings: "dlig", "liga", "lnum", "kern";
+  --headings-font-weight: 600;
+  --headings-font-size-base: var(--font-size-base);
+  --headings-font-size-h1: calc(var(--headings-font-size-base) * 2.25);
+  --headings-font-size-h2: calc(var(--headings-font-size-base) * 2);
+  --headings-font-size-h3: calc(var(--headings-font-size-base) * 1.8);
+  --headings-font-size-h4: calc(var(--headings-font-size-base) * 1.5);
+  --headings-font-size-h5: calc(var(--headings-font-size-base) * 1.25);
+  --headings-font-size-h6: calc(var(--headings-font-size-base) * 1.1);
+  --headings-letter-spacing: -1;
+  --headings-line-height: 1.25;
+  --headings-margin: 0 0 0.4em;
+  --headings-small-color: color(var(--headings-color) l(15%));
+}
+
+/* Content */
+:root {
+  --content-color: var(--body-color);
+  /* Disable weird looking Q in content texts with "salt" */
+  --content-font-feature-settings: "dlig", "liga", "salt", "kern";
+  --content-margin: 0 0 1.5em;
+  --list-margin: 0 0 1.25em;
+  --pre-margin: 0 0 2em;
+  --pre-padding: 1em;
+}

@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color:                 var(--headings-color);
+  font-family:           var(--headings-font-family);
+  font-feature-settings: var(--headings-font-feature-settings);
+  font-weight:           var(--headings-font-weight);
+  letter-spacing:        var(--headings-letter-spacing);
+  line-height:           var(--headings-line-height);
+  margin:                var(--headings-margin);
+  text-rendering:        geometricprecision;
+}
+
+h1, .h1 {
+  font-size: var(--headings-font-size-h1);
+  color: var(--color-main);
+}
+
+h2, .h2 {
+  font-size: var(--headings-font-size-h2);
+  color: var(--color-main);
+}
+
+h3, .h3 {
+  font-size: var(--headings-font-size-h3);
+  color: var(--color-main);
+}
+
+h4, .h4 {
+  font-size: var(--headings-font-size-h4);
+}
+
+h5, .h5 {
+  font-size: var(--headings-font-size-h5);
+}
+
+h6, .h6 {
+  font-size: var(--headings-font-size-h6);
+}
+
+:matches(h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6) :matches(small, .small) {
+  font-weight: normal;
+  line-height: 1;
+  color: var(--headings-small-color);
+}
+
+.typeset             { counter-reset: h1 }
+.typeset .h1-counter { counter-reset: h2 }
+.typeset .h2-counter { counter-reset: h3 }
+.typeset .h3-counter { counter-reset: h4 }
+.typeset .h4-counter { counter-reset: h5 }
+.typeset .h5-counter { counter-reset: h6 }
+
+.typeset .h1-counter::before { counter-increment: h1; content: counter(h1) '. ' }
+.typeset .h2-counter::before { counter-increment: h2; content: counter(h1) '.' counter(h2) '. ' }
+.typeset .h3-counter::before { counter-increment: h3; content: counter(h1) '.' counter(h2) '.' counter(h3) '. ' }
+.typeset .h4-counter::before { counter-increment: h4; content: counter(h1) '.' counter(h2) '.' counter(h3) '.' counter(h4) '. ' }
+.typeset .h5-counter::before { counter-increment: h5; content: counter(h1) '.' counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) '. ' }
+.typeset .h6-counter::before { counter-increment: h6; content: counter(h1) '.' counter(h2) '.' counter(h3) '.' counter(h4) '.' counter(h5) '.' counter(h6) '. ' }

@@ -1,0 +1,67 @@
+p, blockquote {
+  margin: var(--content-margin);
+}
+
+ol, ul {
+  margin: var(--list-margin);
+}
+
+p, li {
+  font-feature-settings: var(--content-font-feature-settings);
+}
+
+.lead {
+  color: color(var(--body-color) l(-10%));
+  font-size: calc(var(--font-size-base) * 1.25);
+  font-weight: 300;
+}
+
+article :matches(p, li) {
+  color: var(--content-color);
+}
+
+blockquote {
+  quotes: none;
+  margin-left: -1rem;
+}
+
+blockquote p {
+  border-left: 0.15rem solid var(--color-main);
+  font-family: var(--font-family-serif);
+  font-style: italic;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+pre {
+  font-family: var(--font-family-mono);
+  margin: var(--pre-margin);
+  padding: var(--pre-padding);
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: color(var(--color-secondary) l(+33%));
+}
+
+code {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: color(var(--content-color) b(+10%));
+}
+
+/* Style underline in a way it does not interfere with the descender of our font
+ * https://en.wikipedia.org/wiki/Descender
+ *
+ * As we use text-shadow to hide the decoration, we are unable to use the actual
+ * text-decoration property, emulating by using a background :)
+ */
+.typeset a:hover {
+  background-image: linear-gradient(to bottom, transparent 50%, var(--link-color) 50%);
+  background-position: 0 85%;
+  background-repeat: repeat-x;
+  background-size: 100% 1px;
+  text-shadow:  0.10rem 0 var(--body-background-color),
+                0.15rem 0 var(--body-background-color),
+               -0.10rem 0 var(--body-background-color),
+               -0.15rem 0 var(--body-background-color);
+}
+

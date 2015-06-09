@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+:matches(ol, ul) li {
+  margin-left: 0;
+}
