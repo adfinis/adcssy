@@ -33,4 +33,5 @@ a:visited {
 
 ::selection {
   background-color: color(var(--color-main) l(+25%));
+  text-shadow: none;
 }
