@@ -52,7 +52,7 @@
 }
 
 .table > tbody > tr.primary {
-  background-color: color(var(--color-main) l(+20%));
+  background-color: color(var(--color-main) l(+22.5%));
 }
 
 .table--striped > tbody > tr.primary:nth-of-type(2n+1) {
@@ -60,11 +60,11 @@
 }
 
 .table--hover > tbody > tr.primary:hover {
-  background-color: color(var(--color-main) l(+17.5%));
+  background-color: color(var(--color-main) l(+20%));
 }
 
 .table tr.success {
-  background-color: color(var(--color-success) l(+20%));
+  background-color: color(var(--color-success) l(+22.5%));
 }
 
 .table--striped > tbody > tr.success:nth-of-type(2n+1) {
@@ -72,11 +72,11 @@
 }
 
 .table--hover > tbody > tr.success:hover {
-  background-color: color(var(--color-success) l(+17.5%));
+  background-color: color(var(--color-success) l(+20%));
 }
 
 .table tr.info {
-  background-color: color(var(--color-info) l(+20%));
+  background-color: color(var(--color-info) l(+22.5%));
 }
 
 .table--striped > tbody > tr.info:nth-of-type(2n+1) {
@@ -84,11 +84,11 @@
 }
 
 .table--hover > tbody > tr.info:hover {
-  background-color: color(var(--color-info) l(+17.5%));
+  background-color: color(var(--color-info) l(+20%));
 }
 
 .table tr.warning {
-  background-color: color(var(--color-warning) l(+20%));
+  background-color: color(var(--color-warning) l(+22.5%));
 }
 
 .table--striped > tbody > tr.warning:nth-of-type(2n+1) {
@@ -96,17 +96,17 @@
 }
 
 .table--hover > tbody > tr.warning:hover {
-  background-color: color(var(--color-warning) l(+17.5%));
+  background-color: color(var(--color-warning) l(+20%));
 }
 
 .table tr.danger {
-  background-color: color(var(--color-danger) l(+20%));
+  background-color: color(var(--color-danger) l(+22.5%));
 }
 
 .table--striped > tbody > tr.danger:nth-of-type(2n+1) {
-  background-color: color(var(--color-danger) l(+25%));
+  background-color: color(var(--color-danger) l(+22.5%));
 }
 
 .table--hover > tbody > tr.danger:hover {
-  background-color: color(var(--color-danger) l(+17.5%));
+  background-color: color(var(--color-danger) l(+20%));
 }
