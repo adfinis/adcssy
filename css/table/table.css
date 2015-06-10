@@ -104,7 +104,7 @@
 }
 
 .table--striped > tbody > tr.danger:nth-of-type(2n+1) {
-  background-color: color(var(--color-danger) l(+22.5%));
+  background-color: color(var(--color-danger) l(+25%));
 }
 
 .table--hover > tbody > tr.danger:hover {
