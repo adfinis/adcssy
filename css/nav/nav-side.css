@@ -21,6 +21,26 @@
   border-left: 1px solid var(--color-border);
 }
 
+.nav-side-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-side-header-logo {
+  width: 32px;
+  height: 32px;
+  background: url(../pictures/logo/sy.png);
+  background-size: 32px 32px;
+  margin: 1rem 0.5rem 0 1rem;
+  border-radius: var(--nav-logo-border-radius);
+}
+
+.nav-side-header-title {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: color(var(--body-color) l(+10%));
+}
+
 .nav-side-body {
   flex-grow: 1;
   overflow-y: auto;

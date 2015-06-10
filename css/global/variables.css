@@ -60,6 +60,7 @@
 :root {
   --nav-font-size: var(--font-size-small);
   --nav-item-border-radius: 3px;
+  --nav-logo-border-radius: 4px;
 }
 
 /* Links */
