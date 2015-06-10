@@ -30,3 +30,7 @@ a:focus {
 a:visited {
   color: var(--link-color-visited);
 }
+
+::selection {
+  background-color: color(var(--color-main) l(+25%));
+}
