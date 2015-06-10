@@ -43,13 +43,13 @@
 }
 
 .btn-primary {
-  background-color: var(--color-main);
-  border-color: color(var(--color-main) l(-5%));
+  background-color: var(--color-primary);
+  border-color: color(var(--color-primary) l(-5%));
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: color(var(--color-main) l(-10%) s(+5%));
-  border-color: color(var(--color-main) l(-20%));
+  background-color: color(var(--color-primary) l(-10%) s(+5%));
+  border-color: color(var(--color-primary) l(-20%));
   color: #fff;
 }
 

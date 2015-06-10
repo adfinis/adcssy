@@ -85,7 +85,7 @@
 
 .nav-side-list a:hover {
   color: #fff;
-  background: var(--color-main);
+  background: var(--color-primary);
 }
 
 .nav-side-list-header {

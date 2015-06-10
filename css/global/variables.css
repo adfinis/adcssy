@@ -13,7 +13,7 @@
 
 /* Colors */
 :root {
-  --color-main:      rgb( 91, 142, 219);
+  --color-primary:      rgb( 91, 142, 219);
   --color-secondary: rgb(162, 155, 150);
   --color-ternary:   rgb(134, 127, 124);
   --color-border:    rgb(225, 225, 225);
@@ -65,7 +65,7 @@
 
 /* Links */
 :root {
-  --link-color:           var(--color-main);
+  --link-color:           var(--color-primary);
   --link-color-highlight: color(var(--link-color) l(+10%));
   --link-color-visited:   color(var(--link-color) l(-10%));
 }

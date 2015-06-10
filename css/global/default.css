@@ -32,6 +32,6 @@ a:visited {
 }
 
 ::selection {
-  background-color: color(var(--color-main) l(+25%));
+  background-color: color(var(--color-primary) l(+25%));
   text-shadow: none;
 }

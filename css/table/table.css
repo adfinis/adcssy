@@ -52,15 +52,15 @@
 }
 
 .table > tbody > tr.primary {
-  background-color: color(var(--color-main) l(+22.5%));
+  background-color: color(var(--color-primary) l(+22.5%));
 }
 
 .table--striped > tbody > tr.primary:nth-of-type(2n+1) {
-  background-color: color(var(--color-main) l(+25%));
+  background-color: color(var(--color-primary) l(+25%));
 }
 
 .table--hover > tbody > tr.primary:hover {
-  background-color: color(var(--color-main) l(+20%));
+  background-color: color(var(--color-primary) l(+20%));
 }
 
 .table tr.success {
