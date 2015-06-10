@@ -7,7 +7,6 @@
   border: 1px solid var(--color-border);
   background: #fff;
   border-radius: var(--button-border-radius);
-  color: color(var(--body-color) l(+20%));
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -23,6 +22,10 @@
               border-color 0.2s ease 0s;
 }
 
+.btn, .btn:visited {
+  color: color(var(--body-color) l(+20%));
+}
+
 .btn:hover, .btn:focus {
   color: var(--link-color);
   border-color: color(var(--link-color-highlight) l(+10%));
@@ -34,7 +37,8 @@
   outline-offset: -2px;
 }
 
-.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger,
+:matches(.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger):visited {
   color: #fff;
 }
 
