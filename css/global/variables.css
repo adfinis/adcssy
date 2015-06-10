@@ -18,6 +18,12 @@
   --color-ternary:   rgb(134, 127, 124);
   --color-border:    rgb(225, 225, 225);
   --color-menu:      rgb(246, 246, 246);
+
+  /* State colors */
+  --color-success: rgb(92, 184, 92);
+  --color-info:    rgb(91, 192, 222);
+  --color-warning: rgb(240, 173, 78);
+  --color-danger:  rgb(217, 83, 79);
 }
 
 /* Grid */
@@ -91,4 +97,9 @@
   --list-margin: 0 0 1.25em;
   --pre-margin: 0 0 2em;
   --pre-padding: 1em;
+}
+
+/* Buttons */
+:root {
+  --button-border-radius: 4px;
 }

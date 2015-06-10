@@ -1,0 +1,95 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  border-radius: var(--button-border-radius);
+  color: color(var(--body-color) l(+20%));
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  line-height: 1.166;
+  line-height: 40px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s ease 0s,
+              background 0.2s ease 0s,
+              border-color 0.2s ease 0s;
+}
+
+.btn:hover, .btn:focus {
+  color: var(--link-color);
+  border-color: color(var(--link-color-highlight) l(+10%));
+  text-decoration: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
+}
+
+.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--color-main);
+  border-color: color(var(--color-main) l(-5%));
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: color(var(--color-main) l(-5%) s(+5%));
+  border-color: color(var(--color-main) l(-20%));
+  color: #fff;
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  border-color: color(var(--color-success) l(-5%));
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: color(var(--color-success) l(-5%) s(+5%));
+  border-color: color(var(--color-success) l(-20%));
+  color: #fff;
+}
+
+.btn-info {
+  background-color: var(--color-info);
+  border-color: color(var(--color-info) l(-5%));
+}
+
+.btn-info:hover, .btn-info:focus {
+  background-color: color(var(--color-info) l(-5%) s(+5%));
+  border-color: color(var(--color-info) l(-20%));
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: var(--color-warning);
+  border-color: color(var(--color-warning) l(-5%));
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background-color: color(var(--color-warning) l(-5%) s(+5%));
+  border-color: color(var(--color-warning) l(-20%));
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  border-color: color(var(--color-danger) l(-5%));
+}
+
+.btn-danger:hover, .btn-danger:focus {
+  background-color: color(var(--color-danger) l(-5%) s(+5%));
+  border-color: color(var(--color-danger) l(-20%));
+  color: #fff;
+}
