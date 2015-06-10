@@ -21,9 +21,14 @@
   border-left: 1px solid var(--color-border);
 }
 
-.nav-side-header {
+.nav-side-header,
+.nav-side-header > a {
   display: flex;
   align-items: center;
+}
+
+.nav-side-header > a {
+  flex-grow: 1;
 }
 
 .nav-side-header-logo {
