@@ -44,7 +44,7 @@
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: color(var(--color-main) l(-5%) s(+5%));
+  background-color: color(var(--color-main) l(-10%) s(+5%));
   border-color: color(var(--color-main) l(-20%));
   color: #fff;
 }
@@ -55,7 +55,7 @@
 }
 
 .btn-success:hover, .btn-success:focus {
-  background-color: color(var(--color-success) l(-5%) s(+5%));
+  background-color: color(var(--color-success) l(-10%) s(+5%));
   border-color: color(var(--color-success) l(-20%));
   color: #fff;
 }
@@ -66,7 +66,7 @@
 }
 
 .btn-info:hover, .btn-info:focus {
-  background-color: color(var(--color-info) l(-5%) s(+5%));
+  background-color: color(var(--color-info) l(-10%) s(+5%));
   border-color: color(var(--color-info) l(-20%));
   color: #fff;
 }
@@ -77,7 +77,7 @@
 }
 
 .btn-warning:hover, .btn-warning:focus {
-  background-color: color(var(--color-warning) l(-5%) s(+5%));
+  background-color: color(var(--color-warning) l(-10%) s(+5%));
   border-color: color(var(--color-warning) l(-20%));
   color: #fff;
 }
@@ -88,7 +88,7 @@
 }
 
 .btn-danger:hover, .btn-danger:focus {
-  background-color: color(var(--color-danger) l(-5%) s(+5%));
+  background-color: color(var(--color-danger) l(-10%) s(+5%));
   border-color: color(var(--color-danger) l(-20%));
   color: #fff;
 }
