@@ -10,13 +10,7 @@ let ionicons = funnel('node_modules/ionicons-pre/fonts', {
   destDir: 'fonts'
 })
 
-let pictures = funnel('assets/pictures', {
-  destDir: 'pictures'
-})
-
-let fonts = funnel('assets/fonts', {
-  destDir: 'fonts'
-})
+let assets = merge([ funnel('assets'), ionicons ])
 
 let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   compress:  false,
@@ -29,7 +23,7 @@ let html = funnel('test', {
   files: [ 'index.html' ]
 })
 
-module.exports = merge([ css, ionicons, fonts, pictures, html ])
+module.exports = merge([ css, assets, html ])
 
 function broc(m) {
   return require('broccoli-' + m)
