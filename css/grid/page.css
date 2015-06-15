@@ -1,3 +1,32 @@
+/*doc
+---
+title: Page
+name: page
+category: Grid
+---
+The top level of a application / website is the `page`, it behaves like a much simpler `grid`:
+
+```html_example
+<!-- the .page element is usually the `body` -->
+<div class="page">
+  <!-- .page-viewport wraps the whole content (for ember applications, this would be the root element -->
+  <div class="page-viewport">
+    <!-- .page-content contains all the page specific content -->
+    <main class="page-content" style="background: #bbb">
+      <header class="page-header">
+        <h1>Page header</h1>
+      </header>
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </section>
+      <footer class="page-footer">
+        <small>&copy; Page footer</small>
+      </footer>
+    </main>
+  </div>
+</div>
+```
+*/
 .page {
   display: flex;
   flex-direction: column;

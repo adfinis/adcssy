@@ -1,3 +1,44 @@
+/*doc
+---
+title: Headings
+name: headings
+category: Typography
+---
+
+Headings:
+
+```html_example
+<section>
+  <h1>Foobar</h1>
+  <h2>Foobar</h2>
+  <h3>Foobar</h3>
+  <h4>Foobar</h4>
+  <h5>Foobar</h5>
+  <h6>Foobar</h6>
+</section>
+```
+
+Counting Headings:
+
+```html_example
+<div class="typeset">
+  <h1 class="h1-counter">Foobar</h1>
+  <h2 class="h2-counter">Foobar</h2>
+  <h2 class="h2-counter">Foobar</h2>
+  <h2 class="h2-counter">Foobar</h2>
+  <h3 class="h3-counter">Foobar</h3>
+  <h3 class="h3-counter">Foobar</h3>
+  <h4 class="h4-counter">Foobar</h4>
+  <h5 class="h5-counter">Foobar</h5>
+
+  <h1 class="h1-counter">Foobar</h1>
+  <h2 class="h2-counter">Foobar</h2>
+  <h4 class="h4-counter">Foobar</h4>
+  <h5 class="h5-counter">Foobar</h5>
+  <h6 class="h6-counter">Foobar</h6>
+</div>
+```
+*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color:                 var(--headings-color);

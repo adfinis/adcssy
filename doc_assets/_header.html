@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>AdCSSy Styleguide: <%= title %></title>
+    <link rel="stylesheet" href="build/css/adcssy.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          <% @categories.each do |category, file_name| %>
+            <li class="nav-side-list-item"><a href="<%= file_name %>"><%= category %></a></li>
+          <% end %>
+          </ul>
+        </section>
+      </nav>
+
+      <main class="page-content">
+        <section>
+          <div class="h1">Overview</div>
+          <ul>
+          <% @blocks.each do |b| %>
+            <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+          <% end %>
+          </ul>

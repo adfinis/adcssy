@@ -1,3 +1,65 @@
+/*doc
+---
+title: Table
+name: table
+category: Table
+---
+Basic usage:
+
+```html_example
+<table class="table">
+  <thead>
+    <tr><th>#</th><th>Foo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</th><td>Bar</td></tr>
+    <tr><td>2</th><td>Baz</td></tr>
+  </tbody>
+</table>
+```
+
+Modifiers:
+
+- `table--bordered` Add border around a table
+- `table--striped` Add stripes to `tbody` rows
+- `table--hover` Add hover effect over `tbody` rows
+
+```html_example
+<table class="table table--striped table--hover table--bordered">
+  <thead>
+    <tr><th>#</th><th>Foo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</th><td>Bar</td></tr>
+    <tr><td>2</th><td>Baz</td></tr>
+    <tr><td>3</th><td>Bar</td></tr>
+    <tr><td>4</th><td>Baz</td></tr>
+    <tr><td>5</th><td>Bar</td></tr>
+    <tr><td>6</th><td>Baz</td></tr>
+    <tr><td>7</th><td>Bar</td></tr>
+    <tr><td>8</th><td>Baz</td></tr>
+  </tbody>
+</table>
+```
+
+Table row states:
+
+```html_example
+<table class="table table--striped table--hover table--bordered">
+  <thead>
+    <tr><th>#</th><th>Foo</th></tr>
+  </thead>
+  <tbody>
+    <tr class="primary"><td>1</th><td>Bar</td></tr>
+    <tr class="success"><td>2</th><td>Baz</td></tr>
+    <tr class="info"><td>3</th><td>Bar</td></tr>
+    <tr class="warning"><td>4</th><td>Baz</td></tr>
+    <tr class="danger"><td>5</th><td>Bar</td></tr>
+  </tbody>
+</table>
+```
+
+*/
 .table {
   display: table;
   width: 100%;

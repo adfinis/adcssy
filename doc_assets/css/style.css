@@ -1,0 +1,14 @@
+.exampleOutput {
+  display: flex;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 3rem;
+}
+
+.example-grid-content {
+  background: rgb(224, 224, 224);
+  display: flex;
+}
+
+.exampleOutput .btn + .btn {
+  margin-left: 1rem;
+}

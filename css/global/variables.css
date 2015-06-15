@@ -11,9 +11,8 @@
 @custom-media --md-viewport only screen and (min-width: 62rem);
 @custom-media --lg-viewport only screen and (min-width: 75rem);
 
-/* Colors */
 :root {
-  --color-primary:      rgb( 91, 142, 219);
+  --color-primary:   rgb( 91, 142, 219);
   --color-secondary: rgb(162, 155, 150);
   --color-ternary:   rgb(134, 127, 124);
   --color-border:    rgb(225, 225, 225);

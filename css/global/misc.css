@@ -1,3 +1,16 @@
+/*doc
+---
+title: Miscellaneous
+name: misc
+category: Basics
+---
+
+The link prefix can be used to prepend a '>' to a link.
+
+```html_example
+<a href="#" class="link-prefix">Foobar</a>
+```
+*/
 .link-prefix::before {
   content: '>';
   vertical-align: 6%;
