@@ -1,7 +1,7 @@
 .exampleOutput {
   display: flex;
   border: 1px solid rgb(224, 224, 224);
-  padding: 3rem;
+  padding: 2rem;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
