@@ -125,6 +125,8 @@ Modifiers:
 .nav-top-list a {
   align-self: center;
   padding: 1rem 0.5rem;
+  border-bottom-right-radius: var(--nav-item-border-radius);
+  border-bottom-left-radius: var(--nav-item-border-radius);
   color: color(var(--link-color) l(-20%));
   transition: color 0.2s, background-color 0.2s;
 }
