@@ -40,10 +40,9 @@ Example:
   display: flex;
   flex: 0 0 160px;
   flex-direction: column;
-  border-right: var(--color-border);
   background-color: var(--color-menu);
-  z-index: 1000;
   border-right: 1px solid var(--color-border);
+  z-index: 1000;
 }
 
 @media (--md-viewport) {

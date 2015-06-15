@@ -1,0 +1,117 @@
+/*doc
+---
+title: Topbar Navigation
+name: nav-top
+category: Components
+---
+
+Example:
+
+```html_example
+<nav class="nav-top">
+  <header class="nav-top-header">
+    <a href="#">
+      <div class="nav-top-header-logo"></div>
+      <div class="nav-top-header-title">Foobar</div>
+    </a>
+  </header>
+  <section class="nav-top-body">
+    <ul class="nav-top-list">
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="ion-person"></i>
+          Users
+        </a>
+      </li>
+      <li class="nav-top-list-item">
+        <a href="#">
+          Teams
+        </a>
+      </li>
+    </ul>
+    <ul class="nav-top-list nav-top-list--right">
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="ion-email-unread"></i>
+          Messages
+        </a>
+      </li>
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="ion-power"></i>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </section>
+</nav>
+```
+*/
+.nav-top {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+  background-color: var(--color-menu);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+  padding: 0 var(--page-padding);
+}
+
+.nav-top-header,
+.nav-top-header a {
+  display: flex;
+}
+
+.nav-top-header {
+  margin-right: 1rem;
+}
+
+.nav-top-header-logo {
+  width: 40px;
+  height: 40px;
+  background: url(../pictures/logo/sy.png);
+  background-size: 40px 40px;
+  border-radius: var(--nav-logo-border-radius);
+  margin-right: 0.5rem;
+}
+
+.nav-top-header-logo,
+.nav-top-header-title {
+  align-self: center;
+}
+
+.nav-top-header-title {
+  color: color(var(--body-color) l(+10%));
+}
+
+.nav-top-body {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav-top-list {
+  height: 50px;
+  display: flex;
+  font-size: var(--nav-font-size);
+  line-height: 1.5;
+  list-style: none;
+}
+
+.nav-top-list--right {
+  margin-left: auto;
+}
+
+.nav-top-list a {
+  align-self: center;
+  padding: 1rem 0.5rem;
+}
+
+.nav-top-list a:hover {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.nav-top-list-item {
+  display: flex;
+}
