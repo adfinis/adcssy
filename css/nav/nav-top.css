@@ -121,6 +121,8 @@ Modifiers:
 .nav-top-list a {
   align-self: center;
   padding: 1rem 0.5rem;
+  color: color(var(--link-color) l(-20%));
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .nav-top-list a:hover {
