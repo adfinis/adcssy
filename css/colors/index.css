@@ -1,0 +1,83 @@
+/*doc
+---
+title: Colors
+name: colors
+category: Basics
+---
+
+<div style="display:flex;justify-content:space-around;width:640px">
+  <div class="example-color background-color-primary"></div>
+  <div class="example-color background-color-secondary"></div>
+  <div class="example-color background-color-ternary"></div>
+</div>
+<div style="display:flex;justify-content:space-around;width:853px;margin-top:0.5rem">
+  <div class="example-color background-color-success"></div>
+  <div class="example-color background-color-info"></div>
+  <div class="example-color background-color-warning"></div>
+  <div class="example-color background-color-danger"></div>
+</div>
+<script>
+  ;[].slice.call(document.getElementsByClassName('example-color')).forEach(function(el) {
+    var style = window.getComputedStyle(el);
+
+    el.textContent = style.backgroundColor
+  })
+</script>
+
+*/
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-ternary {
+  color: var(--color-ternary);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+.color-info {
+  color: var(--color-info);
+}
+
+.color-warning {
+  color: var(--color-warning);
+}
+
+.color-danger {
+  color: var(--color-danger);
+}
+
+.background-color-primary {
+  background-color: var(--color-primary);
+}
+
+.background-color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.background-color-ternary {
+  background-color: var(--color-ternary);
+}
+
+.background-color-success {
+  background-color: var(--color-success);
+}
+
+.background-color-info {
+  background-color: var(--color-info);
+}
+
+.background-color-warning {
+  background-color: var(--color-warning);
+}
+
+.background-color-danger {
+  background-color: var(--color-danger);
+}
