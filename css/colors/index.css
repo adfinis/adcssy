@@ -8,7 +8,7 @@ category: Basics
 <div style="display:flex;justify-content:space-around;width:640px">
   <div class="example-color background-color-primary"></div>
   <div class="example-color background-color-secondary"></div>
-  <div class="example-color background-color-ternary"></div>
+  <div class="example-color background-color-tertiary"></div>
 </div>
 <div style="display:flex;justify-content:space-around;width:853px;margin-top:0.5rem">
   <div class="example-color background-color-success"></div>
@@ -34,8 +34,8 @@ category: Basics
   color: var(--color-secondary);
 }
 
-.color-ternary {
-  color: var(--color-ternary);
+.color-tertiary {
+  color: var(--color-tertiary);
 }
 
 .color-success {
@@ -62,8 +62,8 @@ category: Basics
   background-color: var(--color-secondary);
 }
 
-.background-color-ternary {
-  background-color: var(--color-ternary);
+.background-color-tertiary {
+  background-color: var(--color-tertiary);
 }
 
 .background-color-success {
