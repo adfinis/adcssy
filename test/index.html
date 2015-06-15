@@ -8,14 +8,46 @@
     <link href="http://fonts.googleapis.com/css?family=Merriweather:300,300italic,700,700italic" rel="stylesheet">
   </head>
   <body class="page">
-    <div class="page-viewport">
-      <!--<header class="page-header">
-        <nav>
-          <ul><li>Left stuff</li></ul>
-          <ul><li>Right stuff</li></ul>
-        </nav>
-      </header>-->
-      <nav class="nav-side">
+    <div class="page-viewport page-viewport--column">
+      <nav class="nav-top">
+        <header class="nav-top-header">
+          <a href="#">
+            <div class="nav-top-header-logo"></div>
+            <div class="nav-top-header-title">Foobar</div>
+          </a>
+        </header>
+        <section class="nav-top-body">
+          <ul class="nav-top-list">
+            <li class="nav-top-list-item">
+              <a href="#">
+                <i class="ion-person"></i>
+                Users
+              </a>
+            </li>
+            <li class="nav-top-list-item">
+              <a href="#">
+                <i class="ion-person"></i>
+                Users
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-top-list nav-top-list--right">
+            <li class="nav-top-list-item">
+              <a href="#">
+                <i class="ion-email-unread"></i>
+                Messages
+              </a>
+            </li>
+            <li class="nav-top-list-item">
+              <a href="#">
+                <i class="ion-power"></i>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <!--<nav class="nav-side">
         <header class="nav-side-header">
           <a href="#">
             <div class="nav-side-header-logo"></div>
@@ -69,7 +101,7 @@
             </li>
           </ul>
         </section>
-      </nav>
+      </nav>-->
       <main class="page-content">
         <div class="grid grid--1 grid-sm--2">
           <div class="grid-cell">foo</div>
