@@ -74,6 +74,10 @@ Modifiers:
   margin-top: calc(50px + 1px);
 }
 
+.nav-top + .page-content--scroll {
+  height: calc(100vh - 50px - 1px);
+}
+
 .nav-top-header,
 .nav-top-header a {
   display: flex;

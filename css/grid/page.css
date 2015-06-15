@@ -25,6 +25,11 @@ The top level of a application / website is the `page`, it behaves like a much s
     </main>
   </div>
 </div>
+
+Modifiers:
+
+- `page-content--scroll` Makes page-content scrollable
+
 ```
 */
 .page {
@@ -54,6 +59,11 @@ The top level of a application / website is the `page`, it behaves like a much s
   background: var(--body-background-color);
   flex-grow: 1;
   padding: var(--page-padding) var(--page-padding) 0;
+}
+
+.page-content--scroll {
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .page-main {
