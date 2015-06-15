@@ -46,6 +46,11 @@ Example:
   </section>
 </nav>
 ```
+
+Modifiers:
+
+- `nav-top--fixed` Sets the navigation fixed on top
+
 */
 .nav-top {
   position: relative;
@@ -56,6 +61,17 @@ Example:
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
   padding: 0 var(--page-padding);
+}
+
+.nav-top--fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-top--fixed + * {
+  margin-top: calc(50px + 1px);
 }
 
 .nav-top-header,
