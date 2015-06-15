@@ -25,12 +25,12 @@ The top level of a application / website is the `page`, it behaves like a much s
     </main>
   </div>
 </div>
+```
 
 Modifiers:
 
 - `page-content--scroll` Makes page-content scrollable
 
-```
 */
 .page {
   display: flex;
