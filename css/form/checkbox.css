@@ -81,7 +81,7 @@ Styled radios
   font-size: 1rem;
   font-weight: 700;
   color: var(--color-success);
-  transition: opacity 0.2s, color 0.2s, transform 0.2;
+  transition: all 0.2s;
 }
 
 :--checkbox-container > :--customizableRadio + label::after {
