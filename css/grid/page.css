@@ -67,7 +67,7 @@ Modifiers:
 }
 
 .page-main {
-  flex-grow: 1;
+  flex: 1 0 auto;
 }
 
 @media (--sm-viewport) {
