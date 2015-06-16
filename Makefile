@@ -2,7 +2,7 @@
 
 all: dist
 
-dist: clean build hologram
+dist: clean build
 
 build:
 	@broccoli build build
