@@ -23,8 +23,9 @@ Bootstrap-like Form-Group:
     <p class="help-block">Example block-level help text here.</p>
   </div>
   <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
+    <input  id="checkMeOut" type="checkbox">
+    <label for="checkMeOut">
+      Check me out
     </label>
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
@@ -45,8 +46,9 @@ Inline-Form-Group:
     <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
   </div>
   <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
+    <input  id="rememberMe" type="checkbox">
+    <label for="rememberMe">
+      Remember me
     </label>
   </div>
   <button type="submit" class="btn btn-default">Sign in</button>
@@ -82,22 +84,15 @@ Inline-Form-Group:
   background-color: rgb(255, 255, 255);
   background-image: none;
   border: 1px solid rgb(204, 204, 204);
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: var(--input-border-radius);
+  box-shadow: var(--input-box-shadow);
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .form-control:focus {
   border-color: color(var(--color-primary) tint(20%));
-  outline: 0px none;
+  outline: 0 none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px color(var(--color-primary) a(60%));
-}
-
-.checkbox, .radio {
-  position: relative;
-  display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 @media (--sm-viewport) {

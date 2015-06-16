@@ -1,0 +1,123 @@
+/*doc
+---
+title: Checkbox
+name: checkbox
+category: Form
+---
+
+Styled checkboxes
+
+```html_example
+<div class="checkbox">
+  <input  id="checkboxExample" type="checkbox">
+  <label for="checkboxExample">Check me out</label>
+</div>
+```
+
+Styled radios
+
+```html_example
+<div class="radio">
+  <input  id="radioExample1" name="radioExample" type="radio">
+  <label for="radioExample1" name="radioExample">Radio 1</label>
+  <input  id="radioExample2" name="radioExample" type="radio">
+  <label for="radioExample2" name="radioExample">Radio 2</label>
+</div>
+```
+
+*/
+
+@custom-selector :--checkbox-container .checkbox, .radio;
+
+@custom-selector :--checkbox input[type=checkbox], input[type=radio];
+
+@custom-selector :--customizableRadio input[type=radio]:not(:checked), input[type=radio]:checked;
+
+@custom-selector :--customizable input[type=checkbox]:not(:checked), input[type=checkbox]:checked,
+                                 input[type=radio]:not(:checked),    input[type=radio]:checked;
+
+:--checkbox-container {
+  position: relative;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+:--checkbox-container > :--customizable {
+  position: absolute;
+  left: -99999px;
+}
+
+:--checkbox-container > :--customizable + label {
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+:--checkbox-container > :--customizable + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border-radius: var(--input-border-radius);
+  box-shadow: var(--input-box-shadow);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+:--checkbox-container > :--customizableRadio + label::before {
+  border-radius: 50%;
+}
+
+:--checkbox-container > :--customizable + label::after {
+  content: '\2713';
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-success);
+  transition: opacity 0.2s, color 0.2s, transform 0.2;
+}
+
+:--checkbox-container > :--customizableRadio + label::after {
+  content: '\2022';
+}
+
+:--checkbox-container > :--checkbox:not(:checked) + label::after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+:--checkbox-container > :--checkbox:checked + label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+:--checkbox-container > :--customizable:disabled + label::before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+
+:--checkbox-container > :--checkbox:disabled:checked + label::after {
+  color: #999;
+}
+
+:--checkbox-container > :--checkbox:disabled + label {
+  color: #aaa;
+}
+
+:--checkbox-container > :--customizable:focus + label::before {
+  border-color: color(var(--color-primary) tint(20%));
+  outline: 0 none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px color(var(--color-primary) a(60%));
+}
+
+:--checkbox-container > :--customizable + label:hover::before {
+  border-color: color(var(--color-primary) tint(50%));
+}
