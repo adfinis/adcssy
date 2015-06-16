@@ -5,7 +5,7 @@ all: dist
 dist: clean build
 
 build:
-	@broccoli build build
+	@BROCCOLI_ENV=production broccoli build build
 
 hologram:
 	@hologram
@@ -14,4 +14,4 @@ clean:
 	@rm -rf build docs
 
 watch:
-	@broccoli serve
+	@BROCCOLI_ENV=development broccoli serve
