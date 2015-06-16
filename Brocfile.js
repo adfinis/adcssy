@@ -15,7 +15,8 @@ let assets = merge([ funnel('assets'), ionicons ])
 let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   compress:  false,
   sourcemap: true,
-  url:       false
+  url:       false,
+  browsers:  '> 1%, last 2 versions, Firefox ESR'
 })
 
 let html = funnel('test', {
