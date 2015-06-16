@@ -68,7 +68,7 @@ Inline-Form-Group:
   font-weight: 700;
 }
 
-.form-control::-moz-placeholder {
+.form-control::placeholder {
   color: rgb(153, 153, 153);
   opacity: 1;
 }
