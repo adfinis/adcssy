@@ -18,7 +18,7 @@ ol, ul {
   margin: 0;
 }
 
-:matches(ol, ul) li {
+:matches(ol, ul) > li {
   margin-left: 0;
 }
 
