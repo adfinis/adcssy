@@ -5,6 +5,7 @@
 let cssnext = broc('cssnext-single')
 let funnel  = broc('funnel')
 let merge   = broc('merge-trees')
+let live    = broc('inject-livereload')
 let env     = broc('env').getEnv()
 
 let ionicons = funnel('node_modules/ionicons-pre/fonts', {
@@ -20,7 +21,7 @@ let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   browsers:  '> 1%, last 2 versions, Firefox ESR'
 })
 
-let html = funnel('test', {
+let html = live('test', {
   destDir: '/',
   files: [ 'index.html' ]
 })
