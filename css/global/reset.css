@@ -74,3 +74,11 @@ template {
 progress {
   display: inline-block;
 }
+
+/**
+ * Fix font size in monospace elements
+ * http://code.stephenmorley.org/html-and-css/fixing-browsers-broken-monospace-font-handling/
+ */
+pre, code, kbd, samp, tt {
+  font-size: 1em;
+}
