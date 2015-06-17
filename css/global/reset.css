@@ -6,6 +6,13 @@ body {
   margin: 0;
 }
 
+/**
+ * Android 4.3-, Internet Explorer 11+, Windows Phone 8.1+
+ */
+main {
+  display: block;
+}
+
 ol, ul {
   padding-left: 0;
   margin: 0;
@@ -46,4 +53,25 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+/**
+ * Internet Explorer 10-
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Android 4.3-, Internet Explorer 11+, iOS 7-, Safari 7-, Windows Phone 8.1+
+ */
+template {
+  display: none;
+}
+
+/**
+ * Internet Explorer 11+, Windows Phone 8.1+
+ */
+progress {
+  display: inline-block;
 }
