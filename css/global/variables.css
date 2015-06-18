@@ -11,6 +11,8 @@
 @custom-media --md-viewport only screen and (min-width: 62rem);
 @custom-media --lg-viewport only screen and (min-width: 75rem);
 
+@custom-media --nav-top-mobile-width only screen and (min-width: 48rem);
+
 :root {
   --color-primary:   rgb( 91, 142, 219);
   --color-secondary: rgb(162, 155, 150);

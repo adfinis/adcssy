@@ -10,6 +10,7 @@ Example:
 ```html_example
 <nav class="nav-top">
   <header class="nav-top-header">
+    <button class="nav-top-toggle" onclick="document.getElementsByClassName('nav-top-body')[0].classList.toggle('nav-top-body--visible')"></button>
     <a href="#">
       <div class="nav-top-header-logo"></div>
       <div class="nav-top-header-title">Foobar</div>
@@ -56,11 +57,10 @@ Modifiers:
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--color-menu);
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
-  padding: 0 var(--page-padding);
 }
 
 .nav-top--fixed {
@@ -78,13 +78,41 @@ Modifiers:
   height: calc(100vh - 50px - 1px);
 }
 
+.nav-top-toggle {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  background-color: var(--color-menu);
+}
+
+.nav-top-toggle:focus {
+  outline: thin dotted;
+  outline-offset: -4px;
+}
+
+.nav-top-toggle::before {
+  content: '\f20d';
+  display: inline-block;
+  font-family: 'Ionicons';
+  font-style: normal;
+  font-weight: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+}
+
 .nav-top-header,
 .nav-top-header a {
   display: flex;
 }
 
 .nav-top-header {
-  margin-right: 1rem;
+  justify-content: space-between;
 }
 
 .nav-top-header-logo {
@@ -103,32 +131,31 @@ Modifiers:
 
 .nav-top-header-title {
   color: color(var(--body-color) l(+10%));
+  margin-right: 0.5rem;
+}
+
+.nav-top-body.nav-top-body--visible {
+  display: block;
+  max-height: 400px;
 }
 
 .nav-top-body {
-  display: flex;
-  flex-grow: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s;
 }
 
 .nav-top-list {
-  height: 50px;
   display: flex;
-  font-size: var(--nav-font-size);
+  flex-direction: column;
+  font-size: calc(var(--nav-font-size) * 1.25);
   line-height: 1.5;
   list-style: none;
 }
 
-.nav-top-list--right {
-  margin-left: auto;
-}
-
 .nav-top-list a {
-  align-self: center;
-  padding: 1rem 0.5rem;
-  border-bottom-right-radius: var(--nav-item-border-radius);
-  border-bottom-left-radius: var(--nav-item-border-radius);
-  color: color(var(--link-color) l(-20%));
-  transition: color 0.2s, background-color 0.2s;
+  flex-grow: 1;
+  padding: 0.75rem 0.75rem;
 }
 
 .nav-top-list a:hover {
@@ -138,4 +165,52 @@ Modifiers:
 
 .nav-top-list-item {
   display: flex;
+}
+
+.nav-top-list a {
+  color: color(var(--link-color) l(-20%));
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-top-list--right {
+  border-top: 1px solid var(--color-border);
+}
+
+@media (--nav-top-mobile-width) {
+  .nav-top {
+    flex-direction: row;
+    padding: 0 var(--page-padding);
+  }
+
+  .nav-top-toggle {
+    display: none;
+  }
+
+  .nav-top-header {
+    justify-content: left;
+  }
+
+  .nav-top-body {
+    display: flex;
+    flex-grow: 1;
+    max-height: 50px;
+    transition: none;
+  }
+
+  .nav-top-list {
+    height: 50px;
+    flex-direction: row;
+    font-size: var(--nav-font-size);
+  }
+
+  .nav-top-list--right {
+    margin-left: auto;
+  }
+
+  .nav-top-list a {
+    align-self: center;
+    padding: 1rem 0.5rem;
+    border-bottom-right-radius: var(--nav-item-border-radius);
+    border-bottom-left-radius: var(--nav-item-border-radius);
+  }
 }
