@@ -7,6 +7,8 @@ dist: clean build
 build:
 	@BROCCOLI_ENV=production broccoli build build
 
+docs: hologram
+
 hologram:
 	@hologram
 
