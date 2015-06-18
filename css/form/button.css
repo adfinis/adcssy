@@ -21,8 +21,11 @@ Button styles:
 <button class="btn btn-warning">Click me!</button>
 <button class="btn btn-danger">Click me!</button>
 ```
-
 */
+
+@custom-selector :--button-types .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger;
+@custom-selector :--button-active .btn:active, .btn.active;
+
 .btn {
   display: flex;
   justify-content: center;
@@ -58,7 +61,7 @@ Button styles:
   text-decoration: none;
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.btn:focus, :--button-active:focus {
   outline: thin dotted;
   outline-offset: -2px;
   -webkit-outline-radius: var(--button-border-radius);
@@ -67,13 +70,12 @@ Button styles:
           outline-radius: var(--button-border-radius);
 }
 
-.btn:active, .btn.active {
+:--button-active {
   border-top-width: 2px;
   border-bottom-width: 1px;
 }
 
-.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger,
-:matches(.btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger):visited {
+:--button-types, :--button-types:visited {
   color: #fff;
 }
 
