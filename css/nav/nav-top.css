@@ -54,6 +54,7 @@ Modifiers:
 */
 .nav-top {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: var(--color-menu);
