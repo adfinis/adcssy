@@ -30,6 +30,7 @@ Button styles:
   margin-bottom: 0;
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-border);
+  border-bottom-width: 2px;
   background: #fff;
   border-radius: var(--button-border-radius);
   text-align: center;
@@ -60,6 +61,14 @@ Button styles:
 .btn:focus, .btn:active:focus, .btn.active:focus {
   outline: thin dotted;
   outline-offset: -2px;
+  -webkit-outline-radius: var(--button-border-radius);
+     -moz-outline-radius: var(--button-border-radius);
+          outline-radius: var(--button-border-radius);
+}
+
+.btn:active, .btn.active {
+  border-top-width: 2px;
+  border-bottom-width: 1px;
 }
 
 .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger,
