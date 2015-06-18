@@ -61,13 +61,8 @@ Button styles:
   text-decoration: none;
 }
 
-.btn:focus, :--button-active:focus {
-  outline: thin dotted;
-  outline-offset: -2px;
-  -webkit-outline-radius: var(--button-border-radius);
-     -moz-outline-radius: var(--button-border-radius);
-      -ms-outline-radius: var(--button-border-radius);
-          outline-radius: var(--button-border-radius);
+.btn:focus {
+  outline: none;
 }
 
 :--button-active {
