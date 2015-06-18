@@ -43,6 +43,10 @@ Styled radios
   margin-bottom: 0.5rem;
 }
 
+/*
+Hide the radios and checkboxes by moving them out of the viewport,
+some browsers behave weird if they are set to `display: none`
+*/
 :--checkbox-container > :--customizable {
   position: absolute;
   left: -99999px;
