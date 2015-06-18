@@ -10,7 +10,14 @@ The link prefix can be used to prepend a '>' to a link.
 ```html_example
 <a href="#" class="link-prefix">Foobar</a>
 ```
+
+Caret to indicate dropdowns.
+
+```html_example
+<span class="caret"></span>
+```
 */
+
 .link-prefix::before {
   content: '>';
   vertical-align: 6%;
@@ -26,4 +33,15 @@ The link prefix can be used to prepend a '>' to a link.
 
 .link-prefix:matches(:hover, :focus)::before {
   padding: 0 0.1em 0 0.1em;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
