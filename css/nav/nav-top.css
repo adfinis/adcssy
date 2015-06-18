@@ -137,6 +137,7 @@ Modifiers:
 .nav-top-body.nav-top-body--visible {
   display: block;
   max-height: 400px;
+  overflow-y: auto;
 }
 
 .nav-top-body {
