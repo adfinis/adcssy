@@ -16,4 +16,4 @@ clean:
 	@rm -rf build docs
 
 watch:
-	@BROCCOLI_ENV=development broccoli serve
+	@BROCCOLI_ENV=development broccoli serve --host 0.0.0.0
