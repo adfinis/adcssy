@@ -92,6 +92,7 @@ Example:
 
 .nav-side--expand .nav-side-list {
   font-size: var(--nav-font-size);
+  line-height: 3rem;
 }
 
 .nav-side--expand :matches(.nav-side-list a, .nav-side-list-header) {
@@ -193,10 +194,11 @@ Example:
     overflow-y: auto;
   }
 
-  .nav-side-list {
+  /* Match selector weight with .nav-side--expand */
+  .nav-side .nav-side-list {
     padding: 0 1rem 0 0;
     font-size: var(--nav-font-size);
-    line-height: 1.5;
+    line-height: 1.5 !important;
     list-style: none;
   }
 

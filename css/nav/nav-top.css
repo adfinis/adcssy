@@ -122,7 +122,7 @@ Modifiers:
   display: flex;
   flex-direction: column;
   font-size: calc(var(--nav-font-size) * 1.25);
-  line-height: 1.5;
+  line-height: 2rem;
   list-style: none;
 }
 
