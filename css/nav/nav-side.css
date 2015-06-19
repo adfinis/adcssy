@@ -10,6 +10,7 @@ Example:
 ```html_example
 <nav class="nav-side">
   <header class="nav-side-header">
+    <button class="nav-toggle nav-side-toggle" onclick="document.getElementsByClassName('nav-side')[0].classList.toggle('nav-side--expand')"></button>
     <a href="#">
       <div class="nav-side-header-logo"></div>
       <div class="nav-side-header-title">Foobar</div>
@@ -36,92 +37,31 @@ Example:
 ```
 */
 .nav-side {
-  position: relative;
-  display: flex;
-  flex: 0 0 160px;
   flex-direction: column;
   background-color: var(--color-menu);
   border-right: 1px solid var(--color-border);
   z-index: 1000;
-}
-
-@media (--md-viewport) {
-  .nav-side {
-    flex: 0 0 240px;
-  }
-}
-
-.nav-side--right {
-  order: 1;
-  border-right: none;
-  border-left: 1px solid var(--color-border);
-}
-
-.nav-side-header,
-.nav-side-header > a {
-  display: flex;
-  align-items: center;
-}
-
-.nav-side-header > a {
-  flex-grow: 1;
-}
-
-.nav-side-header-logo {
-  width: 32px;
-  height: 32px;
-  background: url(../pictures/logo/sy.png);
-  background-size: 32px 32px;
-  margin: 1rem 0.5rem 0 1rem;
-  border-radius: var(--nav-logo-border-radius);
-}
-
-.nav-side-header-title {
-  margin-top: 1rem;
-  font-weight: 700;
-  color: color(var(--body-color) l(+10%));
+  width: 50px;
+  transition: width 0.2s;
 }
 
 .nav-side-body {
-  flex-grow: 1;
-  overflow-y: auto;
+  font-size: 0;
 }
 
-.nav-side-list {
-  padding: 0 1rem 0 0;
-  font-size: var(--nav-font-size);
-  line-height: 1.5;
-  list-style: none;
+.nav-side-body i {
+  font-size: 2rem;
 }
 
-.nav-side--right .nav-side-list {
-  padding: 0 0 0 1rem;
+.nav-side--expand {
+  width: 240px;
 }
 
 .nav-side-list a,
 .nav-side-list-header {
   display: flex;
   align-items: center;
-  padding: 0.3rem 1rem;
-}
-
-.nav-side-list a {
-  color: color(var(--link-color) l(-20%));
-  transition: color 0.2s, background-color 0.2s;
-  border-top-right-radius: var(--nav-item-border-radius);
-  border-bottom-right-radius: var(--nav-item-border-radius);
-}
-
-.nav-side--right .nav-side-list a {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: var(--nav-item-border-radius);
-  border-bottom-left-radius: var(--nav-item-border-radius);
-}
-
-.nav-side-list a:hover {
-  color: #fff;
-  background: var(--color-primary);
+  padding: 0.1rem 0.80rem;
 }
 
 .nav-side-list-header {
@@ -131,17 +71,173 @@ Example:
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  display: none;
 }
 
-.nav-side-list i {
+.nav-side-header-title {
+  display: none;
+  font-weight: 700;
+  color: color(var(--body-color) l(+10%));
+}
+
+.nav-side--expand .nav-side-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-side--expand .nav-side-header-title  {
+  display: block;
+}
+
+.nav-side--expand .nav-side-list {
+  font-size: var(--nav-font-size);
+}
+
+.nav-side--expand :matches(.nav-side-list a, .nav-side-list-header) {
+  padding: 0 0.5rem;
+}
+
+.nav-side--expand .nav-side-list i {
   margin-right: 0.5rem;
   text-align: center;
   width: 1em;
 }
 
-.nav-side-footer {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  height: 3rem;
+.nav-side--expand .nav-side-body i:not([class])::before {
+  content: '';
+  display: inline-block;
+}
+
+.nav-side--expand .nav-side-list-header {
+  display: block;
+}
+
+.nav-side-list a {
+  color: color(var(--link-color) l(-20%));
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-side-list a:hover {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+@media (--nav-side-mobile-width-small) {
+  .nav-side-body {
+    width: auto;
+    font-size: inherit;
+  }
+
+  .nav-side-body i {
+    font-size: inherit;
+  }
+
+  .nav-side {
+    width: 160px;
+  }
+}
+
+@media (--nav-side-mobile-width-full) {
+  .nav-side {
+    width: 240px;
+  }
+}
+
+@media (--nav-side-mobile-width-unhide) {
+  .nav-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-menu);
+    border-right: 1px solid var(--color-border);
+    z-index: 1000;
+  }
+
+  .nav-side-toggle {
+    display: none;
+  }
+
+  .nav-side--right {
+    order: 1;
+    border-right: none;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .nav-side-header-title {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav-side-header,
+  .nav-side-header > a {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-side-header > a {
+    flex-grow: 1;
+  }
+
+  .nav-side-header-logo {
+    width: 32px;
+    height: 32px;
+    background: url(../pictures/logo/sy.png);
+    background-size: 32px 32px;
+    margin: 1rem 0.5rem 0 1rem;
+    border-radius: var(--nav-logo-border-radius);
+  }
+
+  .nav-side-body {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  .nav-side-list {
+    padding: 0 1rem 0 0;
+    font-size: var(--nav-font-size);
+    line-height: 1.5;
+    list-style: none;
+  }
+
+  .nav-side--right .nav-side-list {
+    padding: 0 0 0 1rem;
+  }
+
+  /* Match selector weight with .nav-side--expand */
+  .nav-side :matches(.nav-side-list a, .nav-side-list-header) {
+    padding: 0.3rem 1rem;
+  }
+
+  .nav-side-list a {
+    border-top-right-radius: var(--nav-item-border-radius);
+    border-bottom-right-radius: var(--nav-item-border-radius);
+  }
+
+  .nav-side--right .nav-side-list a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--nav-item-border-radius);
+    border-bottom-left-radius: var(--nav-item-border-radius);
+  }
+
+  .nav-side-list-header {
+    display: block;
+  }
+
+  .nav-side-list i {
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 1em;
+  }
+
+  .nav-side-body i:not([class])::before {
+    content: '';
+  }
+
+  .nav-side-footer {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+  }
 }

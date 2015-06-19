@@ -1,0 +1,28 @@
+.nav-toggle {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  width: 3rem;
+  flex: 0 0 3rem;
+  cursor: pointer;
+  background-color: var(--color-menu);
+}
+
+.nav-toggle:focus {
+  outline: thin dotted;
+  outline-offset: -4px;
+}
+
+.nav-toggle::before {
+  content: '\f20d';
+  display: inline-block;
+  font-family: 'Ionicons';
+  font-style: normal;
+  font-weight: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+}
