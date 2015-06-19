@@ -58,6 +58,10 @@ Example:
   flex-basis: 240px;
 }
 
+.nav-side-list {
+  list-style: none;
+}
+
 .nav-side-list a,
 .nav-side-list-header {
   display: flex;
@@ -199,7 +203,6 @@ Example:
     padding: 0 1rem 0 0;
     font-size: var(--nav-font-size);
     line-height: 1.5 !important;
-    list-style: none;
   }
 
   .nav-side--right .nav-side-list {
