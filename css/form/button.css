@@ -46,6 +46,7 @@ Button styles:
   line-height: 1.5;
   font-weight: 300;
   cursor: pointer;
+  user-select: none;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
   transition: color 0.2s ease 0s,
               background 0.2s ease 0s,
