@@ -41,8 +41,9 @@ Example:
   background-color: var(--color-menu);
   border-right: 1px solid var(--color-border);
   z-index: 1000;
-  width: 50px;
-  transition: width 0.2s;
+  flex-basis: 50px;
+  flex-shrink: 0;
+  transition: flex-basis 0.2s;
 }
 
 .nav-side-body {
@@ -54,7 +55,7 @@ Example:
 }
 
 .nav-side--expand {
-  width: 240px;
+  flex-basis: 240px;
 }
 
 .nav-side-list a,
@@ -133,13 +134,13 @@ Example:
   }
 
   .nav-side {
-    width: 160px;
+    flex-basis: 160px;
   }
 }
 
 @media (--nav-side-mobile-width-full) {
   .nav-side {
-    width: 240px;
+    flex-basis: 240px;
   }
 }
 
