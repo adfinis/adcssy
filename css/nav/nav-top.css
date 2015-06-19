@@ -10,7 +10,7 @@ Example:
 ```html_example
 <nav class="nav-top">
   <header class="nav-top-header">
-    <button class="nav-top-toggle" onclick="document.getElementsByClassName('nav-top-body')[0].classList.toggle('nav-top-body--expand')"></button>
+    <button class="nav-top-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-top-body--expand')"></button>
     <a href="#">
       <div class="nav-top-header-logo"></div>
       <div class="nav-top-header-title">Foobar</div>
@@ -106,7 +106,7 @@ Modifiers:
   margin-right: 0.5rem;
 }
 
-.nav-top-body.nav-top-body--expand {
+.nav-top--expand .nav-top-body {
   display: block;
   max-height: 400px;
   overflow-y: auto;
