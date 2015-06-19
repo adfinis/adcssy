@@ -9,10 +9,10 @@
     <link href="http://fonts.googleapis.com/css?family=Merriweather:300,300italic,700,700italic" rel="stylesheet">
   </head>
   <body class="page">
-    <div class="page-viewport page-viewport--column">
-      <nav class="nav-top">
+    <div class="page-viewport">
+      <!--<nav class="nav-top">
         <header class="nav-top-header">
-          <button class="nav-top-toggle" onclick="document.getElementsByClassName('nav-top-body')[0].classList.toggle('nav-top-body--visible')"></button>
+          <button class="nav-toggle nav-top-toggle" onclick="document.getElementsByClassName('nav-top-body')[0].classList.toggle('nav-top-body--expand')"></button>
           <a href="#">
             <div class="nav-top-header-logo"></div>
             <div class="nav-top-header-title">Foobar</div>
@@ -54,9 +54,10 @@
             </li>
           </ul>
         </section>
-      </nav>
-      <!--<nav class="nav-side">
+      </nav>-->
+      <nav class="nav-side">
         <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="document.getElementsByClassName('nav-side')[0].classList.toggle('nav-side--expand')"></button>
           <a href="#">
             <div class="nav-side-header-logo"></div>
             <div class="nav-side-header-title">Foobar</div>
@@ -109,27 +110,8 @@
             </li>
           </ul>
         </section>
-      </nav>-->
+      </nav>
       <main class="page-content page-content--scroll">
-        <div class="grid grid--1 grid-sm--2">
-          <div class="grid-cell">foo</div>
-          <div class="grid-cell">
-            <div style="display: flex; justify-content: space-between">
-              <a class="btn" href="#" role="button">Link</a>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
-              <button class="btn" type="submit">Button</button>
-              <input class="btn" type="button" value="Input">
-              <input class="btn" type="submit" value="Submit">
-            </div>
-            <div style="display: flex; justify-content: space-between">
-              <button class="btn btn-primary" type="submit">Primary</button>
-              <button class="btn btn-success" type="submit">Success</button>
-              <button class="btn btn-info" type="submit">Info</button>
-              <button class="btn btn-warning" type="submit">Warning</button>
-              <button class="btn btn-danger" type="submit">Danger</button>
-            </div>
-          </div>
-        </div>
         <article>
           <header>
             <h1>ffi 12345 Q</h1>
