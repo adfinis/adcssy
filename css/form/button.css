@@ -76,7 +76,7 @@ Button styles:
 }
 
 .btn:--button-active {
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.15) inset;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2) inset, 0 -1px 0 rgba(255, 255, 255, 0.2) inset;
   border-top-width: 2px;
   border-bottom-width: 1px;
 }
