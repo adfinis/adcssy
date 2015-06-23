@@ -57,6 +57,14 @@ Button styles:
   color: color(var(--body-color) l(+20%));
 }
 
+:--button-types {
+  color: #fff;
+}
+
+:--button-types:visited {
+  color: #fff;
+}
+
 .btn:hover, .btn:focus {
   color: var(--link-color);
   border-color: color(var(--link-color-highlight) l(+10%));
@@ -71,10 +79,6 @@ Button styles:
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.15) inset;
   border-top-width: 2px;
   border-bottom-width: 1px;
-}
-
-:--button-types, :--button-types:visited {
-  color: #fff;
 }
 
 .btn-primary {
