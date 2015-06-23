@@ -145,6 +145,10 @@ Modifiers:
   transition: color 0.2s, background-color 0.2s;
 }
 
+.nav-top-list--right {
+  border-top: 1px solid var(--color-border);
+}
+
 @media (--nav-top-mobile-width) {
   .nav-top {
     flex-direction: row;
