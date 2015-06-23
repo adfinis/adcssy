@@ -9,7 +9,7 @@ build:
 
 docs: hologram
 
-hologram:
+hologram: dist
 	@hologram
 
 clean:
