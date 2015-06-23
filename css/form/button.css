@@ -24,7 +24,7 @@ Button styles:
 */
 
 @custom-selector :--button-types .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger;
-@custom-selector :--button-active .btn:active, .btn.active;
+@custom-selector :--button-active :active, .active;
 
 .btn {
   display: flex;
@@ -75,7 +75,7 @@ Button styles:
   outline: none;
 }
 
-:--button-active {
+.btn:--button-active {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.15) inset;
   border-top-width: 2px;
   border-bottom-width: 1px;
