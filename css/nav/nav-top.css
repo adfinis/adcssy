@@ -177,6 +177,7 @@ Modifiers:
   }
 
   .nav-top-list--right {
+    border-top: 0;
     margin-left: auto;
   }
 
