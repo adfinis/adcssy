@@ -24,10 +24,10 @@
   --color-menu:      rgb(246, 246, 246);
 
   /* State colors */
-  --color-success: rgb(92, 184, 92);
-  --color-info:    rgb(91, 192, 222);
-  --color-warning: rgb(240, 173, 78);
-  --color-danger:  rgb(217, 83, 79);
+  --color-success: rgb( 92, 184,  92);
+  --color-info:    rgb( 91, 192, 222);
+  --color-warning: rgb(240, 173,  78);
+  --color-danger:  rgb(217,  83,  79);
 }
 
 /* Grid */
