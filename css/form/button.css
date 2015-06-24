@@ -28,6 +28,8 @@ Button styles:
 
 .btn {
   display: flex;
+  /* Don't allow Chrome to make button smaller than content */
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
