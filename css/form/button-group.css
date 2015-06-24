@@ -1,0 +1,130 @@
+/*doc
+---
+title: Button Group and Toolbar
+name: button-groups
+category: Form
+---
+
+Simple button group:
+
+```html_example
+<div class="btn-group" role="group">
+  <button type="button" class="btn">Left</button>
+  <button type="button" class="btn">Center</button>
+  <button type="button" class="btn">Right</button>
+</div>
+```
+
+Button toolbars grouping multiple button groups together:
+
+```html_example
+<div class="btn-toolbar" role="toolbar">
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">1</button>
+      <button type="button" class="btn">2</button>
+      <button type="button" class="btn">3</button>
+    </div>
+  </div>
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">4</button>
+      <button type="button" class="btn">5</button>
+    </div>
+  </div>
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">6</button>
+    </div>
+  </div>
+</div>
+```
+
+Vertical button group:
+
+```html_example
+<div class="btn-group-vertical" role="group">
+  <button type="button" class="btn">Top</button>
+  <button type="button" class="btn">Center</button>
+  <button type="button" class="btn">Bottom</button>
+</div>
+```
+
+*/
+
+.btn-group, .btn-group-vertical {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.btn-group > .btn:first-child:not(:last-child, .dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group > .btn:first-child {
+  margin-left: 0;
+}
+
+.btn-group > .btn:not(:first-child, :last-child, .dropdown-toggle) {
+  border-radius: 0;
+}
+
+.btn-group > :matches(.btn + .btn,
+                      .btn + .btn-group,
+                      .btn-group .btn-group + .btn,
+                      .btn-group .btn-group + .btn-group) {
+  margin-left: -1px;
+}
+
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical {
+  flex-direction: column;
+}
+
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group-vertical > .btn:not(:first-child, :last-child) {
+  border-radius: 0;
+}
+
+.btn-group-vertical > .btn:not(:last-child) {
+  border-bottom-color: transparent;
+}
+
+.btn-group-vertical > :matches(.btn + .btn,
+                               .btn + .btn-group,
+                               .btn-group + .btn,
+                               .btn-group + .btn-group) {
+  margin-top: -1px;
+  margin-left: 0;
+}
+
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+}
+
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-toolbar {
+  display: flex;
+  margin-left: -5px;
+}
+
+.btn-toolbar > :matches(.btn, .btn-group, .input-group) {
+  margin-left: 5px;
+}

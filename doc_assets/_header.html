@@ -35,8 +35,8 @@
       <main class="page-content page-content--scroll">
         <section class="page-main">
           <div class="h1">Overview</div>
-          <ul>
+          <div class="btn-group" style="margin-bottom: 1em">
           <% @blocks.each do |b| %>
-            <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <a class="btn" href="#<%= b[:name] %>"><%= b[:title] %></a>
           <% end %>
-          </ul>
+          </div>
