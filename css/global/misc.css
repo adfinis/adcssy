@@ -19,6 +19,7 @@ Caret to indicate dropdowns.
 */
 
 .link-prefix::before {
+  /* content: '›'; */
   content: '>';
   vertical-align: 6%;
   padding: 0 0.2em 0 0;
