@@ -34,9 +34,14 @@ Example:
     </ul>
   </section>
 </nav>
+<main class="page-content">
+  <!-- content -->
+</main>
+<div class="page-content-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
 ```
 */
 .nav-side {
+  display: flex;
   flex-direction: column;
   background-color: var(--color-menu);
   border-right: 1px solid var(--color-border);
@@ -44,10 +49,13 @@ Example:
   flex-basis: 50px;
   flex-shrink: 0;
   transition: flex-basis 0.2s;
+  height: 100vh;
 }
 
 .nav-side-body {
   font-size: 0;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .nav-side-body i {
@@ -58,8 +66,29 @@ Example:
   flex-basis: 240px;
 }
 
+.nav-side--expand + .page-content {
+  margin-right: -240px;
+}
+
+.nav-side--expand + .page-content + .page-content-overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 240px;
+  z-index: 900;
+}
+
+.page-content {
+  transition: margin-right 0.2s;
+}
+
 .nav-side-list {
   list-style: none;
+}
+
+.nav-side-list:first-child .nav-side-list-header {
+  margin-top: 0;
 }
 
 .nav-side-list a,
@@ -67,15 +96,16 @@ Example:
   display: flex;
   align-items: center;
   padding: 0.1rem 0.80rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav-side-list-header {
   color: color(var(--body-color) l(+20%));
   letter-spacing: 1px;
   margin-top: 1rem;
+  line-height: 2rem;
   text-transform: uppercase;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   display: none;
 }
 
@@ -161,6 +191,14 @@ Example:
 
   .nav-side-toggle {
     display: none;
+  }
+
+  .nav-side--expand + .page-content + .page-content-overlay {
+    display: none;
+  }
+
+  .nav-side--expand + .page-content {
+    margin-right: 0;
   }
 
   .nav-side--right {
