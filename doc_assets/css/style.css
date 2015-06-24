@@ -35,3 +35,7 @@
   text-align: center;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.example-color-grid {
+  max-width: 1000px;
+}
