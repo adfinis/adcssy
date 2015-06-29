@@ -64,6 +64,32 @@ Specifying grid cell sizes on each cell:
 </div>
 ```
 
+Responsive grid:
+
+```html_example
+<div class="grid grid--1 grid-xs--2 grid-md--4 grid-lg--6">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 4</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 5</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 6</div></div>
+</div>
+```
+
+Responsive grid-cells:
+
+```html_example
+<div class="grid">
+  <div class="grid-cell grid-cell--1"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell grid-cell-xs--1"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell grid-cell-md--2 grid-cell-lg--4"><div class="example-grid-content">Cell 3</div></div>
+  <div class="grid-cell grid-cell-md--2 grid-cell-lg--4"><div class="example-grid-content">Cell 4</div></div>
+  <div class="grid-cell grid-cell-lg--4"><div class="example-grid-content">Cell 5</div></div>
+  <div class="grid-cell grid-cell-lg--4"><div class="example-grid-content">Cell 6</div></div>
+</div>
+```
+
 Aligning grid-cell content using the following modifier:
 
 - `grid--align-start` vertical align cells on 'top'
@@ -73,6 +99,14 @@ Aligning grid-cell content using the following modifier:
 - `grid-cell--align-start` vertical align single cell on 'top'
 - `grid-cell--align-center` vertical align single cell on 'center'
 - `grid-cell--align-end` vertical align single cell on 'bottom'
+
+Responsive cell-order modifier:
+
+- `grid-xs--row`
+- `grid-xs--col`
+- `grid-xs--row-reverse`
+- `grid-xs--col-reverse`
+
 */
 .grid {
   display: flex;
