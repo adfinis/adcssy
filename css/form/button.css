@@ -43,9 +43,10 @@ Button styles:
   text-transform: uppercase;
   text-shadow: none;
   white-space: nowrap;
+  height: 2rem;
   letter-spacing: 1px;
   font-size: 0.75rem;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 300;
   cursor: pointer;
   user-select: none;
@@ -137,4 +138,22 @@ Button styles:
   background-color: color(var(--color-danger) l(-10%) s(+5%));
   border-color: color(var(--color-danger) l(-20%));
   color: #fff;
+}
+
+.btn-link {
+  color: var(--link-color);
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline;
+  line-height: inherit;
+  text-transform: none;
+  height: auto;
+  letter-spacing: normal;
+}
+
+.btn-link, .btn-link:--button-active, .btn-link:focus, .btn-link:hover {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
 }

@@ -66,3 +66,11 @@
 .fa-typography:before {
   content: '\f035';
 }
+
+.fa-login:before {
+  content: '\f090';
+}
+
+.exampleOutput .page-login {
+  min-height: 200px;
+}

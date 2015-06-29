@@ -1,0 +1,32 @@
+/*doc
+---
+title: Login Page
+name: login
+category: Login
+---
+
+Example login page:
+
+```html_example
+<div class="page page-login">
+  <div class="page-viewport">
+    <main class="page-content">
+      <div class="login-form">
+        <form class="form-inline">
+          <div class="form-group login-form-email">
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group login-form-password">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button class="login-form-password-reset btn btn-link">Forgot password?</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+```
+*/
+@import 'page.css';
+@import 'form.css';
