@@ -21,12 +21,15 @@ let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   browsers:  '> 1%, last 2 versions, Firefox ESR'
 })
 
-let html = live('test', {
-  destDir: '/',
-  files: [ 'index.html' ]
-})
+let trees = [ css, assets ]
 
-module.exports = merge([ css, assets, html ])
+if (env === 'development') {
+  let html = live('test', { destDir: '/' })
+
+  trees.push(html)
+}
+
+module.exports = merge(trees)
 
 function broc(m) {
   return require('broccoli-' + m)

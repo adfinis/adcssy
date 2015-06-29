@@ -1,0 +1,87 @@
+.login-form {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-form > form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.login-form .btn {
+  width: 100%;
+}
+
+.login-form .btn-primary {
+  margin-bottom: 1rem;
+}
+
+.login-form .form-group {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+:matches(.login-form-email, .login-form-password) .form-control {
+  background: none;
+  border: none;
+  box-shadow: none;
+  width: 255px;
+}
+
+.login-form-email, .login-form-password {
+  background: var(--color-border);
+  padding-left: 1rem;
+}
+
+:matches(.login-form-email, .login-form-password)::before {
+  font-family: 'FontAwesome';
+}
+
+.login-form-email::before {
+  content: '\f0e0'
+}
+
+.login-form-password::before {
+  content: '\f023'
+}
+
+.login-form-password-reset,
+.login-form-password-reset:active {
+  color: #fff;
+}
+
+.btn.login-form-password-reset:focus,
+.btn.login-form-password-reset:hover {
+  color: #edeeee;
+}
+
+@media (--sm-viewport) {
+  .login-form {
+    width: 670px;
+  }
+
+  .login-form > form {
+    flex-direction: row;
+  }
+
+  .login-form .btn {
+    width: auto;
+  }
+
+  .login-form .btn-primary {
+    margin-bottom: 0;
+  }
+
+  .login-form-password-reset {
+    margin-top: 0.5rem;
+  }
+
+  .login-form .form-group {
+    flex-grow: 0;
+  }
+}
