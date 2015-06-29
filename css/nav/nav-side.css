@@ -21,13 +21,13 @@ Example:
       <li class="nav-side-list-header">Settings</li>
       <li class="nav-side-list-item">
         <a href="#">
-          <i class="ion-person"></i>
+          <i class="fa fa-user"></i>
           Users
         </a>
       </li>
       <li class="nav-side-list-item">
         <a href="#">
-          <i></i>
+          <i class="fa fa-users"></i>
           Teams
         </a>
       </li>
@@ -52,6 +52,11 @@ Example:
   height: 100vh;
 }
 
+.nav-side-header {
+  display: flex;
+  align-items: center;
+}
+
 .nav-side-body {
   font-size: 0;
   flex-grow: 1;
@@ -72,9 +77,9 @@ Example:
 
 .nav-side--expand + .page-content + .page-content-overlay {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 240px;
   z-index: 900;
 }
@@ -85,6 +90,7 @@ Example:
 
 .nav-side-list {
   list-style: none;
+  line-height: 3rem;
 }
 
 .nav-side-list:first-child .nav-side-list-header {
@@ -95,7 +101,8 @@ Example:
 .nav-side-list-header {
   display: flex;
   align-items: center;
-  padding: 0.1rem 0.80rem;
+  justify-content: center;
+  padding: 0.1rem 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -115,9 +122,9 @@ Example:
   color: color(var(--body-color) l(+10%));
 }
 
-.nav-side--expand .nav-side-header {
-  display: flex;
-  align-items: center;
+.nav-side--expand :matches(.nav-side-list a,
+                           .nav-side-list-header) {
+  justify-content: flex-start;
 }
 
 .nav-side--expand .nav-side-header-title  {
@@ -126,7 +133,6 @@ Example:
 
 .nav-side--expand .nav-side-list {
   font-size: var(--nav-font-size);
-  line-height: 3rem;
 }
 
 .nav-side--expand :matches(.nav-side-list a, .nav-side-list-header) {
@@ -136,7 +142,7 @@ Example:
 .nav-side--expand .nav-side-list i {
   margin-right: 0.5rem;
   text-align: center;
-  width: 1em;
+  width: 1.5em;
 }
 
 .nav-side--expand .nav-side-body i:not([class])::before {
@@ -216,6 +222,7 @@ Example:
   .nav-side-header > a {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .nav-side-header > a {
@@ -253,6 +260,7 @@ Example:
   }
 
   .nav-side-list a {
+    justify-content: flex-start;
     border-top-right-radius: var(--nav-item-border-radius);
     border-bottom-right-radius: var(--nav-item-border-radius);
   }
@@ -271,7 +279,7 @@ Example:
   .nav-side-list i {
     margin-right: 0.5rem;
     text-align: center;
-    width: 1em;
+    width: 1.5em;
   }
 
   .nav-side-body i:not([class])::before {

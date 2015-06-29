@@ -13,6 +13,6 @@
     "broccoli-funnel": "^0.2.3",
     "broccoli-inject-livereload": "^0.2.0",
     "broccoli-merge-trees": "^0.2.1",
-    "ionicons-pre": "^1.0.0-pre"
+    "font-awesome": "^4.3.0"
   }
 }

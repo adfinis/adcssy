@@ -3,8 +3,8 @@
   padding: 0;
   margin: 0;
   font-size: 2rem;
-  width: 3rem;
-  flex: 0 0 3rem;
+  width: 54px;
+  flex: 0 0 54px;
   cursor: pointer;
   background-color: var(--color-menu);
 }
@@ -15,9 +15,9 @@
 }
 
 .nav-toggle::before {
-  content: '\f20d';
+  content: '\f0c9';
   display: inline-block;
-  font-family: 'Ionicons';
+  font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
   font-feature-settings: normal;

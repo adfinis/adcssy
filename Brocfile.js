@@ -8,7 +8,7 @@ let merge   = broc('merge-trees')
 let live    = broc('inject-livereload')
 let env     = broc('env').getEnv()
 
-let ionicons = funnel('node_modules/ionicons-pre/fonts', {
+let ionicons = funnel('node_modules/font-awesome/fonts', {
   destDir: 'fonts'
 })
 

@@ -8,7 +8,6 @@ category: Basics
 This is the [Adfinis SyGroup AG](http://adfinis-sygroup.ch/) CSS Framework Guide
 
 */
-@import '../node_modules/ionicons-pre/css/ionicons.css';
 @import 'colors/index';
 @import 'fonts/index';
 @import 'global/index';

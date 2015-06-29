@@ -20,12 +20,13 @@ Example:
     <ul class="nav-top-list">
       <li class="nav-top-list-item">
         <a href="#">
-          <i class="ion-person"></i>
+          <i class="fa fa-user"></i>
           Users
         </a>
       </li>
       <li class="nav-top-list-item">
         <a href="#">
+          <i class="fa fa-users"></i>
           Teams
         </a>
       </li>
@@ -33,13 +34,13 @@ Example:
     <ul class="nav-top-list nav-top-list--right">
       <li class="nav-top-list-item">
         <a href="#">
-          <i class="ion-email-unread"></i>
+          <i class="fa fa-envelope"></i>
           Messages
         </a>
       </li>
       <li class="nav-top-list-item">
         <a href="#">
-          <i class="ion-power"></i>
+          <i class="fa fa-power-off"></i>
           Logout
         </a>
       </li>
@@ -127,8 +128,15 @@ Modifiers:
 }
 
 .nav-top-list a {
+  display: flex;
+  align-items: baseline;
   flex-grow: 1;
-  padding: 0.75rem 0.75rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+}
+
+.nav-top-list .fa {
+  flex: 0 0 2em;
+  text-align: center;
 }
 
 .nav-top-list a:hover {
@@ -182,6 +190,7 @@ Modifiers:
   }
 
   .nav-top-list a {
+    display: block;
     align-self: center;
     padding: 1rem 0.5rem;
     border-bottom-right-radius: var(--nav-item-border-radius);

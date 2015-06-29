@@ -25,6 +25,7 @@
           <% @categories.each do |category, file_name| %>
             <li class="nav-side-list-item">
               <a href="<%= file_name %>">
+                <i class="fa fa-<%= category.downcase %>"></i>
                 <%= category %>
               </a>
             </li>
