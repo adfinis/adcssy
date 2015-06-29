@@ -23,7 +23,7 @@ Content which should respect typesettings should be wrapped in a `typeset` class
       <p>
         Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it.
       </p>
-      &mdash; <a href="https://en.wikipedia.org/wiki/Terry_Pratchett">Terry Pratchett</a>
+      <p>&mdash; <a href="https://en.wikipedia.org/wiki/Terry_Pratchett">Terry Pratchett</a></p>
     </blockquote>
     <p>
       Integer est velit, condimentum id urna quis, placerat molestie diam. Quisque tempus, augue in laoreet tempus, turpis nibh <a href="#">placerat elit</a>, et malesuada augue lectus sed augue. Etiam vel sem nec mi accumsan rutrum. Nullam sed egestas sem. Nam pulvinar tortor a purus fringilla, eu posuere tortor porttitor. Nulla sit amet magna porttitor, lobortis urna a, hendrerit nulla. Sed sed dictum augue, et facilisis risus. Quisque sed sem sodales, consequat tellus id, mattis nulla. Proin quis hendrerit nisi, eget mollis tellus. Sed dapibus elementum ex vel mollis.
@@ -64,10 +64,10 @@ article :matches(p, li) {
 blockquote {
   quotes: none;
   margin-left: -1rem;
+  border-left: 0.15rem solid var(--color-primary);
 }
 
 blockquote p {
-  border-left: 0.15rem solid var(--color-primary);
   font-family: var(--font-family-serif);
   font-style: italic;
   padding: 0.5rem 0 0.5rem 1rem;
