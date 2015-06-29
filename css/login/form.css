@@ -26,28 +26,39 @@
   align-items: center;
 }
 
-:matches(.login-form-email, .login-form-password) .form-control {
+.login-form .form-control {
   background: none;
   border: none;
   box-shadow: none;
-  width: 255px;
+  width: 285px;
+  background: var(--color-border);
+  padding-left: 2.5rem;
+}
+
+.login-form .form-control:focus {
+  background: color(var(--color-border) tint(50%));
 }
 
 .login-form-email, .login-form-password {
-  background: var(--color-border);
-  padding-left: 1rem;
+  position: relative;
 }
 
 :matches(.login-form-email, .login-form-password)::before {
   font-family: 'FontAwesome';
+  position: absolute;
+  top: 8px;
+  left: 1rem;
+  /* Font-Awesome is not monospaced! Set width and center.. *sigh* */
+  width: 16px;
+  text-align: center;
 }
 
 .login-form-email::before {
-  content: '\f0e0'
+  content: '\f0e0';
 }
 
 .login-form-password::before {
-  content: '\f023'
+  content: '\f023';
 }
 
 .login-form-password-reset,
