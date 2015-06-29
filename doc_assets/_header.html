@@ -37,8 +37,10 @@
       <main class="page-content page-content--scroll">
         <section class="page-main">
           <div class="h1">Overview</div>
-          <div class="btn-group btn-group--vertical" style="margin-bottom: 1em">
-          <% @blocks.each do |b| %>
-            <a class="btn" href="#<%= b[:name] %>"><%= b[:title] %></a>
-          <% end %>
+          <div class="grid grid-sm--5">
+            <div class="grid-cell btn-group btn-group--vertical" style="margin-bottom: 1em">
+            <% @blocks.each do |b| %>
+              <a class="btn" href="#<%= b[:name] %>"><%= b[:title] %></a>
+            <% end %>
+            </div>
           </div>
