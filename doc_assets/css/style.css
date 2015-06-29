@@ -40,9 +40,6 @@
   max-width: 1000px;
 }
 
-.ion-basics:before, .ion-components:before, .ion-form:before, .ion-miscellaneous:before, .ion-table:before, .ion-typography {
-}
-
 .fa-basics:before {
   content: '\f015';
 }
