@@ -45,3 +45,8 @@ Caret to indicate dropdowns.
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+
+.flex-grow {
+  display: flex;
+  flex-grow: 1;
+}
