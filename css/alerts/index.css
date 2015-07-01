@@ -1,0 +1,67 @@
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components
+---
+
+Basic example:
+
+```html_example
+<div class="alert alert-success" role="alert">Success!<div>
+<div class="alert alert-info" role="alert">Information</div>
+<div class="alert alert-warning" role="alert">Warning!</div>
+<div class="alert alert-danger" role="alert">Danger!</div>
+```
+
+Example with close button:
+
+```html_example
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  Success!
+</div>
+```
+*/
+
+.alert {
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--alert-border-radius);
+}
+
+.alert-dismissable, .alert-dismissible {
+  padding-right: 35px;
+}
+
+:matches(.alert-dismissable, .alert-dismissible) .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success {
+  color: color(var(--color-success) shade(25%));
+  border-color: color(var(--color-success) tint(50%));
+  background-color: color(var(--color-success) tint(75%));
+}
+
+.alert-info {
+  color: color(var(--color-info) shade(25%));
+  border-color: color(var(--color-info) tint(50%));
+  background-color: color(var(--color-info) tint(75%));
+}
+
+.alert-warning {
+  color: color(var(--color-warning) shade(25%));
+  border-color: color(var(--color-warning) tint(50%));
+  background-color: color(var(--color-warning) tint(75%));
+}
+
+.alert-danger {
+  color: color(var(--color-danger) shade(25%));
+  border-color: color(var(--color-danger) tint(50%));
+  background-color: color(var(--color-danger) tint(75%));
+}
