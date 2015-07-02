@@ -74,3 +74,16 @@ button.close {
   cursor: pointer;
   opacity: 0.75;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.fade-in {
+  animation: 0.2s ease 0s normal forwards 1 running fade-in;
+}

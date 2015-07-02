@@ -69,6 +69,7 @@
 .btn.login-form-password-reset:focus,
 .btn.login-form-password-reset:hover {
   color: #edeeee;
+  text-decoration: underline;
 }
 
 @media (--sm-viewport) {
@@ -78,6 +79,14 @@
 
   .login-form > form {
     flex-direction: row;
+  }
+
+  .login-form--password-reset {
+    width: auto;
+  }
+
+  .login-form--password-reset > form {
+    flex-direction: column;
   }
 
   .login-form .btn {
@@ -94,5 +103,9 @@
 
   .login-form .form-group {
     flex-grow: 0;
+  }
+
+  .login-form--password-reset .btn {
+    width: 100%;
   }
 }

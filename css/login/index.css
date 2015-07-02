@@ -11,7 +11,7 @@ Example login page:
 <div class="page page-login">
   <div class="page-viewport">
     <main class="page-content">
-      <div class="login-form">
+      <div class="login-form fade-in">
         <form class="form-inline">
           <div class="form-group login-form-email">
             <input type="email" class="form-control" placeholder="Email Address" autofocus>
@@ -21,6 +21,27 @@ Example login page:
           </div>
           <button type="submit" class="btn btn-primary">Sign in</button>
           <button class="login-form-password-reset btn btn-link">Forgot password?</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</div>
+```
+
+Example login password reset page:
+
+```html_example
+<div class="page page-login">
+  <div class="page-viewport">
+    <main class="page-content">
+      <div class="login-form login-form--password-reset">
+        <form class="fade-in">
+          <div class="form-group login-form-email">
+            <input type="email" class="form-control" placeholder="Email Address" autofocus>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send new password</button>
+          </div>
         </form>
       </div>
     </main>
