@@ -65,13 +65,13 @@
   content: '\f023';
 }
 
-.login-form-password-reset,
-.login-form-password-reset:active {
+.btn.btn-link,
+.btn.btn-link:active {
   color: #fff;
 }
 
-.btn.login-form-password-reset:focus,
-.btn.login-form-password-reset:hover {
+.btn.btn-link:focus,
+.btn.btn-link:hover {
   color: #edeeee;
   text-decoration: underline;
 }
