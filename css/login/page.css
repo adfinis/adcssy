@@ -1,3 +1,49 @@
-:matches(.page-login, .page-password-reset) .page-content {
+.page-login .page-content {
   background: linear-gradient(to bottom, var(--color-tertiary), var(--color-secondary));
+}
+
+.page-login .btn {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-login .form-group {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.page-login .form-control {
+  background: none;
+  border: none;
+  box-shadow: none;
+  width: 285px;
+  background: var(--color-border);
+  padding-left: 2.5rem;
+}
+
+.page-login .form-control:focus {
+  background: color(var(--color-border) tint(50%));
+}
+
+.page-login .btn-link,
+.page-login .btn-link:active {
+  color: #fff;
+}
+
+.page-login .btn-link:focus,
+.page-login .btn-link:hover {
+  color: #edeeee;
+  text-decoration: underline;
+}
+
+@media (--sm-viewport) {
+  .page-login .btn {
+    width: auto;
+  }
+
+  .page-login .form-group {
+    flex-grow: 0;
+  }
 }

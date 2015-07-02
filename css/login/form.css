@@ -12,31 +12,8 @@
   flex-direction: column;
 }
 
-.login-form .btn {
-  width: 100%;
-}
-
 .login-form .btn-primary {
   margin-bottom: 1rem;
-}
-
-.login-form .form-group {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.login-form .form-control {
-  background: none;
-  border: none;
-  box-shadow: none;
-  width: 285px;
-  background: var(--color-border);
-  padding-left: 2.5rem;
-}
-
-.login-form .form-control:focus {
-  background: color(var(--color-border) tint(50%));
 }
 
 .login-form-user, .login-form-email, .login-form-password {
@@ -65,17 +42,6 @@
   content: '\f023';
 }
 
-.btn.btn-link,
-.btn.btn-link:active {
-  color: #fff;
-}
-
-.btn.btn-link:focus,
-.btn.btn-link:hover {
-  color: #edeeee;
-  text-decoration: underline;
-}
-
 @media (--sm-viewport) {
   .login-form {
     width: 670px;
@@ -93,20 +59,12 @@
     flex-direction: column;
   }
 
-  .login-form .btn {
-    width: auto;
-  }
-
   .login-form .btn-primary {
     margin-bottom: 0;
   }
 
   .login-form-password-reset {
     margin-top: 0.5rem;
-  }
-
-  .login-form .form-group {
-    flex-grow: 0;
   }
 
   .login-form--password-reset .btn {
