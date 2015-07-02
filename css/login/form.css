@@ -39,11 +39,11 @@
   background: color(var(--color-border) tint(50%));
 }
 
-.login-form-email, .login-form-password {
+.login-form-user, .login-form-email, .login-form-password {
   position: relative;
 }
 
-:matches(.login-form-email, .login-form-password)::before {
+:matches(.login-form-user, .login-form-email, .login-form-password)::before {
   font-family: 'FontAwesome';
   position: absolute;
   top: 8px;
@@ -51,6 +51,10 @@
   /* Font-Awesome is not monospaced! Set width and center.. *sigh* */
   width: 16px;
   text-align: center;
+}
+
+.login-form-user::before {
+  content: '\f007';
 }
 
 .login-form-email::before {
