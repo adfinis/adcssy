@@ -16,6 +16,14 @@ Caret to indicate dropdowns.
 ```html_example
 <span class="caret"></span>
 ```
+
+Loading dots.
+
+```html_example
+<div>
+  Loading<span class="loading-dots"><i>.</i><i>.</i><i>.</i></span>
+</div>
+```
 */
 
 .link-prefix::before {
@@ -86,4 +94,30 @@ button.close {
 
 .fade-in {
   animation: 0.2s ease 0s normal forwards 1 running fade-in;
+}
+
+@keyframes loading-dots {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.loading-dots i {
+  animation: loading-dots 1.3s infinite;
+  font-style: normal;
+  opacity: 0;
+}
+
+.loading-dots i + i {
+  animation-delay: 0.2s;
+}
+
+.loading-dots i + i + i {
+  animation-delay: 0.3s;
 }
