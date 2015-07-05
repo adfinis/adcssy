@@ -2,14 +2,16 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .login-form > form {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .login-form .btn-primary {
@@ -63,8 +65,9 @@
     margin-bottom: 0;
   }
 
-  .login-form-password-reset {
+  .login-form-password-reset-btn {
     margin-top: 0.5rem;
+    align-self: flex-start;
   }
 
   .login-form--password-reset .btn {
