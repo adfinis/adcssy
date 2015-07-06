@@ -21,7 +21,7 @@ Example login page:
           </div>
           <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
-        <button class="btn btn-link">Forgot password?</button>
+        <button class="login-form-password-reset-btn btn btn-link">Forgot password?</button>
       </div>
     </main>
   </div>
