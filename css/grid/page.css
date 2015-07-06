@@ -39,13 +39,15 @@ Modifiers:
   min-height: 100%;
 }
 
-.page-viewport {
+.page-viewport,
+.page.ember-application > .ember-view {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
 }
 
-.page-viewport--column {
+.page-viewport--column,
+.page--column.ember-application > .ember-view {
   flex-direction: column;
 }
 
