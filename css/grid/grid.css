@@ -121,6 +121,7 @@ Responsive cell-order modifier:
   margin: 0 var(--gutter-compensation) var(--gutter-width);
   padding: 0;
 }
+
 .grid--no-gutters {
   margin-left:  0;
   margin-right: 0;
