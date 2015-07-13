@@ -115,10 +115,10 @@ button.close {
 }
 
 .loading-dots i + i {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
   opacity: 0;
 }
 
 .loading-dots i + i + i {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
