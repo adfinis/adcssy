@@ -48,7 +48,7 @@ Example:
   z-index: 1000;
   flex-basis: 50px;
   flex-shrink: 0;
-  transition: flex-basis 0.2s;
+  transition: flex-basis 0.2s, transform 0.2s;
   height: 100vh;
 }
 
@@ -173,16 +173,6 @@ Example:
   .nav-side-body i {
     font-size: inherit;
   }
-
-  .nav-side {
-    flex-basis: 160px;
-  }
-}
-
-@media (--nav-side-mobile-width-full) {
-  .nav-side {
-    flex-basis: 240px;
-  }
 }
 
 @media (--nav-side-mobile-width-unhide) {
@@ -193,6 +183,23 @@ Example:
     background-color: var(--color-menu);
     border-right: 1px solid var(--color-border);
     z-index: 1000;
+  }
+
+  .nav-side--autohide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    transform: translateX(-140px);
+  }
+
+  .nav-side--autohide:hover {
+    transform: none;
+  }
+
+  .nav-side--autohide + * {
+    padding-left: 25px;
   }
 
   .nav-side-list:first-child .nav-side-list-item:first-child {
@@ -295,6 +302,8 @@ Example:
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     height: 3rem;
   }
 }
