@@ -24,7 +24,7 @@
           <% @categories = @categories.sort { |a,b| a[0].downcase <=> b[0].downcase } %>
           <% @categories.each do |category, file_name| %>
             <li class="nav-side-list-item">
-              <a href="<%= file_name %>">
+              <a <%= 'class="active"' if category == title %> href="<%= file_name %>">
                 <i class="fa fa-<%= category.downcase %>"></i>
                 <%= category %>
               </a>
