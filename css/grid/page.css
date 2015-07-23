@@ -58,29 +58,29 @@ Modifiers:
 
 .page-content {
   display: flex;
-  flex-direction: column;
   background: var(--body-background-color);
   flex-grow: 1;
-  padding: var(--page-padding) var(--page-padding) 0;
 }
 
-.page-content--scroll {
+.page-content--scroll,
+.page-main--scroll {
   height: 100vh;
   overflow-y: auto;
 }
 
 .page-main {
   flex: 1 0 auto;
+  padding: var(--page-padding) var(--page-padding) 0;
 }
 
 @media (--xs-viewport) {
-  .page-content {
+  .page-main {
     padding: calc(var(--page-padding) * 1.5) calc(var(--page-padding) * 1.5) 0;
   }
 }
 
 @media (--md-viewport) {
-  .page-content {
+  .page-main {
     padding: calc(var(--page-padding) * 2) calc(var(--page-padding) * 2) 0;
   }
 }
