@@ -159,7 +159,7 @@ Example:
   transition: color 0.2s, background-color 0.2s;
 }
 
-.nav-side-list a:hover {
+.nav-side-list a:matches(:hover, .active) {
   color: #fff;
   background: var(--color-primary);
 }
