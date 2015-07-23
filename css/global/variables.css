@@ -12,8 +12,7 @@
 @custom-media --lg-viewport only screen and (min-width: 75rem);
 
 @custom-media --nav-top-mobile-width only screen and (min-width: 48rem);
-@custom-media --nav-side-mobile-width-small only screen and (min-width: 48rem);
-@custom-media --nav-side-mobile-width-full only screen and (min-width: 62rem);
+
 @custom-media --nav-side-mobile-width-unhide only screen and (min-width: 48rem);
 
 :root {

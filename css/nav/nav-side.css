@@ -164,17 +164,6 @@ Example:
   background: var(--color-primary);
 }
 
-@media (--nav-side-mobile-width-small) {
-  .nav-side-body {
-    width: auto;
-    font-size: inherit;
-  }
-
-  .nav-side-body i {
-    font-size: inherit;
-  }
-}
-
 @media (--nav-side-mobile-width-unhide) {
   .nav-side {
     position: relative;
@@ -253,6 +242,12 @@ Example:
   .nav-side-body {
     flex-grow: 1;
     overflow-y: auto;
+    width: auto;
+    font-size: inherit;
+  }
+
+  .nav-side-body i {
+    font-size: inherit;
   }
 
   /* Match selector weight with .nav-side--expand */
