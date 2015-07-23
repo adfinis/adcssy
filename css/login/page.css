@@ -1,5 +1,6 @@
 .page-login .page-content {
   background: linear-gradient(to bottom, var(--color-tertiary), var(--color-secondary));
+  flex-direction: column;
 }
 
 .page-login .btn {
