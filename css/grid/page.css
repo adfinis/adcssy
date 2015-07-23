@@ -12,16 +12,18 @@ The top level of a application / website is the `page`, it behaves like a much s
   <!-- .page-viewport wraps the whole content (for ember applications, this would be the root element -->
   <div class="page-viewport">
     <!-- .page-content contains all the page specific content -->
-    <main class="page-content" style="background: #bbb">
-      <header class="page-header">
-        <h1>Page header</h1>
-      </header>
-      <section class="page-main">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <main class="page-main" style="background: #bbb">
+      <section class="page-content">
+        <header class="page-content-header">
+          <h1>Page header</h1>
+        </header>
+        <section class="page-content-main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <footer class="page-content-footer">
+          <small>&copy; Page footer</small>
+        </footer>
       </section>
-      <footer class="page-footer">
-        <small>&copy; Page footer</small>
-      </footer>
     </main>
   </div>
 </div>
@@ -30,6 +32,7 @@ The top level of a application / website is the `page`, it behaves like a much s
 Modifiers:
 
 - `page-content--scroll` Makes page-content scrollable
+- `page-main--scroll` Makes page-main scrollable
 
 */
 .page {
@@ -44,6 +47,8 @@ Modifiers:
   flex-grow: 1;
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-viewport--column,
@@ -51,12 +56,16 @@ Modifiers:
   flex-direction: column;
 }
 
-.page-header,
-.page-footer {
+.page-content-header,
+.page-content-footer {
   flex: 0 0 auto;
 }
 
 .page-content {
+  flex-direction: column;
+}
+
+.page-main, .page-content {
   display: flex;
   background: var(--body-background-color);
   flex-grow: 1;
@@ -68,19 +77,23 @@ Modifiers:
   overflow-y: auto;
 }
 
-.page-main {
+.page-content-main {
+  flex: 1 0 auto;
+}
+
+.page-content {
   flex: 1 0 auto;
   padding: var(--page-padding) var(--page-padding) 0;
 }
 
 @media (--xs-viewport) {
-  .page-main {
+  .page-content {
     padding: calc(var(--page-padding) * 1.5) calc(var(--page-padding) * 1.5) 0;
   }
 }
 
 @media (--md-viewport) {
-  .page-main {
+  .page-content {
     padding: calc(var(--page-padding) * 2) calc(var(--page-padding) * 2) 0;
   }
 }

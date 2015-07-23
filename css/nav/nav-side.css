@@ -37,7 +37,7 @@ Example:
 <main class="page-content">
   <!-- content -->
 </main>
-<div class="page-content-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+<div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
 ```
 */
 .nav-side {
@@ -168,6 +168,7 @@ Example:
   .nav-side {
     position: relative;
     display: flex;
+    flex-basis: 172px;
     flex-direction: column;
     background-color: var(--color-menu);
     border-right: 1px solid var(--color-border);
@@ -180,6 +181,7 @@ Example:
     bottom: 0;
     left: 0;
     z-index: 1001;
+    min-width: 172px;
     transform: translateX(-140px);
   }
 
@@ -216,6 +218,7 @@ Example:
   .nav-side-header-title {
     display: block;
     margin-top: 1rem;
+    padding-right: 1rem;
   }
 
   .nav-side-header,

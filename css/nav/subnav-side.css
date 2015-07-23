@@ -1,0 +1,116 @@
+/*doc
+---
+title: Sidebar Sub-Navigation
+name: subnav-side
+category: Components
+---
+
+Example:
+
+```html_example
+<div class="page-viewport">
+  <nav class="nav-side">
+    <header class="nav-side-header">
+      <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')"></button>
+      <a href="#">
+        <div class="nav-side-header-logo"></div>
+        <div class="nav-side-header-title">Foobar</div>
+      </a>
+    </header>
+    <section class="nav-side-body">
+      <ul class="nav-side-list">
+        <li class="nav-side-list-header">Settings</li>
+        <li class="nav-side-list-item">
+          <a href="#">
+            <i class="fa fa-user"></i>
+            Users
+          </a>
+        </li>
+        <li class="nav-side-list-item">
+          <a href="#">
+            <i class="fa fa-users"></i>
+            Teams
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer class="nav-side-footer">
+      <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+        this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+        this.firstChild.classList.toggle('fa-chevron-left')
+        this.firstChild.classList.toggle('fa-chevron-right')
+      "><i class="fa fa-chevron-left"></i></button>
+    </footer>
+  </nav>
+  <main class="page-main">
+    <nav class="nav-side nav-side--sub">
+      <header class="nav-side-header">
+        <div class="nav-side-header-title">Manage</div>
+      </header>
+      <section class="nav-side-body">
+        <ul class="nav-side-list">
+          <li class="nav-side-list-item">
+            <a href="#">
+              Hosts
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Host Groups
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-side-list">
+          <li class="nav-side-list-item">
+            <a class="active" href="#">
+              Commands
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Services
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Service Groups
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="page-content">
+      <!-- content -->
+    </section>
+  </main>
+  <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+</div>
+```
+*/
+
+.nav-side--sub {
+  display: none;
+  border-right: 1px solid color(var(--color-border) tint(30%));
+}
+
+.nav-side--sub .nav-side-list {
+  margin-top: 1rem;
+}
+
+@media (--subnav-side-mobile-width-unhide) {
+  .nav-side--sub {
+    display: flex;
+    background-color: color(var(--color-menu) tint(50%));
+  }
+
+  .nav-side--sub .nav-side-header {
+    height: 3rem;
+    padding-left: 1rem;
+  }
+
+  .nav-side--sub .nav-side-list {
+    padding: 0 1rem 0 0;
+    font-size: var(--nav-font-size);
+    line-height: 1.5 !important;
+  }
+}
