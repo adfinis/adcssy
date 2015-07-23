@@ -27,7 +27,14 @@ Example login page:
   </div>
 </div>
 ```
+*/
 
+/*doc
+---
+title: Password Reset Page
+name: password-reset
+category: Login
+---
 Example login password reset page:
 
 ```html_example
