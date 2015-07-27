@@ -164,6 +164,10 @@ Example:
   background: var(--color-primary);
 }
 
+.nav-side-footer .nav-hide {
+  display: none;
+}
+
 @media (--nav-side-mobile-width-unhide) {
   .nav-side {
     position: relative;
@@ -182,7 +186,7 @@ Example:
     left: 0;
     z-index: 1001;
     min-width: 172px;
-    transform: translateX(-140px);
+    transform: translateX(-9rem);
   }
 
   .nav-side--autohide:hover {
@@ -303,5 +307,9 @@ Example:
     justify-content: center;
     flex-direction: row;
     height: 3rem;
+  }
+
+  .nav-side-footer .nav-hide {
+    display: flex;
   }
 }
