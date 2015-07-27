@@ -74,7 +74,7 @@ Modifiers:
 .page-content--scroll,
 .page-main--scroll {
   height: 100vh;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .page-content-main {
