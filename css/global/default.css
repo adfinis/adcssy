@@ -1,12 +1,10 @@
 html {
-  height: 100%;
-}
-
-body {
+  height:      100%;
   background:  var(--body-background-color);
   color:       var(--body-color);
   font-family: var(--body-font-family);
-  font-size:   var(--body-font-size);
+  font-size:   responsive var(--body-min-font-size) var(--body-max-font-size);
+  font-range:  var(--body-min-font-size-break) var(--body-max-font-size-break);
 }
 
 a {

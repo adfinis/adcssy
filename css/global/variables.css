@@ -49,8 +49,8 @@
   --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-family-base: var(--font-family-sans-serif);
   --font-size-base: 16px;
-  --font-size-large: calc(1.25 * var(--font-size-base));
-  --font-size-small: calc(0.85 * var(--font-size-base));
+  --font-size-large: 1.25rem;
+  --font-size-small: 0.85rem;
 }
 
 /* Body */
@@ -58,12 +58,16 @@
   --body-background-color: #fff;
   --body-color: rgb(61, 61, 61);
   --body-font-family: var(--font-family-base);
-  --body-font-size: var(--font-size-base);
+  --body-min-font-size: calc(var(--font-size-base) - 3px);
+  --body-max-font-size: calc(var(--font-size-base) + 2px);
+  --body-min-font-size-break: 420px;
+  --body-max-font-size-break: 1440px;
 }
 
 /* Nav */
 :root {
-  --nav-font-size: var(--font-size-small);
+  --nav-font-size: var(--font-size-large);
+  --nav-font-size-unhide: var(--font-size-small);
   --nav-item-border-radius: 3px;
   --nav-logo-border-radius: 4px;
 }

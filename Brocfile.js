@@ -18,7 +18,9 @@ let css = cssnext('css', 'adcssy.css', 'css/adcssy.css', {
   compress:  env === 'production',
   sourcemap: env !== 'production',
   url:       false,
-  browsers:  '> 1%, last 2 versions, Firefox ESR'
+  browsers:  '> 1%, last 2 versions, Firefox ESR',
+  features:  { rem: false },
+  plugins:   [ plugin('responsive-type') ]
 })
 
 let trees = [ css, assets ]
@@ -33,4 +35,8 @@ module.exports = merge(trees)
 
 function broc(m) {
   return require('broccoli-' + m)
+}
+
+function plugin(p) {
+  return require('postcss-' + p)
 }

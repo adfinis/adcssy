@@ -110,7 +110,7 @@ Example:
 
   .nav-side--sub .nav-side-list {
     padding: 0 1rem 0 0;
-    font-size: var(--nav-font-size);
+    font-size: var(--nav-font-size-unhide);
     line-height: 1.5 !important;
   }
 }
