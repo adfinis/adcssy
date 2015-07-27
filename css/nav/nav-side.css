@@ -127,6 +127,7 @@ Example:
   justify-content: flex-start;
 }
 
+.nav-side--expand .nav-side-list-header,
 .nav-side--expand .nav-side-header-title  {
   display: block;
 }
@@ -148,10 +149,6 @@ Example:
 .nav-side--expand .nav-side-body i:not([class])::before {
   content: '';
   display: inline-block;
-}
-
-.nav-side--expand .nav-side-list-header {
-  display: block;
 }
 
 .nav-side-list a {
@@ -201,10 +198,7 @@ Example:
     margin-top: 1rem;
   }
 
-  .nav-side-toggle {
-    display: none;
-  }
-
+  .nav-side-toggle,
   .nav-side--expand + .page-content + .page-content-overlay {
     display: none;
   }
