@@ -36,7 +36,8 @@ Visible helpers
 .visible-xs,
 .visible-sm,
 .visible-md,
-.visible-lg {
+.visible-lg,
+.visible-xl {
   display: none;
 }
 
