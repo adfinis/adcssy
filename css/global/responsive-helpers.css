@@ -1,0 +1,127 @@
+/*doc
+---
+title: Responsive Helpers
+name: responsive-helpers
+category: Miscellaneous
+---
+
+Hide helpers
+
+```html_example
+<div>
+  <div class="hidden">Hide everywhere</div>
+  <div class="hidden-xs">Hide on xs and upwards devices</div>
+  <div class="hidden-sm">Hide on sm and upwards devices</div>
+  <div class="hidden-md">Hide on md and upwards devices</div>
+  <div class="hidden-lg">Hide on lg and upwards devices</div>
+</div>
+```
+
+Visible helpers
+
+```html_example
+<div>
+  <div class="visible-xs">Show on xs and upwards devices</div>
+  <div class="visible-sm">Show on sm and upwards devices</div>
+  <div class="visible-md">Show on md and upwards devices</div>
+  <div class="visible-lg">Show on lg and upwards devices</div>
+</div>
+```
+*/
+
+
+.hidden,
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none;
+}
+
+@media (--xs-viewport) {
+  .visible-xs {
+    display: block;
+  }
+
+  table.visible-xs {
+    display: table;
+  }
+
+  tr.visible-xs {
+    display: table-row;
+  }
+
+  :--table-cell.visible-xs {
+    display: table-cell;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (--sm-viewport) {
+  .visible-sm {
+    display: block;
+  }
+
+  table.visible-sm {
+    display: table;
+  }
+
+  tr.visible-sm {
+    display: table-row;
+  }
+
+  :--table-cell.visible-sm {
+    display: table-cell;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (--md-viewport) {
+  .visible-md {
+    display: block;
+  }
+
+  table.visible-md {
+    display: table;
+  }
+
+  tr.visible-md {
+    display: table-row;
+  }
+
+  :--table-cell.visible-md {
+    display: table-cell;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (--lg-viewport) {
+  .visible-lg {
+    display: block;
+  }
+
+  table.visible-lg {
+    display: table;
+  }
+
+  tr.visible-lg {
+    display: table-row;
+  }
+
+  :--table-cell.visible-lg {
+    display: table-cell;
+  }
+
+  .hidden-lg {
+    display: none;
+  }
+}

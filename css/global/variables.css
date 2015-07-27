@@ -17,6 +17,8 @@
 
 @custom-media --subnav-side-mobile-width-unhide only screen and (min-width: 48rem);
 
+@custom-selector :--table-cell td, th;
+
 :root {
   --color-primary:   rgb( 91, 142, 219);
   --color-secondary: rgb(162, 155, 150);

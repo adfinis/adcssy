@@ -72,7 +72,7 @@ Table row states:
   border: 1px solid var(--color-border);
 }
 
-.table--bordered > :matches(tbody, thead, tfoot) > tr > :matches(td, th) {
+.table--bordered > :matches(tbody, thead, tfoot) > tr > :--table-cell {
   border: 1px solid var(--color-border);
 }
 
@@ -89,13 +89,13 @@ Table row states:
   text-align: left;
 }
 
-.table > :matches(thead, tbody, tfoot) > tr > :matches(td, th) {
+.table > :matches(thead, tbody, tfoot) > tr > :--table-cell {
   padding: 0.5rem;
   vertical-align: top;
   border-top: 1px solid var(--color-border);
 }
 
-.table--condensed > :matches(thead, tbody, tfoot) > tr > :matches(td, th) {
+.table--condensed > :matches(thead, tbody, tfoot) > tr > :--table-cell {
   padding: 0.25rem;
 }
 
@@ -105,11 +105,11 @@ Table row states:
   border-bottom: 2px solid var(--color-border);
 }
 
-.table > thead:first-child > tr:first-child > :matches(td, th) {
+.table > thead:first-child > tr:first-child > :--table-cell {
   border-top: 0;
 }
 
-.table > :matches(caption, colgroup) + thead > tr:first-child > :matches(td, th) {
+.table > :matches(caption, colgroup) + thead > tr:first-child > :--table-cell {
   border-top: 0;
 }
 
