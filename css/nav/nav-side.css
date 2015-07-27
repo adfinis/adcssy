@@ -67,6 +67,11 @@ Example:
   font-size: 2rem;
 }
 
+.nav-side-toggle {
+  width: 54px;
+  height: 44px;
+}
+
 .nav-side--expand {
   flex-basis: 240px;
 }
