@@ -1,0 +1,49 @@
+.media-debug::before {
+  content: 'mo';
+  text-transform: uppercase;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-color:  var(--color-border);
+  background-color: color(var(--color-success) a(70%));
+  z-index: 99999;
+}
+
+@media (--xs-viewport) {
+  .media-debug::before {
+    content: 'xs';
+    background-color: color(var(--color-success) a(70%) blend(color(var(--color-danger)) 20%));
+  }
+}
+
+@media (--sm-viewport) {
+  .media-debug::before {
+    content: 'sm';
+    background-color: color(var(--color-success) a(70%) blend(color(var(--color-danger)) 40%));
+  }
+}
+
+@media (--md-viewport) {
+  .media-debug::before {
+    content: 'md';
+    background-color: color(var(--color-success) a(70%) blend(color(var(--color-danger)) 60%));
+  }
+}
+
+@media (--lg-viewport) {
+  .media-debug::before {
+    content: 'lg';
+    background-color: color(var(--color-success) a(70%) blend(color(var(--color-danger)) 80%));
+  }
+}
+
+@media (--xl-viewport) {
+  .media-debug::before {
+    content: 'xl';
+    background-color: color(var(--color-danger) a(70%));
+  }
+}

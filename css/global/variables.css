@@ -4,12 +4,14 @@
  --screen-sm-min: 48rem;
  --screen-md-min: 62rem;
  --screen-lg-min: 75rem;
+ --screen-xl-min: 90rem;
 }
 
 @custom-media --xs-viewport only screen and (min-width: 30rem);
 @custom-media --sm-viewport only screen and (min-width: 48rem);
 @custom-media --md-viewport only screen and (min-width: 62rem);
 @custom-media --lg-viewport only screen and (min-width: 75rem);
+@custom-media --xl-viewport only screen and (min-width: 90rem);
 
 @custom-media --nav-top-mobile-width only screen and (min-width: 48rem);
 

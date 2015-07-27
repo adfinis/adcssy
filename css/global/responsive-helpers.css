@@ -14,6 +14,7 @@ Hide helpers
   <div class="hidden-sm">Hide on sm and upwards devices</div>
   <div class="hidden-md">Hide on md and upwards devices</div>
   <div class="hidden-lg">Hide on lg and upwards devices</div>
+  <div class="hidden-xl">Hide on xl and upwards devices</div>
 </div>
 ```
 
@@ -25,6 +26,7 @@ Visible helpers
   <div class="visible-sm">Show on sm and upwards devices</div>
   <div class="visible-md">Show on md and upwards devices</div>
   <div class="visible-lg">Show on lg and upwards devices</div>
+  <div class="visible-xl">Show on xl and upwards devices</div>
 </div>
 ```
 */
@@ -122,6 +124,28 @@ Visible helpers
   }
 
   .hidden-lg {
+    display: none;
+  }
+}
+
+@media (--xl-viewport) {
+  .visible-xl {
+    display: block;
+  }
+
+  table.visible-xl {
+    display: table;
+  }
+
+  tr.visible-xl {
+    display: table-row;
+  }
+
+  :--table-cell.visible-xl {
+    display: table-cell;
+  }
+
+  .hidden-xl {
     display: none;
   }
 }
