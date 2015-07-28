@@ -83,17 +83,17 @@ Modifiers:
 
 .page-content {
   flex-grow: 1;
-  padding: var(--page-padding) var(--page-padding) 0;
+  padding: var(--page-padding-v) var(--page-padding-h) 0;
 }
 
 @media (--xs-viewport) {
   .page-content {
-    padding: calc(var(--page-padding) * 1.5) calc(var(--page-padding) * 1.5) 0;
+    padding: calc(var(--page-padding-v) * 1.25) calc(var(--page-padding-h) * 1.25) 0;
   }
 }
 
 @media (--md-viewport) {
   .page-content {
-    padding: calc(var(--page-padding) * 2) calc(var(--page-padding) * 2) 0;
+    padding: calc(var(--page-padding-v) * 1.5) calc(var(--page-padding-h) * 1.5) 0;
   }
 }

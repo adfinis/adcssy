@@ -43,7 +43,8 @@
 
 /* Grid Page */
 :root {
-  --page-padding: 1em
+  --page-padding-v: 1em;
+  --page-padding-h: 1.5em;
 }
 
 /* Global Fonts */

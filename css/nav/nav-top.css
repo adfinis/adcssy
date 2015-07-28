@@ -160,7 +160,7 @@ Modifiers:
 @media (--nav-top-mobile-width) {
   .nav-top {
     flex-direction: row;
-    padding: 0 var(--page-padding);
+    padding: 0 var(--page-padding-h);
   }
 
   .nav-top-toggle {
