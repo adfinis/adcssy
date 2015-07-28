@@ -90,7 +90,7 @@ Example:
 
 .nav-side--sub {
   display: none;
-  flex-basis: 0;
+  flex-shrink: 1;
   border-right: 1px solid color(var(--color-border) tint(30%));
 }
 

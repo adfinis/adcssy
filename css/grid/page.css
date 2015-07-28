@@ -82,7 +82,7 @@ Modifiers:
 }
 
 .page-content {
-  flex: 1 0 100%;
+  flex-grow: 1;
   padding: var(--page-padding) var(--page-padding) 0;
 }
 
