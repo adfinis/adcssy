@@ -34,7 +34,7 @@ Example:
     </ul>
   </section>
 </nav>
-<main class="page-content">
+<main class="page-main">
   <!-- content -->
 </main>
 <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
@@ -76,20 +76,28 @@ Example:
   flex-basis: 240px;
 }
 
-.nav-side--expand + .page-content {
+.nav-side--expand + .page-main {
   margin-right: -240px;
 }
 
-.nav-side--expand + .page-content + .page-content-overlay {
+.page-main-overlay {
+  background-color: #000;
+  transition: left 0.2s, opacity 0.2s, position 0.2s;
+  opacity: 0;
+  left: 0;
+}
+
+.nav-side--expand + .page-main + .page-main-overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 240px;
+  opacity: 0.4;
   z-index: 900;
 }
 
-.page-content {
+.page-main {
   transition: margin-right 0.2s;
 }
 
@@ -204,11 +212,11 @@ Example:
   }
 
   .nav-side-toggle,
-  .nav-side--expand + .page-content + .page-content-overlay {
+  .nav-side--expand + .page-main + .page-main-overlay {
     display: none;
   }
 
-  .nav-side--expand + .page-content {
+  .nav-side--expand + .page-main {
     margin-right: 0;
   }
 
