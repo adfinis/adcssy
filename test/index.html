@@ -10,51 +10,6 @@
   </head>
   <body class="page">
     <div class="page-viewport">
-      <!--<nav class="nav-top">
-        <header class="nav-top-header">
-          <button class="nav-toggle nav-top-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-top--expand')"></button>
-          <a href="#">
-            <div class="nav-top-header-logo"></div>
-            <div class="nav-top-header-title">Foobar</div>
-          </a>
-        </header>
-        <section class="nav-top-body">
-          <ul class="nav-top-list">
-            <li class="nav-top-list-item">
-              <a href="#">
-                <i class="fa fa-user"></i>
-                Users
-              </a>
-            </li>
-            <li class="nav-top-list-item">
-              <a href="#">
-                <i class="fa fa-users"></i>
-                Users
-              </a>
-            </li>
-            <li class="nav-top-list-item">
-              <a href="#">
-                <i class="fa fa-user"></i>
-                Users
-              </a>
-            </li>
-          </ul>
-          <ul class="nav-top-list nav-top-list--right">
-            <li class="nav-top-list-item">
-              <a href="#">
-                <i class="ion-email-unread"></i>
-                Messages
-              </a>
-            </li>
-            <li class="nav-top-list-item">
-              <a href="#">
-                <i class="ion-power"></i>
-                Logout
-              </a>
-            </li>
-          </ul>
-        </section>
-      </nav>-->
       <nav class="nav-side">
         <header class="nav-side-header">
           <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')"></button>
@@ -67,7 +22,7 @@
           <ul class="nav-side-list">
             <li class="nav-side-list-header">Settings</li>
             <li class="nav-side-list-item">
-              <a href="#">
+              <a class="active" href="#">
                 <i class="fa fa-user"></i>
                 Users
               </a>
@@ -78,178 +33,164 @@
                 Teams
               </a>
             </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                <i class="fa fa-circle"></i>
-                Something
-              </a>
-            </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                <i class="fa fa-paint-brush"></i>
-                Themes
-              </a>
-            </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                <i class="fa fa-cubes"></i>
-                foobar
-              </a>
-            </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                <i class="ion-circle"></i>
-                Foo bar baz
-              </a>
-            </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                Foo no icon
-              </a>
-            </li>
-            <li class="nav-side-list-item">
-              <a href="#">
-                <i></i>
-                Quack Dagobert
-              </a>
-            </li>
           </ul>
         </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
       </nav>
-      <main class="page-content page-content--scroll">
-        <section class="page-main">
-          <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            FOOBAR
-          </div>
-          <div class="alert alert-info">
-            FOOBAR
-          </div>
-          <div class="alert alert-warning">
-            FOOBAR
-          </div>
-          <div class="alert alert-danger">
-            FOOBAR
-          </div>
-          <div class="grid">
-            <div class="grid-cell">
-              <button class="btn btn-primary">Click me!</button>
-              <button class="btn btn-success">Click me!</button>
-              <button class="btn btn-info">Click me!</button>
-              <button class="btn btn-warning">Click me!</button>
-              <button class="btn btn-danger">Click me!</button>
-            </div>
-            <div class="grid-cell">
-              <div class="btn-group">
-                <button class="btn btn-primary">Click me!</button>
-                <button class="btn btn-success">Click me!</button>
-                <button class="btn btn-info">Click me!</button>
-                <button class="btn btn-warning">Click me!</button>
-                <button class="btn btn-danger">Click me!</button>
-              </div>
-              <div class="btn-group btn-group--vertical">
-                <button class="btn btn-primary">Click me!</button>
-                <button class="btn btn-success">Click me!</button>
-                <button class="btn btn-info">Click me!</button>
-                <button class="btn btn-warning">Click me!</button>
-                <button class="btn btn-danger">Click me!</button>
-              </div>
-            </div>
-          </div>
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title">Manage</div>
+          </header>
+          <section class="nav-side-body">
+            <ul class="nav-side-list">
+              <li class="nav-side-list-item">
+                <a href="#">
+                  Hosts
+                </a>
+              </li>
+              <li class="nav-side-list-item">
+                <a href="#">
+                  Host Groups
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-side-list">
+              <li class="nav-side-list-item">
+                <a class="active" href="#">
+                  Commands
+                </a>
+              </li>
+              <li class="nav-side-list-item">
+                <a href="#">
+                  Services
+                </a>
+              </li>
+              <li class="nav-side-list-item">
+                <a href="#">
+                  Service Groups
+                </a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+        <section class="page-content page-content--scroll">
           <article>
             <header>
-              <h1>ffi 12345 Q</h1>
+              <h1>My Article</h1>
             </header>
             <section class="typeset">
-
-              <table class="table table--striped table--bordered table--hover">
-                <caption>Table caption</caption>
-                <colgroup>
-                  <col>
-                  <col class="table-column--numeric">
-                </colgroup>
-                <thead>
-                  <tr><th>Foo</th><th>Bar</th></tr>
-                  <tr><th>Foo</th><th>Bar</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Foo</td><td>1</td></tr>
-                  <tr><td>Foo</td><td>1</td></tr>
-                  <tr class="primary"><td>Foo</td><td>1</td></tr>
-                  <tr class="primary"><td>Foo</td><td>1</td></tr>
-                  <tr class="info"><td>Foo</td><td>1</td></tr>
-                  <tr class="info"><td>Foo</td><td>1</td></tr>
-                  <tr class="danger"><td>Foo</td><td>1</td></tr>
-                  <tr class="danger"><td>Foo</td><td>1</td></tr>
-                  <tr class="success"><td>Foo</td><td>1</td></tr>
-                  <tr class="success"><td>Foo</td><td>1</td></tr>
-                  <tr class="warning"><td>Foo</td><td>1</td></tr>
-                  <tr class="warning"><td>Foo</td><td>1</td></tr>
-                </tbody>
-                <tfoot>
-                  <tr><td>Foo</td><td>Bar</td></tr>
-                  <tr><td>Foo</td><td>Bar</td></tr>
-                </tfoot>
-              </table>
-
-              <p class="lead">ffi 12345 Q foo bar baz</p>
-              <p>Blülülülülülülü</p>
-              <ul>
-                <li>Blü</li>
-                <li>lü</li>
-                <li><a href="#" class="link-prefix">lü</a></li>
-                <li><a href="#" class="link-prefix">lü</a></li>
-                <li><a href="#" class="link-prefix">lü</a></li>
-              </ul>
-              <p>Blülülülülülülü</p>
-              <p><a href="#">QgptJj</a></p>
-
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p>
+                Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+                Maecenas justo orci, rutrum et vestibulum at, consectetur id ex.
+                Aliquam erat volutpat. Mauris eleifend sed odio eu lacinia.
+                Donec non dolor tempus, finibus velit vel, <a href="#">consequat
+                justo</a>. Mauris at nisl metus. Donec sit amet lacus tincidunt,
+                pulvinar velit sollicitudin, lacinia urna. Praesent nisi dolor,
+                mollis convallis pellentesque non, blandit quis ligula. Nam sed purus
+                lacinia, blandit felis et, vehicula nisi. Donec consequat augue est,
+                mattis fringilla ipsum facilisis eget.
+              </p>
               <blockquote>
                 <p>
-                  Fuga rerum laboris officia cupidatat, excepteur aliquid ut quis facere, cumque harum optio dignissimos.
-                  Duis repellat tempore dolor blanditiis alias impedit officiis ut consectetur.
-                </p>
-              </blockquote>
-              <blockquote>
-                <p>
-                  Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the darkness has always got there first, and is waiting for it.
+                  Light thinks it travels faster than anything but it is wrong.
+                  No matter how fast light travels, it finds the darkness has always
+                  got there first, and is waiting for it.
                 </p>
                 <p>&mdash; <a href="https://en.wikipedia.org/wiki/Terry_Pratchett">Terry Pratchett</a></p>
               </blockquote>
-
-  <pre><code>body {
-      color: blue;
-  }</code></pre>
-
-              <h1 class="h1-counter">Foo</h1>
-              <h2 class="h2-counter">Foo</h1>
-              <h2 class="h2-counter">Foo</h1>
-              <h2 class="h2-counter">Foo</h1>
-              <h3 class="h3-counter">Foo</h1>
-              <h3 class="h3-counter">Foo</h1>
-              <h3 class="h3-counter">Foo</h1>
-              <h4 class="h4-counter">Foo</h1>
-              <h4 class="h4-counter">Foo</h1>
-              <h4 class="h4-counter">Foo</h1>
-              <h5 class="h5-counter">Foo</h1>
-              <h5 class="h5-counter">Foo</h1>
-              <h4 class="h4-counter">Foo</h1>
-              <h5 class="h5-counter">Foo</h1>
-              <h6 class="h6-counter">Foo</h1>
-              <h6 class="h6-counter">Foo</h1>
-              <h6 class="h6-counter">Foo</h1>
-              <h1 class="h1-counter">Foo</h1>
-              <h1 class="h1-counter">Foo</h1>
+              <p>
+                Integer est velit, condimentum id urna quis, placerat molestie diam.
+                Quisque tempus, augue in laoreet tempus, turpis nibh <a href="#">placerat
+                elit</a>, et malesuada augue lectus sed augue. Etiam vel sem nec mi
+                accumsan rutrum. Nullam sed egestas sem. Nam pulvinar tortor a purus
+                fringilla, eu posuere tortor porttitor. Nulla sit amet magna porttitor,
+                lobortis urna a, hendrerit nulla. Sed sed dictum augue, et facilisis
+                risus. Quisque sed sem sodales, consequat tellus id, mattis nulla.
+                Proin quis hendrerit nisi, eget mollis tellus. Sed dapibus elementum
+                ex vel mollis.
+              </p>
+              <pre><code>.css-example {
+            color: red;
+            background: url(/foo/bar.jpg);
+          }</code></pre>
+              <p>
+                Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+                Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+                erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor tempus,
+                finibus velit vel, <a href="#">consequat justo</a>. Mauris at nisl metus.
+                Donec sit amet lacus tincidunt, pulvinar velit sollicitudin, lacinia urna.
+                Praesent nisi dolor, mollis convallis pellentesque non, blandit quis ligula.
+                Nam sed purus lacinia, blandit felis et, vehicula nisi. Donec consequat
+                augue est, mattis fringilla ipsum facilisis eget.
+              </p>
+              <ul>
+                <li>Foo</li>
+                <li>Bar</li>
+                <li>Baz</li>
+              </ul>
+              <p>
+                Integer est velit, condimentum id urna quis, placerat molestie diam.
+                Quisque tempus, augue in laoreet tempus, turpis nibh <a href="#">placerat
+                elit</a>, et malesuada augue lectus sed augue. Etiam vel sem nec mi
+                accumsan rutrum. Nullam sed egestas sem. Nam pulvinar tortor a purus
+                fringilla, eu posuere tortor porttitor. Nulla sit amet magna porttitor,
+                lobortis urna a, hendrerit nulla. Sed sed dictum augue, et facilisis
+                risus. Quisque sed sem sodales, consequat tellus id, mattis nulla. Proin
+                quis hendrerit nisi, eget mollis tellus. Sed dapibus elementum ex vel
+                mollis.
+              </p>
+              <ol>
+                <li>Foo</li>
+                <li>Bar</li>
+                <li>Baz</li>
+              </ol>
+              <p>
+                Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+                Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+                erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+                tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+                nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+                lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+                blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+                nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+              </p>
             </section>
-            <footer>
-            </footer>
           </article>
-        <section>
-        <footer class="page-footer">
-          &copy; Adfinis SyGroup AG
-        </footer>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+              <input  id="checkMeOut" type="checkbox">
+              <label for="checkMeOut">
+                Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </section>
       </main>
-      <div class="page-content-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
     </div>
   </body>
 </html>
