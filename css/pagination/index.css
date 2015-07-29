@@ -8,7 +8,7 @@ category: Components
 ```html_example
 <nav>
   <ul class="pagination">
-    <li class="disabled">
+    <li class="previous disabled">
       <a href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
@@ -18,7 +18,7 @@ category: Components
     <li><a href="#">3</a></li>
     <li><a href="#">4</a></li>
     <li><a href="#">5</a></li>
-    <li>
+    <li class="next">
       <a href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
@@ -48,8 +48,13 @@ category: Components
 }
 
 .pagination > li {
-  display: flex;
+  display: none;
   font-feature-settings: 'lnum';
+}
+
+.pagination > :matches(.previous, .next, .active) {
+  display: flex;
+  flex-grow: 1;
 }
 
 .pagination > li > :matches(a, span) {
@@ -58,6 +63,8 @@ category: Components
   color: var(--link-color);
   background-color: var(--body-background-color);
   border: 1px solid var(--color-border);
+  text-align: center;
+  flex-grow: 1;
 }
 
 .pagination > .active > :matches(a, a:focus, a:hover, span, span:focus, span:hover) {
@@ -72,4 +79,14 @@ category: Components
   cursor: not-allowed;
   background-color: var(--body-background-color);
   border: 1px solid var(--color-border);
+}
+
+@media (--sm-viewport) {
+  .pagination > li {
+    display: flex;
+  }
+
+  .pagination > :matches(.previous, .next, .active) {
+    flex-grow: 0;
+  }
 }
