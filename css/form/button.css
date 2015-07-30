@@ -21,6 +21,12 @@ Button styles:
 <button class="btn btn-warning">Click me!</button>
 <button class="btn btn-danger">Click me!</button>
 ```
+
+Loading button:
+
+```html_example
+<button class="btn btn-primary loading">Loading</button>
+```
 */
 
 @custom-selector :--button-types .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger;
