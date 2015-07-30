@@ -83,6 +83,34 @@ button.close {
   opacity: 0.75;
 }
 
+@keyframes slide-in--to-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes slide-in--to-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.slide-in {
+  animation: 0.2s ease-out 0s normal forwards 1 running slide-in--to-right;
+}
+
+.slide-in--to-left {
+  animation-name: slide-in--to-left;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0
