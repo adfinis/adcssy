@@ -122,3 +122,44 @@ button.close {
 .loading-dots i + i + i {
   animation-delay: 0.2s;
 }
+
+@keyframes loadingbar-stripes {
+  from {
+    background-position: 45px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.btn.loading,
+.nav-side-list .ember-transitioning-in,
+.loadingbar-stripes {
+  position: relative;
+  cursor: wait;
+  z-index: 0;
+}
+
+.btn.loading::after,
+.nav-side-list .ember-transitioning-in::after,
+.loadingbar-stripes::after {
+  content: '';
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  animation: 2s linear 0s normal none infinite running loadingbar-stripes;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%, transparent
+  );
+  background-size: 45px 45px;
+  z-index: -1;
+}
