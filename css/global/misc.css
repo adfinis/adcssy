@@ -24,6 +24,30 @@ Loading dots.
   Loading<span class="loading-dots"><i>.</i><i>.</i><i>.</i></span>
 </div>
 ```
+
+Loading mask.
+
+```html_example
+<table class="table table--striped">
+  <thead>
+    <tr>
+      <th>Foo</th>
+      <th>Bar</th>
+      <th>Baz</th>
+    </tr>
+  </thead>
+  <tbody class="loading-mask">
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+```
 */
 
 .link-prefix::before {
@@ -190,4 +214,41 @@ button.close {
   );
   background-size: 45px 45px;
   z-index: -1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.loading-mask {
+  position: relative;
+}
+
+.loading-mask::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.25);
+}
+
+.loading-mask::after {
+  content: '';
+  position: absolute;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top:  calc(50% - 50px);
+  left: calc(50% - 50px);
+  animation: spin 2s infinite linear;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
 }
