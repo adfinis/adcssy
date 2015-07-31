@@ -169,14 +169,14 @@ Example:
   transition: color 0.2s, background-color 0.2s;
 }
 
-.nav-side-list a.ember-transitioning-in {
-  color: #fff;
-  background: color(var(--color-primary) tint(20%));
-}
-
 .nav-side-list a:matches(:hover, .active) {
   color: #fff;
   background: var(--color-primary);
+}
+
+.nav-side-list a.ember-transitioning-in {
+  color: #fff;
+  background: color(var(--color-primary) tint(30%));
 }
 
 .nav-side-footer .nav-hide {
