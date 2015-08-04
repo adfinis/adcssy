@@ -65,6 +65,7 @@ Example:
 
 .nav-side-body i {
   font-size: 2rem;
+  flex-shrink: 0;
 }
 
 .nav-side-toggle {
