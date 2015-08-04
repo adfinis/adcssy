@@ -188,11 +188,10 @@ Example:
   .nav-side {
     position: relative;
     display: flex;
-    flex-basis: 172px;
+    flex-basis: auto;
     flex-direction: column;
     background-color: var(--color-menu);
     border-right: 1px solid var(--color-border);
-    z-index: 1000;
   }
 
   .nav-side--autohide {
