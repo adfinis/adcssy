@@ -7,7 +7,6 @@
   ],
   "devDependencies": {
     "broccoli": "0.13.2",
-    "broccoli-clean-css": "^1.0.0",
     "broccoli-cssnext-single": "^1.0.0",
     "broccoli-env": "0.0.1",
     "broccoli-funnel": "^0.2.3",
