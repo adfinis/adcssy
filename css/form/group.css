@@ -55,6 +55,32 @@ Inline-Form-Group:
 </form>
 ```
 
+Disabled form controls:
+
+```html_example
+<form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <input id="cant-check-this" type="checkbox">
+      <label for="cant-check-this">
+        Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+```
+
 */
 
 .form-group {
@@ -93,6 +119,16 @@ Inline-Form-Group:
   border-color: color(var(--color-primary) tint(20%));
   outline: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px color(var(--color-primary) a(60%));
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+.form-control:matches([disabled], [readonly]),
+fieldset[disabled] .form-control {
+  background-color: rgb(238, 238, 238);
 }
 
 @media (--sm-viewport) {

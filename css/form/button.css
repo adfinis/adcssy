@@ -92,6 +92,16 @@ Loading button:
   border-bottom-width: 1px;
 }
 
+fieldset[disabled] .btn,
+.btn[disabled] {
+  cursor: not-allowed;
+  background-color: var(--color-tertiary);
+  border-color: color(var(--color-tertiary) l(-5%));
+  color: color(var(--color-secondary) tint(50%));
+  border-width: 1px;
+  box-shadow: none;
+}
+
 .btn-primary {
   background-color: var(--color-primary);
   border-color: color(var(--color-primary) l(-5%));

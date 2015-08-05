@@ -113,6 +113,7 @@ some browsers behave weird if they are set to `display: none`
 }
 
 :--checkbox-container > :--checkbox:disabled + label {
+  cursor: not-allowed;
   color: #aaa;
 }
 
