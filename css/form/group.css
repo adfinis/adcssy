@@ -103,7 +103,7 @@ Disabled form controls:
   display: block;
   width: 100%;
   height: 2rem;
-  padding: 6px 12px;
+  padding: 0.3rem 0.5rem;
   font-size: 0.9rem;
   line-height: 1.5;
   color: rgb(85, 85, 85);
@@ -117,12 +117,23 @@ Disabled form controls:
 
 select.form-control[multiple] {
   height: auto;
+  padding: 0.3rem 0.2rem;
+}
+
+select.form-control[multiple] > option {
+  margin: 0.1rem 0;
+  padding: 0.1rem 0.3rem;
+}
+
+select.form-control[multiple] > [selected] {
+  border-radius: var(--input-border-radius);
 }
 
 .form-control:focus {
   border-color: color(var(--color-primary) tint(20%));
   outline: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px color(var(--color-primary) a(60%));
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px color(var(--color-primary) a(60%));
 }
 
 .form-control[disabled],
