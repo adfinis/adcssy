@@ -117,7 +117,7 @@ Disabled form controls:
 
 select.form-control[multiple] {
   height: auto;
-  padding: 0.3rem 0.2rem;
+  padding: 0.1rem 0.2rem;
 }
 
 select.form-control[multiple] > option {
