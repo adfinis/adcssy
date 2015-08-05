@@ -115,6 +115,10 @@ Disabled form controls:
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
+select.form-control[multiple] {
+  height: auto;
+}
+
 .form-control:focus {
   border-color: color(var(--color-primary) tint(20%));
   outline: 0;
