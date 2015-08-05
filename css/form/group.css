@@ -121,8 +121,8 @@ select.form-control[multiple] {
 }
 
 select.form-control[multiple] > option {
-  margin: 0.1rem 0;
-  padding: 0.1rem 0.3rem;
+  margin: 2px 0;
+  padding: 2px 0.3rem;
 }
 
 select.form-control[multiple] > [selected] {
