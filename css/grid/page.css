@@ -75,6 +75,8 @@ Modifiers:
 .page-main--scroll {
   height: 100vh;
   overflow: auto;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling */
+  -webkit-overflow-scrolling: touch;
 }
 
 .page-content-main {
