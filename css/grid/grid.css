@@ -167,7 +167,7 @@ Responsive cell-order modifier:
 }
 
 .grid-cell {
-  flex: 1;
+  flex: 1 0 auto;
   padding-left:  var(--gutter-width);
   padding-right: var(--gutter-width);
 }

@@ -63,6 +63,7 @@ Modifiers:
 
 .page-content {
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-main, .page-content {
