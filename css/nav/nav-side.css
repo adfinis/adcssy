@@ -237,6 +237,11 @@ Example:
     padding-right: 1rem;
   }
 
+  .nav-side-header {
+    height: 3rem;
+    flex-shrink: 0;
+  }
+
   .nav-side-header,
   .nav-side-header > a {
     display: flex;
