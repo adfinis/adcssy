@@ -92,6 +92,7 @@ Example:
   display: none;
   flex-shrink: 1;
   border-right: 1px solid color(var(--color-border) tint(30%));
+  z-index: 999;
 }
 
 .nav-side--sub .nav-side-list {
