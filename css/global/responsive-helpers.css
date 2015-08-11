@@ -38,115 +38,115 @@ Visible helpers
 .visible-md,
 .visible-lg,
 .visible-xl {
-  display: none;
+  display: none !important;
 }
 
 @media (--xs-viewport) {
   .visible-xs {
-    display: block;
+    display: block !important;
   }
 
   table.visible-xs {
-    display: table;
+    display: table !important;
   }
 
   tr.visible-xs {
-    display: table-row;
+    display: table-row !important;
   }
 
   :--table-cell.visible-xs {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   .hidden-xs {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (--sm-viewport) {
   .visible-sm {
-    display: block;
+    display: block !important;
   }
 
   table.visible-sm {
-    display: table;
+    display: table !important;
   }
 
   tr.visible-sm {
-    display: table-row;
+    display: table-row !important;
   }
 
   :--table-cell.visible-sm {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   .hidden-sm {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (--md-viewport) {
   .visible-md {
-    display: block;
+    display: block !important;
   }
 
   table.visible-md {
-    display: table;
+    display: table !important;
   }
 
   tr.visible-md {
-    display: table-row;
+    display: table-row !important;
   }
 
   :--table-cell.visible-md {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   .hidden-md {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (--lg-viewport) {
   .visible-lg {
-    display: block;
+    display: block !important;
   }
 
   table.visible-lg {
-    display: table;
+    display: table !important;
   }
 
   tr.visible-lg {
-    display: table-row;
+    display: table-row !important;
   }
 
   :--table-cell.visible-lg {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   .hidden-lg {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (--xl-viewport) {
   .visible-xl {
-    display: block;
+    display: block !important;
   }
 
   table.visible-xl {
-    display: table;
+    display: table !important;
   }
 
   tr.visible-xl {
-    display: table-row;
+    display: table-row !important;
   }
 
   :--table-cell.visible-xl {
-    display: table-cell;
+    display: table-cell !important;
   }
 
   .hidden-xl {
-    display: none;
+    display: none !important;
   }
 }
