@@ -100,7 +100,7 @@
   --headings-letter-spacing: -1;
   --headings-line-height: 1.25;
   --headings-margin: 0 0 0.4em;
-  --headings-small-color: color(var(--headings-color) l(15%));
+  --headings-small-color: color(var(--headings-color) tint(50%));
 }
 
 /* Content */
