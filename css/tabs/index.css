@@ -43,6 +43,10 @@ TODO: Document and add JavaScript for non-ember apps
   color: color(var(--body-color) tint(30%));
 }
 
+.tab-content {
+  padding-top: 0.75rem;
+}
+
 .tab-content > .tab-pane {
   display: none;
 }
