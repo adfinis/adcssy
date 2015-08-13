@@ -31,8 +31,8 @@ Visible helpers
 ```
 */
 
-
 .hidden,
+.sr-only,
 .visible-xs,
 .visible-sm,
 .visible-md,
