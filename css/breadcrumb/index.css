@@ -1,0 +1,49 @@
+/*doc
+---
+title: Breadcrumb
+name: breadcrumb
+category: Components
+---
+Basic usage:
+
+```html_example
+<ol class="breadcrumb">
+  <li><a href="#/manage">Manage</a></li>
+  <li><a href="#/manage/hosts">Hosts</a></li>
+  <li><a href="#/manage/hosts/1">topaxi.ch</a></li>
+  <li><a href="#/manage/hosts/1/services">Services</a></li>
+</ol>
+```
+*/
+
+.breadcrumb {
+  display: flex;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.breadcrumb > li {
+  display: block;
+}
+
+.breadcrumb > li::before {
+  content: '/';
+  margin: 0 0.5rem;
+  color: color(var(--body-color) tint(50%));
+}
+
+.breadcrumb > li:first-child::before {
+  display: none;
+}
+
+.breadcrumb > li:first-child {
+  display: block;
+}
+
+@media (--xs-viewport) {
+  .breadcrumb--first-mobileonly > li:first-child,
+  .breadcrumb--first-mobileonly > li:first-child + li::before {
+    display: none;
+  }
+}
