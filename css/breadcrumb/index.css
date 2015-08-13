@@ -34,6 +34,10 @@ Hide the first menu point on non-mobile devices:
   border-bottom: 1px solid var(--color-border);
 }
 
+.breadcrumb:empty {
+  display: none;
+}
+
 .breadcrumb > li {
   display: block;
 }
