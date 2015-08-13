@@ -107,6 +107,10 @@ Responsive cell-order modifier:
 - `grid-xs--row-reverse`
 - `grid-xs--col-reverse`
 
+Disable cell wrapping:
+
+- `grid--nowrap`
+
 */
 .grid {
   display: flex;
@@ -120,6 +124,10 @@ Responsive cell-order modifier:
   list-style: none;
   margin: 0 var(--gutter-compensation) var(--gutter-width);
   padding: 0;
+}
+
+.grid--nowrap {
+  flex-wrap: nowrap;
 }
 
 .grid--no-gutters {
