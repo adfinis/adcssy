@@ -38,7 +38,6 @@ TODO: Document and add JavaScript for non-ember apps
 
 .nav-tabs > li > a:focus {
   outline: 0;
-  border-color: color(var(--color-border) tint(20%));
   border-style: dotted;
 }
 
@@ -47,6 +46,10 @@ TODO: Document and add JavaScript for non-ember apps
   border-style: solid;
   background-color: #fff;
   color: color(var(--body-color) tint(30%));
+}
+
+.nav-tabs > li > a:focus {
+  border-color: color(var(--color-primary) tint(30%));
 }
 
 .nav-tabs > li > a:matches(.active, :focus) {
