@@ -36,10 +36,6 @@ TODO: Document and add JavaScript for non-ember apps
   border-radius: 4px 4px 0 0;
 }
 
-.nav-tabs > li > a:matches(.active, :focus) {
-  border-bottom-color: transparent;
-}
-
 .nav-tabs > li > a:focus {
   outline: 0;
   border-color: color(var(--color-border) tint(20%));
@@ -51,6 +47,10 @@ TODO: Document and add JavaScript for non-ember apps
   border-style: solid;
   background-color: #fff;
   color: color(var(--body-color) tint(30%));
+}
+
+.nav-tabs > li > a:matches(.active, :focus) {
+  border-bottom-color: transparent;
 }
 
 .tab-content {
