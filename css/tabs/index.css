@@ -36,9 +36,19 @@ TODO: Document and add JavaScript for non-ember apps
   border-radius: 4px 4px 0 0;
 }
 
+.nav-tabs > li > a:matches(.active, :focus) {
+  border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a:focus {
+  outline: 0;
+  border-color: color(var(--color-border) tint(20%));
+  border-style: dotted;
+}
+
 .nav-tabs > li > a.active {
   border-color: var(--color-border);
-  border-bottom-color: transparent;
+  border-style: solid;
   background-color: #fff;
   color: color(var(--body-color) tint(30%));
 }
