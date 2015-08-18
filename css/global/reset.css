@@ -29,6 +29,10 @@ button, input, optgroup, select, textarea {
   margin: 0;
 }
 
+textarea {
+  min-height: 4em;
+}
+
 fieldset {
   border: 0;
   margin: 0;
