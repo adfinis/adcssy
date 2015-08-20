@@ -1,6 +1,7 @@
 .nav-toggle {
+  display: flex;
   border: 0;
-  padding: 0;
+  padding: 0 8px;
   margin: 0;
   font-size: 2rem;
   width: 54px;
@@ -14,15 +15,65 @@
   outline-offset: -4px;
 }
 
-.nav-toggle::before {
-  content: '\f0c9';
-  display: inline-block;
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  font-feature-settings: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
+.nav-toggle-icon, .nav-toggle-icon:matches(::after, ::before) {
+  display: flex;
+  height: 6px;
+  width: 36px;
+  border-radius: 3px;
+  transition: all 0.3s ease 0s;
+  background: black;
+}
+
+.nav-toggle-icon {
+  position: relative;
+}
+
+.nav-toggle-icon:matches(::after, ::before) {
+  content: '';
+  position: absolute;
+  left: 0;
+  transform-origin: 3px center;
+}
+
+.nav-toggle-icon::before {
+  top: 10px;
+}
+
+.nav-toggle-icon::after {
+  top: -10px;
+}
+
+.nav-side--expand .nav-toggle-icon:matches(::before, ::after) {
+  top: 0;
+  width: 20px;
+}
+
+.nav-side--expand .nav-toggle-icon::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.nav-side--expand .nav-toggle-icon::after {
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.nav-top--expand .nav-toggle-icon {
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+
+.nav-top--expand .nav-toggle-icon {
+  width: 30px;
+}
+
+.nav-top--expand .nav-toggle-icon:matches(::before, ::after) {
+  left: auto;
+  right: -5px;
+  width: 20px;
+}
+
+.nav-top--expand .nav-toggle-icon::after {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.nav-top--expand .nav-toggle-icon::before {
+  transform: rotate3d(0, 0, 1, -45deg);
 }
