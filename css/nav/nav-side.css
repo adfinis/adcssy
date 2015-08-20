@@ -138,6 +138,8 @@ Example:
 
 .nav-side-header-title {
   width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   font-weight: 700;
   color: color(var(--body-color) l(+10%));
