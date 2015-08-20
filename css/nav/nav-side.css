@@ -60,13 +60,14 @@ Example:
 }
 
 .nav-side-body {
-  font-size: 0;
   flex-grow: 1;
   overflow-y: auto;
 }
 
 .nav-side-body i {
   font-size: 2rem;
+  width: 1.5em;
+  text-align: center;
   flex-shrink: 0;
 }
 
@@ -100,13 +101,14 @@ Example:
   z-index: 900;
 }
 
-.page-main {
+.nav-side + .page-main {
   transition: margin-right 0.2s;
 }
 
 .nav-side-list {
   list-style: none;
   line-height: 3rem;
+  font-size: 0;
 }
 
 .nav-side-list:first-child .nav-side-list-header {
@@ -117,7 +119,6 @@ Example:
 .nav-side-list-header {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0.1rem 0.5rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -129,13 +130,18 @@ Example:
   margin-top: 1rem;
   line-height: 2rem;
   text-transform: uppercase;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: height 0.2s, padding 0.2s;
 }
 
 .nav-side-header-title {
-  display: none;
+  width: 0;
+  overflow: hidden;
   font-weight: 700;
   color: color(var(--body-color) l(+10%));
+  transition: width 0.2s;
 }
 
 .nav-side--expand :matches(.nav-side-list a,
@@ -143,9 +149,12 @@ Example:
   justify-content: flex-start;
 }
 
-.nav-side--expand .nav-side-list-header,
+.nav-side--expand .nav-side-list-header {
+  height: 2em;
+}
+
 .nav-side--expand .nav-side-header-title  {
-  display: block;
+  width: 100%;
 }
 
 .nav-side--expand .nav-side-list {
@@ -158,8 +167,6 @@ Example:
 
 .nav-side--expand .nav-side-list i {
   margin-right: 0.5rem;
-  text-align: center;
-  width: 1.5em;
 }
 
 .nav-side--expand .nav-side-body i:not([class])::before {
@@ -234,7 +241,7 @@ Example:
   }
 
   .nav-side-header-title {
-    display: block;
+    width: 100%;
     margin-top: 1rem;
     padding-right: 1rem;
   }
@@ -249,6 +256,7 @@ Example:
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-align: left;
   }
 
   .nav-side-header > a {
@@ -259,8 +267,7 @@ Example:
     width: 32px;
     height: 32px;
     flex-shrink: 0;
-    background: url(../pictures/logo/sy.png);
-    background-size: 32px 32px;
+    background: url(../pictures/logo/sy.png) center / contain;
     margin: 1rem 0.5rem 0 1rem;
     border-radius: var(--nav-logo-border-radius);
   }
@@ -269,7 +276,6 @@ Example:
     flex-grow: 1;
     overflow-y: auto;
     width: auto;
-    font-size: inherit;
   }
 
   .nav-side-body i {
@@ -293,6 +299,7 @@ Example:
   }
 
   .nav-side-list a {
+    font-size: inherit;
     justify-content: flex-start;
     border-top-right-radius: var(--nav-item-border-radius);
     border-bottom-right-radius: var(--nav-item-border-radius);
@@ -306,7 +313,7 @@ Example:
   }
 
   .nav-side-list-header {
-    display: block;
+    height: 2em;
   }
 
   .nav-side-list i {
