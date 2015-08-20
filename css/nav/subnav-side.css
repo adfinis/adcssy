@@ -97,6 +97,7 @@ Example:
 
 .nav-side--sub .nav-side-list {
   margin-top: 1rem;
+  font-size: inherit;
 }
 
 @media (--subnav-side-mobile-width-unhide) {
