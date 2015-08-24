@@ -181,6 +181,7 @@ button.close {
 }
 
 .btn.loading,
+.nav-tabs .ember-transitioning-in,
 .nav-side-list .ember-transitioning-in,
 .loadingbar-stripes {
   position: relative;
@@ -189,6 +190,7 @@ button.close {
 }
 
 .btn.loading::after,
+.nav-tabs .ember-transitioning-in::after,
 .nav-side-list .ember-transitioning-in::after,
 .loadingbar-stripes::after {
   content: '';
