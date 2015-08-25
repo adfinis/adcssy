@@ -102,6 +102,10 @@ Example:
   font-size: inherit;
 }
 
+.nav-side--sub .nav-side-list:first-child {
+  margin-top: 0;
+}
+
 @media (--subnav-side-mobile-width-unhide) {
   .nav-side--sub {
     display: flex;
