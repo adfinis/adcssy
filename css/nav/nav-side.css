@@ -57,6 +57,7 @@ Example:
 .nav-side-header {
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .nav-side-body {
@@ -228,10 +229,6 @@ Example:
 
   .nav-side--autohide + * {
     padding-left: 25px;
-  }
-
-  .nav-side-list:first-child .nav-side-list-item:first-child {
-    margin-top: 1rem;
   }
 
   .nav-side-toggle,
