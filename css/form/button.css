@@ -165,7 +165,7 @@ fieldset[disabled] .btn,
   display: inline;
   line-height: inherit;
   text-transform: none;
-  height: auto;
+  min-height: auto;
   letter-spacing: normal;
 }
 
