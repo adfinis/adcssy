@@ -116,6 +116,14 @@ Example:
     padding-left: 1rem;
   }
 
+  .nav-side--sub .nav-side-body {
+    background:
+      linear-gradient(color(var(--color-menu) tint(50%)) 15px, color(var(--color-menu) tint(50%) a(0))) 0 0 / 100% 50px,
+      radial-gradient(at top, rgba(0,0,0,.25), transparent 70%) 0 0 / 100% 15px,
+      linear-gradient(to top, color(var(--color-menu) tint(50%)) 15px, color(var(--color-menu) tint(50%) a(0))) bottom / 100% 50px,
+      radial-gradient(at bottom, rgba(0,0,0,.25), transparent 70%) bottom / 100% 15px;
+  }
+
   .nav-side--sub .nav-side-list {
     padding: 0 1rem 0 0;
     font-size: var(--nav-font-size-unhide);
