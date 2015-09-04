@@ -50,6 +50,11 @@ category: Components
 .pagination > li {
   display: none;
   font-feature-settings: 'lnum';
+  z-index: 1;
+}
+
+.pagination > li:matches(:focus, :hover, .active) + li {
+  z-index: 0;
 }
 
 .pagination > :matches(.previous, .next, .active) {
