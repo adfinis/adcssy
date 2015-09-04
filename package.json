@@ -13,6 +13,7 @@
     "broccoli-inject-livereload": "^0.2.0",
     "broccoli-merge-trees": "^0.2.1",
     "font-awesome": "FortAwesome/Font-Awesome#v4.4.0",
+    "lodash.merge": "^3.3.2",
     "postcss-responsive-type": "^0.2.1"
   }
 }
