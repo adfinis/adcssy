@@ -63,6 +63,14 @@ Vertical button group:
   flex-wrap: nowrap;
 }
 
+.btn-group .btn {
+  z-index: 1;
+}
+
+.btn-group .btn:matches(:focus, :hover, :--button-active) + .btn {
+  z-index: 0;
+}
+
 .btn-group > .btn:first-child:not(:last-child, .dropdown-toggle) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
