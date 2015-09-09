@@ -33,7 +33,7 @@ Loading button:
 @custom-selector :--button-active :active, .active;
 
 .btn {
-  display: flex;
+  display: inline-flex;
   /* Don't allow Chrome to make button smaller than content */
   flex-shrink: 0;
   justify-content: center;
