@@ -6284,7 +6284,7 @@ Example from Bootstrap 4
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
   </div>
-  <img src="http://lorempixel.com/400/200" alt="Card image">
+  <img src="http://lorempixel.com/398/200" alt="Card image">
   <div class="card-block">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="card-link">Card link</a>
@@ -6398,6 +6398,10 @@ Example from Bootstrap 4
 
 .card-link + .card-link {
   margin-left: 1rem;
+}
+
+.card-img, .card-img-top, .card-img-bottom {
+  width: 100%;
 }
 
 .card-img {
