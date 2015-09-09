@@ -2872,6 +2872,18 @@ button.close {
   -webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
           filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
 /*doc
 ---
 title: Grid
@@ -6197,6 +6209,230 @@ Hide the first menu point on non-mobile devices:
   .breadcrumb--first-mobileonly > li:first-child + li:before {
     display: none;
   }
+}
+.list-group {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: rgb( 91, 142, 219);
+  border-color: rgb( 91, 142, 219);
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.list-group--flush .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+/*doc
+---
+title: Card
+name: card
+category: Components
+---
+
+Bootstrap 4 compatible Cards:
+
+Example from Bootstrap 4
+
+```html_example
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="http://lorempixel.com/400/200" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group--flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-block">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card" style="width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+  </div>
+  <img src="http://lorempixel.com/400/200" alt="Card image">
+  <div class="card-block">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card card--inverse card--primary text-center">
+  <div class="card-block">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card card--inverse">
+  <div class="card-block">
+    <h3 class="card-title">Special title treatment</h3>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+```
+
+*/
+
+.card {
+  position: relative;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 3px;
+}
+
+.card--inverse {
+  border-color: rgb(134, 127, 124);
+  background-color: rgb(134, 127, 124);
+}
+
+.card--inverse .card-blockquote, .card--inverse .card-footer, .card--inverse .card-header, .card--inverse .card-title {
+  color: #fff
+}
+
+.card--inverse .card-blockquote > footer, .card--inverse .card-link, .card--inverse .card-text {
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card--primary {
+  background-color: rgb( 91, 142, 219);
+  border-color: rgb( 91, 142, 219);
+}
+
+.card--success {
+  background-color: rgb( 92, 184,  92);
+  border-color: rgb( 92, 184,  92);
+}
+
+.card--info {
+  background-color: rgb( 91, 192, 222);
+  border-color: rgb( 91, 192, 222);
+}
+
+.card--warning {
+  background-color: rgb(240, 173,  78);
+  border-color: rgb(240, 173,  78);
+}
+
+.card--danger {
+  background-color: rgb(217,  83,  79);
+  border-color: rgb(217,  83,  79);
+}
+
+.card-block {
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+}
+
+.card-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link + .card-link {
+  margin-left: 1rem;
+}
+
+.card-img {
+  border-radius: 3px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.card-img-top {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-img-bottom {
+  border-radius: 0 0 3px 3px;
+}
+
+.card-footer, .card-header {
+  padding: 0.5rem 1rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.card-header:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-header {
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.card-footer {
+  border-top: 1px solid rgb(225, 225, 225);
 }
 
 /*# sourceMappingURL=adcssy.css.map */

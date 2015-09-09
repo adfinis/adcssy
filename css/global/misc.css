@@ -250,3 +250,15 @@ button.close {
   animation: spin 2s infinite linear;
   filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

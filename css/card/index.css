@@ -1,0 +1,192 @@
+/*doc
+---
+title: Card
+name: card
+category: Components
+---
+
+Bootstrap 4 compatible Cards:
+
+Example from Bootstrap 4
+
+```html_example
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="http://lorempixel.com/400/200" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group--flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-block">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card" style="width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+  </div>
+  <img src="http://lorempixel.com/400/200" alt="Card image">
+  <div class="card-block">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card card--inverse card--primary text-center">
+  <div class="card-block">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card card--inverse">
+  <div class="card-block">
+    <h3 class="card-title">Special title treatment</h3>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
+```
+
+```html_example
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+```
+
+*/
+
+.card {
+  position: relative;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+}
+
+.card--inverse {
+  border-color: var(--color-tertiary);
+  background-color: var(--color-tertiary);
+}
+
+.card--inverse :matches(.card-blockquote, .card-footer, .card-header, .card-title) {
+  color: #fff
+}
+
+.card--inverse :matches(.card-blockquote > footer, .card-link, .card-text) {
+  color: color(#fff a(70%));
+}
+
+.card--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.card--success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.card--info {
+  background-color: var(--color-info);
+  border-color: var(--color-info);
+}
+
+.card--warning {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+}
+
+.card--danger {
+  background-color: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.card-block {
+  padding: 1rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+}
+
+.card-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link + .card-link {
+  margin-left: 1rem;
+}
+
+.card-img {
+  border-radius: 3px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.card-img-top {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-img-bottom {
+  border-radius: 0 0 3px 3px;
+}
+
+.card-footer, .card-header {
+  padding: 0.5rem 1rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.card-header:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.card-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.card-footer {
+  border-top: 1px solid var(--color-border);
+}
