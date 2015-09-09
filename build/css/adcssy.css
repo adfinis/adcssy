@@ -4911,7 +4911,7 @@ Loading button:
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border: 1px solid rgb(225, 225, 225);
   border-bottom-width: 2px;
   background: #fff;
@@ -4923,7 +4923,7 @@ Loading button:
   white-space: nowrap;
   min-height: 2rem;
   letter-spacing: 1px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
   cursor: pointer;
@@ -4938,6 +4938,13 @@ Loading button:
           transition: color 0.2s ease 0s,
               background 0.2s ease 0s,
               border-color 0.2s ease 0s;
+}
+
+@media only screen and (min-width:  768px) {
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 .btn, .btn:visited {
