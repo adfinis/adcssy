@@ -11,7 +11,7 @@ let env        = broc('env').getEnv()
 
 let cssOptions = {
   url:       false,
-  browsers:  '> 1%, last 2 versions, Firefox ESR',
+  browsers:  '> 2%, last 2 versions, Firefox 38',
   features:  { rem: false },
   plugins:   [ plugin('responsive-type') ]
 }
