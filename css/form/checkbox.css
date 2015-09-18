@@ -54,7 +54,9 @@ some browsers behave weird if they are set to `display: none`
 
 :--checkbox-container > :--customizable + label {
   position: relative;
-  padding-left: 1.5rem;
+  display: flex;
+  padding-left: 2.5rem;
+  line-height: 2rem;
   cursor: pointer;
 }
 
@@ -62,9 +64,8 @@ some browsers behave weird if they are set to `display: none`
   content: '';
   position: absolute;
   left: 0;
-  top: 2px;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid rgb(204, 204, 204);
   background-color: rgb(255, 255, 255);
   background-image: none;
@@ -80,9 +81,10 @@ some browsers behave weird if they are set to `display: none`
 :--checkbox-container > :--customizable + label::after {
   content: '\2713';
   position: absolute;
-  top: -1px;
-  left: 4px;
-  font-size: 1rem;
+  left: 0.4rem;
+  top: 0.1rem;
+  line-height: 1;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-success);
   transition: all 0.2s;
@@ -90,6 +92,8 @@ some browsers behave weird if they are set to `display: none`
 
 :--checkbox-container > :--customizableRadio + label::after {
   content: '\2022';
+  left: 0.465rem;
+  top: -0.035rem;
 }
 
 :--checkbox-container > :--checkbox:not(:checked) + label::after {
@@ -125,4 +129,26 @@ some browsers behave weird if they are set to `display: none`
 
 :--checkbox-container > :--customizable + label:hover::before {
   border-color: color(var(--color-primary) tint(50%));
+}
+
+@media (--sm-viewport) {
+  :--checkbox-container > :--customizable + label::before {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  :--checkbox-container > :--customizable + label::after {
+    font-size: 1rem;
+    left: 0.2rem;
+    top: -0.025rem;
+  }
+
+  :--checkbox-container > :--customizable + label {
+    padding-left: 1.5rem;
+    line-height: 1;
+  }
+
+  :--checkbox-container > :--customizableRadio + label::after {
+    left: 0.25rem;
+  }
 }

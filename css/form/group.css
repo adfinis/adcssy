@@ -102,9 +102,9 @@ Disabled form controls:
 .form-control {
   display: block;
   width: 100%;
-  height: 2rem;
+  min-height: 3rem;
   padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: rgb(85, 85, 85);
   background-color: rgb(255, 255, 255);
@@ -113,6 +113,13 @@ Disabled form controls:
   border-radius: var(--input-border-radius);
   box-shadow: var(--input-box-shadow);
   transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+@media (--sm-viewport) {
+  .form-control {
+    font-size: 0.9rem;
+    min-height: 2rem;
+  }
 }
 
 select.form-control[multiple] {

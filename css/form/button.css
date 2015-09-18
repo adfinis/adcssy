@@ -50,7 +50,7 @@ Loading button:
   text-transform: uppercase;
   text-shadow: none;
   white-space: nowrap;
-  min-height: 2rem;
+  min-height: 3rem;
   letter-spacing: 1px;
   font-size: 1rem;
   line-height: 1.2;
@@ -68,6 +68,7 @@ Loading button:
     font-size: 0.75rem;
     padding: 0.5rem 1rem;
     display: inline-flex;
+    min-height: 2rem;
   }
 }
 
