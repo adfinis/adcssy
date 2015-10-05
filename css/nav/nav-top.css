@@ -124,7 +124,7 @@ Modifiers:
 .nav-top-list {
   display: flex;
   flex-direction: column;
-  font-size: calc(var(--nav-font-size) * 1.25);
+  font-size: var(--nav-font-size);
   line-height: 2rem;
   list-style: none;
 }
@@ -183,7 +183,7 @@ Modifiers:
   .nav-top-list {
     height: 50px;
     flex-direction: row;
-    font-size: var(--nav-font-size);
+    font-size: var(--font-size-small);
   }
 
   .nav-top-list--right {
