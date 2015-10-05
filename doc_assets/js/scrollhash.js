@@ -2,6 +2,7 @@
 (function(window) {
   var $            = window.jQuery
   var setTimeout   = window.setTimeout
+  var history      = window.history
   var context      = '.page-content'
   var $context     = $(context)
   var selector     = '[id].styleguide'
@@ -9,7 +10,7 @@
   var $subnavLinks = $subnav.find('a')
   var floor        = Math.floor
 
-  var $sections = $(selector).map(function(i, el) {
+  $(selector).map(function(i, el) {
     return $(el).nextUntil('h1').andSelf().wrapAll('<section class="adsy-styleguide">')
   })
 
@@ -41,6 +42,21 @@
     }
   })
 
+  function setCurrentHash(hash) {
+    currentHash = hash
+
+    if (history.replaceState) {
+      history.replaceState(null, null, '#' + hash)
+    }
+    else {
+      var scrollTop = $context.scrollTop()
+      window.location.hash = hash
+
+      // prevent browser to scroll
+      $context.scrollTop(scrollTop)
+    }
+  }
+
   // You wouldn't want to keep checking the scroll state as
   // it affects the browser performance when it's accessing
   // DOM and reduce your FPS (Frame per Seconds) for scrolling
@@ -59,13 +75,11 @@
       if (currentHash === p.hash) {
         break
       }
-      var scrollTop = $context.scrollTop()
-      window.location.hash = currentHash = p.hash
-      // prevent browser to scroll
-      $context.scrollTop(scrollTop)
+
+      setCurrentHash(p.hash)
 
       $subnavLinks.removeClass('active')
-      $subnavLinks.filter('[href=#' + p.hash +']').addClass('active')
+      $subnavLinks.filter('[href=#' + p.hash + ']').addClass('active')
     }
     setTimeout(step, 200)
   }
