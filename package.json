@@ -5,15 +5,22 @@
   "keywords": [
     "css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adfinis-sygroup/adcssy.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "broccoli": "0.13.2",
-    "broccoli-cssnext-single": "^1.0.0",
     "broccoli-env": "0.0.1",
     "broccoli-funnel": "^0.2.3",
     "broccoli-inject-livereload": "^0.2.0",
     "broccoli-merge-trees": "^0.2.1",
+    "broccoli-postcss": "^2.0.0",
+    "cssnano": "^3.3.1",
     "font-awesome": "FortAwesome/Font-Awesome#v4.4.0",
-    "lodash.merge": "^3.3.2",
-    "postcss-responsive-type": "^0.2.1"
+    "postcss-cssnext": "^2.1.0",
+    "postcss-import": "^7.1.0",
+    "postcss-responsive-type": "^0.3.1"
   }
 }
