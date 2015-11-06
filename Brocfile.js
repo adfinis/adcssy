@@ -16,7 +16,7 @@ let plugins = [
   {
     module: plugin('cssnext'),
     options: {
-      browsers: '> 2%, last 2 versions, Firefox 38',
+      browsers: '> 2%, last 2 versions, Firefox ESR',
       features: { rem: false }
     }
   },
