@@ -15,7 +15,7 @@
     "broccoli-env": "0.0.1",
     "broccoli-funnel": "^0.2.12",
     "broccoli-inject-livereload": "^0.2.0",
-    "broccoli-merge-trees": "^0.2.4",
+    "broccoli-merge-trees": "^1.0.0",
     "broccoli-postcss": "^2.1.0",
     "cssnano": "^3.3.2",
     "font-awesome": "^4.4.0",
