@@ -2166,6 +2166,23 @@ category: Basics
        url('../fonts/TheSansOffice.woff') format('woff'),
        url('../fonts/TheSansOffice.ttf') format('truetype');
 }
+/*doc
+---
+title: Media Query Debug
+name: media-debug
+category: Development
+---
+
+Show currently active media-query on the top-right screen.
+Add it to the &lt;body&gt; element or any other element.
+
+```html_example
+<div class="media-debug">
+  Look at the top-right corner of the page :)
+</div>
+```
+
+*/
 .media-debug::before {
   content: 'mo';
   text-transform: uppercase;
@@ -2564,6 +2581,23 @@ Loading mask.
     <tr><td></td><td></td><td></td></tr>
   </tbody>
 </table>
+```
+
+Close button.
+
+```html_example
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+```
+
+
+Text-alignments.
+
+```html_example
+<div style="width:100%">
+  <div class="text-left">Text align left</div>
+  <div class="text-center">Text align center</div>
+  <div class="text-right">Text align right</div>
+</div>
 ```
 */
 
@@ -6275,6 +6309,42 @@ Hide the first menu point on non-mobile devices:
     display: none;
   }
 }
+/*doc
+---
+title: List Group
+name: list-group
+category: Components
+---
+
+List group:
+
+```html_example
+<div class="list-group">
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item active">An active something</div>
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item">Something</div>
+</div>
+```
+
+Remove left and right border from list-group with `list-group--flush`, for example to be used with a `card` component:
+
+```html_example
+<div class="card" style="max-width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="list-group list-group--flush">
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item active">An active something</div>
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item">Something</div>
+  </div>
+</div>
+```
+
+*/
 .list-group {
   padding-left: 0;
   margin-top: 0;
@@ -6318,7 +6388,7 @@ Bootstrap 4 compatible Cards:
 Example from Bootstrap 4
 
 ```html_example
-<div class="card" style="width:400px">
+<div class="card" style="max-width:400px">
   <img class="card-img-top" src="http://lorempixel.com/400/200" alt="Card image">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
@@ -6337,7 +6407,7 @@ Example from Bootstrap 4
 ```
 
 ```html_example
-<div class="card" style="width:400px">
+<div class="card" style="max-width:400px">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>

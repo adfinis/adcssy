@@ -1,3 +1,39 @@
+/*doc
+---
+title: List Group
+name: list-group
+category: Components
+---
+
+List group:
+
+```html_example
+<div class="list-group">
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item active">An active something</div>
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item">Something</div>
+</div>
+```
+
+Remove left and right border from list-group with `list-group--flush`, for example to be used with a `card` component:
+
+```html_example
+<div class="card" style="max-width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="list-group list-group--flush">
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item active">An active something</div>
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item">Something</div>
+  </div>
+</div>
+```
+
+*/
 .list-group {
   padding-left: 0;
   margin-top: 0;

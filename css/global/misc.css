@@ -44,6 +44,23 @@ Loading mask.
   </tbody>
 </table>
 ```
+
+Close button.
+
+```html_example
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+```
+
+
+Text-alignments.
+
+```html_example
+<div style="width:100%">
+  <div class="text-left">Text align left</div>
+  <div class="text-center">Text align center</div>
+  <div class="text-right">Text align right</div>
+</div>
+```
 */
 
 .link-prefix::before {

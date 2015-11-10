@@ -10,7 +10,7 @@ Bootstrap 4 compatible Cards:
 Example from Bootstrap 4
 
 ```html_example
-<div class="card" style="width:400px">
+<div class="card" style="max-width:400px">
   <img class="card-img-top" src="http://lorempixel.com/400/200" alt="Card image">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
@@ -29,7 +29,7 @@ Example from Bootstrap 4
 ```
 
 ```html_example
-<div class="card" style="width:400px">
+<div class="card" style="max-width:400px">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
