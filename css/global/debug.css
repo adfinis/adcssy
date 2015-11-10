@@ -1,3 +1,20 @@
+/*doc
+---
+title: Media Query Debug
+name: media-debug
+category: Development
+---
+
+Show currently active media-query on the top-right screen.
+Add it to the &lt;body&gt; element or any other element.
+
+```html_example
+<div class="media-debug">
+  Look at the top-right corner of the page :)
+</div>
+```
+
+*/
 .media-debug::before {
   content: 'mo';
   text-transform: uppercase;

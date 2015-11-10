@@ -69,6 +69,10 @@
   content: '\f090';
 }
 
+.fa-development:before {
+  content: '\f188';
+}
+
 .exampleOutput .page-login {
   min-height: 200px;
 }
