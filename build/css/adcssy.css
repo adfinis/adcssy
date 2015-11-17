@@ -4916,6 +4916,20 @@ Loading button:
 ```html_example
 <button class="btn btn-primary loading">Loading</button>
 ```
+
+Active button:
+
+```html_example
+<button class="btn btn-primary active">Click me!</button>
+```
+
+Override active class as sometimes it might not be trivial to remove
+the active class.
+
+```html_example
+<button class="btn btn-primary active no-active-class">Click me!</button>
+```
+
 */
 
 .btn {
@@ -5013,7 +5027,7 @@ Loading button:
 }
 
 .btn:active,
-.btn.active {
+.btn.active:not(.no-active-class) {
   box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
               0 -1px  0   rgba(255, 255, 255, 0.2) inset;
   border-top-width: 2px;
@@ -5099,7 +5113,7 @@ fieldset[disabled] .btn,
 
 .btn-link,
 .btn-link:active,
-.btn-link.active,
+.btn-link.active:not(.no-active-class),
 .btn-link:focus,
 .btn-link:hover {
   border-color: transparent;
@@ -5177,7 +5191,7 @@ Vertical button group:
 .btn-group > .btn:focus + .btn,
 .btn-group > .btn:hover + .btn,
 .btn-group > .btn:active + .btn,
-.btn-group > .btn.active + .btn {
+.btn-group > .btn.active:not(.no-active-class) + .btn {
   z-index: 0;
 }
 
@@ -5226,13 +5240,13 @@ Vertical button group:
 }
 
 .btn-group--vertical > .btn:active,
-.btn-group--vertical > .btn.active {
+.btn-group--vertical > .btn.active:not(.no-active-class) {
   box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
               0 -1px  0   rgba(255, 255, 255, 0.2) inset;
 }
 
 .btn-group--vertical > .btn:last-child:active,
-.btn-group--vertical > .btn:last-child.active {
+.btn-group--vertical > .btn:last-child.active:not(.no-active-class) {
   box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
               0 -1px  0   rgba(255, 255, 255, 0.2) inset;
 }

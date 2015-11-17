@@ -27,10 +27,24 @@ Loading button:
 ```html_example
 <button class="btn btn-primary loading">Loading</button>
 ```
+
+Active button:
+
+```html_example
+<button class="btn btn-primary active">Click me!</button>
+```
+
+Override active class as sometimes it might not be trivial to remove
+the active class.
+
+```html_example
+<button class="btn btn-primary active no-active-class">Click me!</button>
+```
+
 */
 
 @custom-selector :--button-types .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger;
-@custom-selector :--button-active :active, .active;
+@custom-selector :--button-active :active, .active:not(.no-active-class);
 
 .btn {
   display: flex;
