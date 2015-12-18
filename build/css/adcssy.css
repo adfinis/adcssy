@@ -4097,7 +4097,7 @@ Example:
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-side {
+  .nav-side:not(.nav-side--autohide) {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4113,26 +4113,6 @@ Example:
             flex-direction: column;
     background-color: rgb(246, 246, 246);
     border-right: 1px solid rgb(225, 225, 225);
-  }
-
-  .nav-side--autohide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1001;
-    min-width: 172px;
-    -webkit-transform: translateX(calc(-100% + 25px));
-            transform: translateX(calc(-100% + 25px));
-  }
-
-  .nav-side--autohide:hover {
-    -webkit-transform: none;
-            transform: none;
-  }
-
-  .nav-side--autohide + * {
-    padding-left: 25px;
   }
 
   .nav-side-toggle,
@@ -4153,7 +4133,7 @@ Example:
     border-left: 1px solid rgb(225, 225, 225);
   }
 
-  .nav-side-header-title {
+  .nav-side:not(.nav-side--autohide) .nav-side-header-title {
     width: 100%;
     margin-top: 1rem;
     padding-right: 1rem;
@@ -4201,7 +4181,11 @@ Example:
     border-radius: 4px;
   }
 
-  .nav-side-body {
+  .nav-side--autohide .nav-side-header-logo {
+    margin: 1rem auto 0;
+  }
+
+  .nav-side:not(.nav-side--autohide) .nav-side-body {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
@@ -4215,22 +4199,22 @@ Example:
   }
 
   /* Match selector weight with .nav-side--expand */
-  .nav-side .nav-side-list {
+  .nav-side:not(.nav-side--autohide) .nav-side-list {
     padding: 0 1rem 0 0;
     font-size: 0.85rem;
     line-height: 1.5 !important;
   }
 
-  .nav-side--right .nav-side-list {
+  .nav-side:not(.nav-side--autohide) .nav-side--right .nav-side-list {
     padding: 0 0 0 1rem;
   }
 
   /* Match selector weight with .nav-side--expand */
-  .nav-side .nav-side-list a, .nav-side .nav-side-list-header {
+  .nav-side:not(.nav-side--autohide) .nav-side-list a, .nav-side:not(.nav-side--autohide) .nav-side-list-header {
     padding: 0.3rem 1rem;
   }
 
-  .nav-side-list a {
+  .nav-side:not(.nav-side--autohide) .nav-side-list a {
     font-size: inherit;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -4255,6 +4239,11 @@ Example:
     margin-right: 0.5rem;
     text-align: center;
     width: 1.5em;
+  }
+
+  .nav-side--autohide .nav-side-list i {
+    font-size: 1.25rem;
+    margin: 0;
   }
 
   .nav-side-body i:not([class])::before {

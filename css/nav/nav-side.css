@@ -204,31 +204,13 @@ Example:
 }
 
 @media (--nav-side-mobile-width-unhide) {
-  .nav-side {
+  .nav-side:not(.nav-side--autohide) {
     position: relative;
     display: flex;
     flex-basis: auto;
     flex-direction: column;
     background-color: var(--color-menu);
     border-right: 1px solid var(--color-border);
-  }
-
-  .nav-side--autohide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1001;
-    min-width: 172px;
-    transform: translateX(calc(-100% + 25px));
-  }
-
-  .nav-side--autohide:hover {
-    transform: none;
-  }
-
-  .nav-side--autohide + * {
-    padding-left: 25px;
   }
 
   .nav-side-toggle,
@@ -246,7 +228,7 @@ Example:
     border-left: 1px solid var(--color-border);
   }
 
-  .nav-side-header-title {
+  .nav-side:not(.nav-side--autohide) .nav-side-header-title {
     width: 100%;
     margin-top: 1rem;
     padding-right: 1rem;
@@ -278,7 +260,11 @@ Example:
     border-radius: var(--nav-logo-border-radius);
   }
 
-  .nav-side-body {
+  .nav-side--autohide .nav-side-header-logo {
+    margin: 1rem auto 0;
+  }
+
+  .nav-side:not(.nav-side--autohide) .nav-side-body {
     flex-grow: 1;
     overflow-y: auto;
     width: auto;
@@ -289,22 +275,22 @@ Example:
   }
 
   /* Match selector weight with .nav-side--expand */
-  .nav-side .nav-side-list {
+  .nav-side:not(.nav-side--autohide) .nav-side-list {
     padding: 0 1rem 0 0;
     font-size: var(--nav-font-size-unhide);
     line-height: 1.5 !important;
   }
 
-  .nav-side--right .nav-side-list {
+  .nav-side:not(.nav-side--autohide) .nav-side--right .nav-side-list {
     padding: 0 0 0 1rem;
   }
 
   /* Match selector weight with .nav-side--expand */
-  .nav-side :matches(.nav-side-list a, .nav-side-list-header) {
+  .nav-side:not(.nav-side--autohide) :matches(.nav-side-list a, .nav-side-list-header) {
     padding: 0.3rem 1rem;
   }
 
-  .nav-side-list a {
+  .nav-side:not(.nav-side--autohide) .nav-side-list a {
     font-size: inherit;
     justify-content: flex-start;
     border-top-right-radius: var(--nav-item-border-radius);
@@ -326,6 +312,11 @@ Example:
     margin-right: 0.5rem;
     text-align: center;
     width: 1.5em;
+  }
+
+  .nav-side--autohide .nav-side-list i {
+    font-size: var(--nav-font-size);
+    margin: 0;
   }
 
   .nav-side-body i:not([class])::before {
