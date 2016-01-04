@@ -135,15 +135,15 @@ category: Basics
   background-color: rgb(217,  83,  79);
 }
 /*!
- *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2156,6 +2156,66 @@ category: Basics
 .fa-fonticons:before {
   content: "\f280";
 }
+.fa-reddit-alien:before {
+  content: "\f281";
+}
+.fa-edge:before {
+  content: "\f282";
+}
+.fa-credit-card-alt:before {
+  content: "\f283";
+}
+.fa-codiepie:before {
+  content: "\f284";
+}
+.fa-modx:before {
+  content: "\f285";
+}
+.fa-fort-awesome:before {
+  content: "\f286";
+}
+.fa-usb:before {
+  content: "\f287";
+}
+.fa-product-hunt:before {
+  content: "\f288";
+}
+.fa-mixcloud:before {
+  content: "\f289";
+}
+.fa-scribd:before {
+  content: "\f28a";
+}
+.fa-pause-circle:before {
+  content: "\f28b";
+}
+.fa-pause-circle-o:before {
+  content: "\f28c";
+}
+.fa-stop-circle:before {
+  content: "\f28d";
+}
+.fa-stop-circle-o:before {
+  content: "\f28e";
+}
+.fa-shopping-bag:before {
+  content: "\f290";
+}
+.fa-shopping-basket:before {
+  content: "\f291";
+}
+.fa-hashtag:before {
+  content: "\f292";
+}
+.fa-bluetooth:before {
+  content: "\f293";
+}
+.fa-bluetooth-b:before {
+  content: "\f294";
+}
+.fa-percent:before {
+  content: "\f295";
+}
 @font-face {
   font-family: 'TheSansOffice Regular';
   font-style: normal;
@@ -2332,7 +2392,7 @@ html {
   background: #fff;
   color: rgb(61, 61, 61);
   font-family: 'TheSansOffice Regular', 'Open Sans', sans-serif;
-  font-size: calc(13px + 5 * ( (100vw - 420px) / 1020));
+  font-size: calc(13px + 5 * ((100vw - 420px) / 1020));
 }
 @media screen and (min-width: 1440px) {
 
@@ -5453,7 +5513,25 @@ select.form-control:not([multiple]) {
               0 0   8px rgba(91, 142, 219, 0.6);
 }
 
-.form-control:invalid {
+.form-control.success {
+  border-color: rgb(125, 198, 125);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px rgba(92, 184, 92, 0.6);
+}
+
+.form-control.info {
+  border-color: rgb(124, 205, 229);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px rgba(91, 192, 222, 0.6);
+}
+
+.form-control.warning {
+  border-color: rgb(243, 189, 113);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px rgba(240, 173, 78, 0.6);
+}
+
+.form-control:invalid, .form-control.invalid {
   border-color: rgb(225, 117, 114);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
               0 0   8px rgba(217, 83, 79, 0.6);

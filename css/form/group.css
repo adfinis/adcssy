@@ -159,7 +159,25 @@ select.form-control:not([multiple]) {
               0 0   8px color(var(--color-primary) a(60%));
 }
 
-.form-control:invalid {
+.form-control.success {
+  border-color: color(var(--color-success) tint(20%));
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px color(var(--color-success) a(60%));
+}
+
+.form-control.info {
+  border-color: color(var(--color-info) tint(20%));
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px color(var(--color-info) a(60%));
+}
+
+.form-control.warning {
+  border-color: color(var(--color-warning) tint(20%));
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0   8px color(var(--color-warning) a(60%));
+}
+
+.form-control:matches(:invalid, .invalid) {
   border-color: color(var(--color-danger) tint(20%));
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
               0 0   8px color(var(--color-danger) a(60%));
