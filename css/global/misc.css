@@ -247,6 +247,7 @@ button.close {
 .loading-mask::before {
   content: '';
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -257,6 +258,7 @@ button.close {
 .loading-mask::after {
   content: '';
   position: absolute;
+  z-index: 2;
   border: 3px solid #fff;
   border-top-color: transparent;
   border-radius: 50%;
