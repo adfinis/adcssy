@@ -27,6 +27,7 @@
   --color-tertiary:  rgb(134, 127, 124);
   --color-border:    rgb(225, 225, 225);
   --color-menu:      rgb(246, 246, 246);
+  --color-modal:     rgb(255, 255, 255);
 
   /* State colors */
   --color-success: rgb( 92, 184,  92);
@@ -119,6 +120,16 @@
   --button-border-radius: 4px;
   --input-border-radius: 4px;
   --input-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+/* Modal */
+:root {
+  --modal-space: 1.5rem;
+  --modal-width-small:  400px;
+  --modal-width-medium: 600px;
+  --modal-width-large:  800px;
+  --modal-border-radius: 6px;
+  --modal-line-color: color(var(--color-modal) b(15%));
 }
 
 /* Alert */
