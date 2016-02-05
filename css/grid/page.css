@@ -69,6 +69,7 @@ Modifiers:
 
 .page-main {
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .page-main, .page-content {
