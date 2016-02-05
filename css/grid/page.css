@@ -49,6 +49,7 @@ Modifiers:
   flex-direction: row;
   position: relative;
   overflow: hidden;
+  width: 100vw;
 }
 
 .page-viewport--column,
@@ -69,7 +70,7 @@ Modifiers:
 .page-main, .page-content {
   display: flex;
   background: var(--body-background-color);
-  flex-grow: 1;
+  flex: 1 1 100vw;
 }
 
 .page-content--scroll,
