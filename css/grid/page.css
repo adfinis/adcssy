@@ -67,10 +67,13 @@ Modifiers:
   min-height: 100vh;
 }
 
+.page-main {
+  overflow: hidden;
+}
+
 .page-main, .page-content {
   display: flex;
   background: var(--body-background-color);
-  flex: 1 1 100vw;
 }
 
 .page-content--scroll,

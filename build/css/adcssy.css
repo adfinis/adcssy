@@ -3498,16 +3498,16 @@ Modifiers:
   min-height: 100vh;
 }
 
+.page-main {
+  overflow: hidden;
+}
+
 .page-main, .page-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100vw;
-      -ms-flex: 1 1 100vw;
-          flex: 1 1 100vw;
 }
 
 .page-content--scroll,
