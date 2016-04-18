@@ -5188,7 +5188,8 @@ the active class.
 }
 
 fieldset[disabled] .btn,
-.btn[disabled] {
+.btn[disabled],
+.btn.disabled {
   cursor: not-allowed;
   background-color: rgb(134, 127, 124);
   border-color: rgb(122, 115, 113);
