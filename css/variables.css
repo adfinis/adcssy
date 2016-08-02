@@ -50,10 +50,11 @@
 
 /* Global Fonts */
 :root {
-  --font-family-sans-serif: 'TheSansOffice Regular', 'Open Sans', sans-serif;
+  --font-family-sans-serif: 'TheSansLT', 'Open Sans', sans-serif;
   --font-family-serif: 'Merriweather', 'Times New Roman', serif;
   --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-family-base: var(--font-family-sans-serif);
+  --font-weight-base: 300;
   --font-size-base: 16px;
   --font-size-large: 1.25rem;
   --font-size-small: 0.85rem;
@@ -63,6 +64,7 @@
 :root {
   --body-background-color: #fff;
   --body-color: rgb(61, 61, 61);
+  --body-font-weight: var(--font-weight-base);
   --body-font-family: var(--font-family-base);
   --body-min-font-size: calc(var(--font-size-base) - 3px);
   --body-max-font-size: calc(var(--font-size-base) + 2px);
@@ -90,7 +92,7 @@
   --headings-color: #000;
   --headings-font-family: var(--font-family-base);
   --headings-font-feature-settings: "dlig", "liga", "lnum", "kern";
-  --headings-font-weight: 600;
+  --headings-font-weight: 500;
   --headings-font-size-base: var(--font-size-base);
   --headings-font-size-h1: calc(var(--headings-font-size-base) * 2.25);
   --headings-font-size-h2: calc(var(--headings-font-size-base) * 2);
