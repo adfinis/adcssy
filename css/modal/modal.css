@@ -232,7 +232,7 @@ Modal sizes:
 
 .modal-header {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .modal-header :matches(h1, h2, h3, h4, h5) {
