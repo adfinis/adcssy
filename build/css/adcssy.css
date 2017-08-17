@@ -82,7 +82,7 @@ category: Basics
 */
 
 .color-primary {
-  color: rgb( 91, 142, 219);
+  color: rgb(91, 142, 219);
 }
 
 .color-secondary {
@@ -94,23 +94,23 @@ category: Basics
 }
 
 .color-success {
-  color: rgb( 92, 184,  92);
+  color: rgb(92, 184, 92);
 }
 
 .color-info {
-  color: rgb( 91, 192, 222);
+  color: rgb(91, 192, 222);
 }
 
 .color-warning {
-  color: rgb(240, 173,  78);
+  color: rgb(240, 173, 78);
 }
 
 .color-danger {
-  color: rgb(217,  83,  79);
+  color: rgb(217, 83, 79);
 }
 
 .background-color-primary {
-  background-color: rgb( 91, 142, 219);
+  background-color: rgb(91, 142, 219);
 }
 
 .background-color-secondary {
@@ -122,30 +122,30 @@ category: Basics
 }
 
 .background-color-success {
-  background-color: rgb( 92, 184,  92);
+  background-color: rgb(92, 184, 92);
 }
 
 .background-color-info {
-  background-color: rgb( 91, 192, 222);
+  background-color: rgb(91, 192, 222);
 }
 
 .background-color-warning {
-  background-color: rgb(240, 173,  78);
+  background-color: rgb(240, 173, 78);
 }
 
 .background-color-danger {
-  background-color: rgb(217,  83,  79);
+  background-color: rgb(217, 83, 79);
 }
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1966,6 +1966,7 @@ category: Basics
   content: "\f23e";
 }
 .fa-battery-4:before,
+.fa-battery:before,
 .fa-battery-full:before {
   content: "\f240";
 }
@@ -2312,6 +2313,143 @@ category: Basics
 .fa-font-awesome:before {
   content: "\f2b4";
 }
+.fa-handshake-o:before {
+  content: "\f2b5";
+}
+.fa-envelope-open:before {
+  content: "\f2b6";
+}
+.fa-envelope-open-o:before {
+  content: "\f2b7";
+}
+.fa-linode:before {
+  content: "\f2b8";
+}
+.fa-address-book:before {
+  content: "\f2b9";
+}
+.fa-address-book-o:before {
+  content: "\f2ba";
+}
+.fa-vcard:before,
+.fa-address-card:before {
+  content: "\f2bb";
+}
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: "\f2bc";
+}
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+.fa-user-circle-o:before {
+  content: "\f2be";
+}
+.fa-user-o:before {
+  content: "\f2c0";
+}
+.fa-id-badge:before {
+  content: "\f2c1";
+}
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: "\f2c2";
+}
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: "\f2c3";
+}
+.fa-quora:before {
+  content: "\f2c4";
+}
+.fa-free-code-camp:before {
+  content: "\f2c5";
+}
+.fa-telegram:before {
+  content: "\f2c6";
+}
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: "\f2c7";
+}
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: "\f2c8";
+}
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: "\f2c9";
+}
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: "\f2ca";
+}
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: "\f2cb";
+}
+.fa-shower:before {
+  content: "\f2cc";
+}
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: "\f2cd";
+}
+.fa-podcast:before {
+  content: "\f2ce";
+}
+.fa-window-maximize:before {
+  content: "\f2d0";
+}
+.fa-window-minimize:before {
+  content: "\f2d1";
+}
+.fa-window-restore:before {
+  content: "\f2d2";
+}
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: "\f2d3";
+}
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: "\f2d4";
+}
+.fa-bandcamp:before {
+  content: "\f2d5";
+}
+.fa-grav:before {
+  content: "\f2d6";
+}
+.fa-etsy:before {
+  content: "\f2d7";
+}
+.fa-imdb:before {
+  content: "\f2d8";
+}
+.fa-ravelry:before {
+  content: "\f2d9";
+}
+.fa-eercast:before {
+  content: "\f2da";
+}
+.fa-microchip:before {
+  content: "\f2db";
+}
+.fa-snowflake-o:before {
+  content: "\f2dc";
+}
+.fa-superpowers:before {
+  content: "\f2dd";
+}
+.fa-wpexplorer:before {
+  content: "\f2de";
+}
+.fa-meetup:before {
+  content: "\f2e0";
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2547,28 +2685,27 @@ html {
   color: rgb(61, 61, 61);
   font-weight: 300;
   font-family: 'TheSansLT', 'Open Sans', sans-serif;
-  font-size: calc(13px + 5 * ((100vw - 420px) / 1020));
+  font-size: calc(11px + 5 * ((100vw - 420px) / 1020));
 }
 @media screen and (min-width: 1440px) {
 
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 420px) {
 
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 a {
-  color: rgb( 91, 142, 219);
+  color: rgb(91, 142, 219);
   text-decoration: none;
 }
 
 a:hover {
-  -webkit-transition: background 0.1s ease 0, color 0.1s ease 0;
   transition: background 0.1s ease 0, color 0.1s ease 0;
 }
 
@@ -2820,7 +2957,6 @@ Text-alignments.
   content: '>';
   vertical-align: 6%;
   padding: 0 0.2em 0 0;
-  -webkit-transition: padding 0.1s;
   transition: padding 0.1s;
   /* Chrome ~= 43 wants inline block */
   display: inline-block;
@@ -3041,22 +3177,13 @@ button.close {
   position: absolute;
   -webkit-animation: 2s linear 0s normal none infinite running loadingbar-stripes;
           animation: 2s linear 0s normal none infinite running loadingbar-stripes;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.2) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.2) 75%,
-    transparent 75%, transparent
-  );
   background-image: linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, .2) 25%,
     transparent 25%,
     transparent 50%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
     transparent 75%, transparent
   );
   background-size: 45px 45px;
@@ -3097,7 +3224,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,.25);
+  background-color: rgba(0, 0, 0, .25);
 }
 
 .loading-mask::after {
@@ -3114,8 +3241,8 @@ button.close {
   -webkit-animation: spin 2s infinite linear;
           animation: spin 2s infinite linear;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="2" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.33)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-  -webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
-          filter: drop-shadow(0 0 2px rgba(0,0,0,.33));
+  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .33));
+          filter: drop-shadow(0 0 2px rgba(0, 0, 0, .33));
 }
 
 .text-center {
@@ -3287,21 +3414,18 @@ Disable cell wrapping:
 .grid--align-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 
 .grid--align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 
 .grid--align-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
@@ -3318,6 +3442,7 @@ Disable cell wrapping:
 
 .grid-cell--align-center {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -3732,30 +3857,30 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 36px;
-  color: rgb( 91, 142, 219);
+  font-size: 31.5px;
+  color: rgb(91, 142, 219);
 }
 
 h2, .h2 {
-  font-size: 32px;
-  color: rgb( 91, 142, 219);
+  font-size: 28px;
+  color: rgb(91, 142, 219);
 }
 
 h3, .h3 {
-  font-size: 28.8px;
-  color: rgb( 91, 142, 219);
+  font-size: 25.2px;
+  color: rgb(91, 142, 219);
 }
 
 h4, .h4 {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 17.5px;
 }
 
 h6, .h6 {
-  font-size: 17.6px;
+  font-size: 15.4px;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -3889,7 +4014,7 @@ p, li {
 
 .lead {
   color: rgb(36, 36, 36);
-  font-size: 20px;
+  font-size: 17.5px;
   font-weight: 300;
 }
 
@@ -3900,7 +4025,7 @@ article p, article li {
 blockquote {
   quotes: none;
   margin-left: -1rem;
-  border-left: 0.15rem solid rgb( 91, 142, 219);
+  border-left: 0.15rem solid rgb(91, 142, 219);
 }
 
 blockquote p {
@@ -3940,8 +4065,7 @@ code {
  * text-decoration property, emulating by using a background :)
  */
 .typeset a:hover {
-  background-image: -webkit-linear-gradient(top, transparent 50%, rgb( 91, 142, 219) 50%);
-  background-image: linear-gradient(to bottom, transparent 50%, rgb( 91, 142, 219) 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgb(91, 142, 219) 50%);
   background-position: 0 85%;
   background-repeat: repeat-x;
   background-size: 100% 1px;
@@ -3978,7 +4102,6 @@ code {
   height: 6px;
   width: 36px;
   border-radius: 3px;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background: black;
 }
@@ -4101,7 +4224,6 @@ Example:
       flex-basis: 55px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -webkit-transition: -webkit-flex-basis 0.2s, -webkit-transform 0.2s;
   transition: -webkit-flex-basis 0.2s, -webkit-transform 0.2s;
   transition: flex-basis 0.2s, transform 0.2s;
   transition: flex-basis 0.2s, transform 0.2s, -webkit-flex-basis 0.2s, -ms-flex-preferred-size 0.2s, -webkit-transform 0.2s;
@@ -4123,14 +4245,10 @@ Example:
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow-y: auto;
-  background: -webkit-linear-gradient(rgb(246, 246, 246) 15px, rgba(246, 246, 246, 0)) 0 0 / 100% 50px,
-    -webkit-radial-gradient(at top, rgba(0,0,0,.25), transparent 70%) 0 0 / 100% 15px,
-    -webkit-linear-gradient(bottom, rgb(246, 246, 246) 15px, rgba(246, 246, 246, 0)) bottom / 100% 50px,
-    -webkit-radial-gradient(at bottom, rgba(0,0,0,.25), transparent 70%) bottom / 100% 15px;
   background: linear-gradient(rgb(246, 246, 246) 15px, rgba(246, 246, 246, 0)) 0 0 / 100% 50px,
-    radial-gradient(at top, rgba(0,0,0,.25), transparent 70%) 0 0 / 100% 15px,
+    radial-gradient(at top, rgba(0, 0, 0, .25), transparent 70%) 0 0 / 100% 15px,
     linear-gradient(to top, rgb(246, 246, 246) 15px, rgba(246, 246, 246, 0)) bottom / 100% 50px,
-    radial-gradient(at bottom, rgba(0,0,0,.25), transparent 70%) bottom / 100% 15px;
+    radial-gradient(at bottom, rgba(0, 0, 0, .25), transparent 70%) bottom / 100% 15px;
   background-repeat: no-repeat;
   background-attachment: local, scroll, local, scroll;
 }
@@ -4159,7 +4277,6 @@ Example:
 
 .page-main-overlay {
   background-color: #000;
-  -webkit-transition: left 0.2s, opacity 0.2s, position 0.2s;
   transition: left 0.2s, opacity 0.2s, position 0.2s;
   opacity: 0;
   left: 0;
@@ -4176,7 +4293,6 @@ Example:
 }
 
 .nav-side + .page-main {
-  -webkit-transition: margin-right 0.2s;
   transition: margin-right 0.2s;
 }
 
@@ -4212,7 +4328,6 @@ Example:
   height: 0;
   overflow: hidden;
   padding: 0;
-  -webkit-transition: height 0.2s, padding 0.2s;
   transition: height 0.2s, padding 0.2s;
 }
 
@@ -4223,7 +4338,6 @@ Example:
   overflow: hidden;
   font-weight: 500;
   color: rgb(87, 87, 87);
-  -webkit-transition: width 0.2s;
   transition: width 0.2s;
 }
 
@@ -4260,13 +4374,12 @@ Example:
 
 .nav-side-list a {
   color: rgb(38, 91, 171);
-  -webkit-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
 }
 
 .nav-side-list a:hover, .nav-side-list a.active {
   color: #fff;
-  background: rgb( 91, 142, 219);
+  background: rgb(91, 142, 219);
 }
 
 .nav-side-list a.ember-transitioning-in {
@@ -4567,14 +4680,10 @@ Example:
   }
 
   .nav-side--sub .nav-side-body {
-    background: -webkit-linear-gradient(rgb(251, 251, 251) 15px, rgba(251, 251, 251, 0)) 0 0 / 100% 50px,
-      -webkit-radial-gradient(at top, rgba(0,0,0,.25), transparent 70%) 0 0 / 100% 15px,
-      -webkit-linear-gradient(bottom, rgb(251, 251, 251) 15px, rgba(251, 251, 251, 0)) bottom / 100% 50px,
-      -webkit-radial-gradient(at bottom, rgba(0,0,0,.25), transparent 70%) bottom / 100% 15px;
     background: linear-gradient(rgb(251, 251, 251) 15px, rgba(251, 251, 251, 0)) 0 0 / 100% 50px,
-      radial-gradient(at top, rgba(0,0,0,.25), transparent 70%) 0 0 / 100% 15px,
+      radial-gradient(at top, rgba(0, 0, 0, .25), transparent 70%) 0 0 / 100% 15px,
       linear-gradient(to top, rgb(251, 251, 251) 15px, rgba(251, 251, 251, 0)) bottom / 100% 50px,
-      radial-gradient(at bottom, rgba(0,0,0,.25), transparent 70%) bottom / 100% 15px;
+      radial-gradient(at bottom, rgba(0, 0, 0, .25), transparent 70%) bottom / 100% 15px;
     background-repeat: no-repeat;
     background-attachment: local, scroll, local, scroll;
   }
@@ -4698,6 +4807,7 @@ Modifiers:
 .nav-top-header-logo,
 .nav-top-header-title {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -4715,7 +4825,6 @@ Modifiers:
 .nav-top-body {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 1.2s;
   transition: max-height 1.2s;
 }
 
@@ -4754,7 +4863,7 @@ Modifiers:
 
 .nav-top-list a:hover {
   color: #fff;
-  background: rgb( 91, 142, 219);
+  background: rgb(91, 142, 219);
 }
 
 .nav-top-list-item {
@@ -4765,7 +4874,6 @@ Modifiers:
 
 .nav-top-list a {
   color: rgb(38, 91, 171);
-  -webkit-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
 }
 
@@ -4800,7 +4908,6 @@ Modifiers:
         -ms-flex-positive: 1;
             flex-grow: 1;
     max-height: 50px;
-    -webkit-transition: none;
     transition: none;
   }
 
@@ -4821,6 +4928,7 @@ Modifiers:
   .nav-top-list a {
     display: block;
     -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     padding: 1rem 0.5rem;
     border-bottom-right-radius: 3px;
@@ -5104,10 +5212,7 @@ the active class.
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
-  -webkit-transition: color 0.2s ease 0s,
-              background 0.2s ease 0s,
-              border-color 0.2s ease 0s;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .15) inset;
   transition: color 0.2s ease 0s,
               background 0.2s ease 0s,
               border-color 0.2s ease 0s;
@@ -5145,7 +5250,7 @@ the active class.
 }
 
 .btn:hover, .btn:focus {
-  color: rgb( 91, 142, 219);
+  color: rgb(91, 142, 219);
   border-color: rgb(176, 200, 238);
   text-decoration: none;
 }
@@ -5156,8 +5261,8 @@ the active class.
 
 .btn:active,
 .btn.active:not(.no-active-class) {
-  box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
-              0 -1px  0   rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0  1px 10px rgba(0, 0, 0, .2) inset,
+              0 -1px  0   rgba(255, 255, 255, .2) inset;
   border-top-width: 2px;
   border-bottom-width: 1px;
 }
@@ -5174,7 +5279,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-primary {
-  background-color: rgb( 91, 142, 219);
+  background-color: rgb(91, 142, 219);
   border-color: rgb(71, 128, 215);
 }
 
@@ -5185,7 +5290,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-success {
-  background-color: rgb( 92, 184,  92);
+  background-color: rgb(92, 184, 92);
   border-color: rgb(76, 174, 76);
 }
 
@@ -5196,7 +5301,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-info {
-  background-color: rgb( 91, 192, 222);
+  background-color: rgb(91, 192, 222);
   border-color: rgb(69, 182, 217);
 }
 
@@ -5207,7 +5312,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-warning {
-  background-color: rgb(240, 173,  78);
+  background-color: rgb(240, 173, 78);
   border-color: rgb(237, 161, 53);
 }
 
@@ -5218,7 +5323,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-danger {
-  background-color: rgb(217,  83,  79);
+  background-color: rgb(217, 83, 79);
   border-color: rgb(212, 64, 58);
 }
 
@@ -5229,7 +5334,7 @@ fieldset[disabled] .btn,
 }
 
 .btn-link {
-  color: rgb( 91, 142, 219);
+  color: rgb(91, 142, 219);
   padding: 0;
   margin: 0;
   border: none;
@@ -5367,14 +5472,14 @@ Vertical button group:
 
 .btn-group--vertical > .btn:active,
 .btn-group--vertical > .btn.active:not(.no-active-class) {
-  box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
-              0 -1px  0   rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0  1px 10px rgba(0, 0, 0, .2) inset,
+              0 -1px  0   rgba(255, 255, 255, .2) inset;
 }
 
 .btn-group--vertical > .btn:last-child:active,
 .btn-group--vertical > .btn:last-child.active:not(.no-active-class) {
-  box-shadow: 0  1px 10px rgba(  0,   0,   0, 0.2) inset,
-              0 -1px  0   rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0  1px 10px rgba(0, 0, 0, .2) inset,
+              0 -1px  0   rgba(255, 255, 255, .2) inset;
 }
 
 .btn-group--vertical > .btn:not(:last-child) {
@@ -5511,11 +5616,6 @@ Disabled form controls:
   opacity: 1;
 }
 
-.form-control::-moz-placeholder {
-  color: rgb(153, 153, 153);
-  opacity: 1;
-}
-
 .form-control:-ms-input-placeholder {
   color: rgb(153, 153, 153);
   opacity: 1;
@@ -5538,8 +5638,7 @@ Disabled form controls:
   background-image: none;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  -webkit-transition: border-color 0.15s, box-shadow 0.15s;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -5585,31 +5684,31 @@ select.form-control:not([multiple]) {
 .form-control:focus {
   border-color: rgb(124, 165, 226);
   outline: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset,
               0 0   8px rgba(91, 142, 219, 0.6);
 }
 
 .form-control.success {
   border-color: rgb(125, 198, 125);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset,
               0 0   8px rgba(92, 184, 92, 0.6);
 }
 
 .form-control.info {
   border-color: rgb(124, 205, 229);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset,
               0 0   8px rgba(91, 192, 222, 0.6);
 }
 
 .form-control.warning {
   border-color: rgb(243, 189, 113);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset,
               0 0   8px rgba(240, 173, 78, 0.6);
 }
 
 .form-control:invalid, .form-control.invalid {
   border-color: rgb(225, 117, 114);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset,
               0 0   8px rgba(217, 83, 79, 0.6);
 }
 
@@ -5733,8 +5832,7 @@ some browsers behave weird if they are set to `display: none`
   background-color: rgb(255, 255, 255);
   background-image: none;
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  -webkit-transition: border-color 0.15s, box-shadow 0.15s;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -5760,8 +5858,7 @@ some browsers behave weird if they are set to `display: none`
   line-height: 1;
   font-size: 2rem;
   font-weight: 500;
-  color: rgb( 92, 184,  92);
-  -webkit-transition: all 0.2s;
+  color: rgb(92, 184, 92);
   transition: all 0.2s;
 }
 
@@ -5830,7 +5927,7 @@ some browsers behave weird if they are set to `display: none`
 .radio > input[type=radio]:checked:focus + label::before {
   border-color: rgb(124, 165, 226);
   outline: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(91, 142, 219, 0.6);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(91, 142, 219, 0.6);
 }
 
 .checkbox > input[type=checkbox]:not(:checked) + label:hover::before,
@@ -5953,7 +6050,6 @@ Example login password reset page:
 ```
 */
 .page-login .page-content {
-  background: -webkit-linear-gradient(top, rgb(134, 127, 124), rgb(162, 155, 150));
   background: linear-gradient(to bottom, rgb(134, 127, 124), rgb(162, 155, 150));
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -6256,7 +6352,7 @@ category: Components
 .pagination > li > a, .pagination > li > span {
   padding: 0.3rem 0.9rem;
   margin-left: -1px;
-  color: rgb( 91, 142, 219);
+  color: rgb(91, 142, 219);
   background-color: #fff;
   border: 1px solid rgb(225, 225, 225);
   text-align: center;
@@ -6268,8 +6364,8 @@ category: Components
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
   color: #fff;
   cursor: default;
-  background-color: rgb( 91, 142, 219);
-  border-color: rgb( 91, 142, 219);
+  background-color: rgb(91, 142, 219);
+  border-color: rgb(91, 142, 219);
 }
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
@@ -6493,8 +6589,8 @@ Remove left and right border from list-group with `list-group--flush`, for examp
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: rgb( 91, 142, 219);
-  border-color: rgb( 91, 142, 219);
+  background-color: rgb(91, 142, 219);
+  border-color: rgb(91, 142, 219);
 }
 
 .list-group-item.disabled,
@@ -6627,28 +6723,28 @@ Example from Bootstrap 4
 }
 
 .card--primary {
-  background-color: rgb( 91, 142, 219);
-  border-color: rgb( 91, 142, 219);
+  background-color: rgb(91, 142, 219);
+  border-color: rgb(91, 142, 219);
 }
 
 .card--success {
-  background-color: rgb( 92, 184,  92);
-  border-color: rgb( 92, 184,  92);
+  background-color: rgb(92, 184, 92);
+  border-color: rgb(92, 184, 92);
 }
 
 .card--info {
-  background-color: rgb( 91, 192, 222);
-  border-color: rgb( 91, 192, 222);
+  background-color: rgb(91, 192, 222);
+  border-color: rgb(91, 192, 222);
 }
 
 .card--warning {
-  background-color: rgb(240, 173,  78);
-  border-color: rgb(240, 173,  78);
+  background-color: rgb(240, 173, 78);
+  border-color: rgb(240, 173, 78);
 }
 
 .card--danger {
-  background-color: rgb(217,  83,  79);
-  border-color: rgb(217,  83,  79);
+  background-color: rgb(217, 83, 79);
+  border-color: rgb(217, 83, 79);
 }
 
 .card-block {
@@ -6916,9 +7012,8 @@ Modal sizes:
   bottom: 0;
   left: 0;
   z-index: 1001;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, .25);
   pointer-events: none;
-  -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
 }
 
@@ -6941,8 +7036,7 @@ Modal sizes:
   margin-top: 100%;
   border: thin solid rgb(225, 225, 225);
   border-radius: 6px;
-  box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.25);
-  -webkit-transition: margin-top 0.75s ease;
+  box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, .25);
   transition: margin-top 0.75s ease;
 }
 
