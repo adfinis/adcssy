@@ -5192,7 +5192,7 @@ the active class.
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 0;
-  padding: 0.75rem 1.25rem;
+  padding: calc(0.75rem + 1px) 1.25rem 0.75rem;
   border: 1px solid rgb(225, 225, 225);
   border-bottom-width: 2px;
   background: #fff;
@@ -5221,7 +5221,7 @@ the active class.
 @media only screen and (min-width:  768px) {
   .btn {
     font-size: 0.75rem;
-    padding: 0.5rem 1rem;
+    padding: calc(0.5rem + 1px) 1rem 0.5rem;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -5249,7 +5249,7 @@ the active class.
   color: #fff;
 }
 
-.btn:hover, .btn:focus {
+.btn:not([disabled]):hover {
   color: rgb(91, 142, 219);
   border-color: rgb(176, 200, 238);
   text-decoration: none;
@@ -5257,24 +5257,27 @@ the active class.
 
 .btn:focus {
   outline: none;
+  box-shadow: 0 0 6px 2px rgba(225, 225, 225, 0.6);
 }
 
 .btn:active,
 .btn.active:not(.no-active-class) {
   box-shadow: 0  1px 10px rgba(0, 0, 0, .2) inset,
               0 -1px  0   rgba(255, 255, 255, .2) inset;
+  padding: 0.75rem 1.25rem calc(0.75rem + 1px);
   border-top-width: 2px;
   border-bottom-width: 1px;
 }
 
-fieldset[disabled] .btn,
-.btn[disabled],
-.btn.disabled {
-  cursor: not-allowed;
-  background-color: rgb(134, 127, 124);
-  border-color: rgb(122, 115, 113);
-  color: rgb(209, 205, 203);
-  border-width: 1px;
+@media only screen and (min-width:  768px) {
+  .btn:active,
+  .btn.active:not(.no-active-class) {
+    padding: 0.5rem 1rem calc(0.5rem + 1px);
+  }
+}
+
+.btn:active:focus,
+.btn.active:not(.no-active-class):focus {
   box-shadow: none;
 }
 
@@ -5283,10 +5286,14 @@ fieldset[disabled] .btn,
   border-color: rgb(71, 128, 215);
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:not([disabled]):hover {
   background-color: rgb(44, 113, 216);
   border-color: rgb(38, 91, 171);
   color: #fff;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 2px 2px rgba(91, 142, 219, 0.5);
 }
 
 .btn-success {
@@ -5294,10 +5301,14 @@ fieldset[disabled] .btn,
   border-color: rgb(76, 174, 76);
 }
 
-.btn-success:hover, .btn-success:focus {
+.btn-success:not([disabled]):hover {
   background-color: rgb(63, 162, 63);
   border-color: rgb(53, 121, 53);
   color: #fff;
+}
+
+.btn-success:focus {
+  box-shadow: 0 0 2px 2px rgba(92, 184, 92, 0.5);
 }
 
 .btn-info {
@@ -5305,10 +5316,14 @@ fieldset[disabled] .btn,
   border-color: rgb(69, 182, 217);
 }
 
-.btn-info:hover, .btn-info:focus {
+.btn-info:not([disabled]):hover {
   background-color: rgb(41, 177, 219);
   border-color: rgb(36, 141, 174);
   color: #fff;
+}
+
+.btn-info:focus {
+  box-shadow: 0 0 2px 2px rgba(91, 192, 222, 0.5);
 }
 
 .btn-warning {
@@ -5316,10 +5331,14 @@ fieldset[disabled] .btn,
   border-color: rgb(237, 161, 53);
 }
 
-.btn-warning:hover, .btn-warning:focus {
+.btn-warning:not([disabled]):hover {
   background-color: rgb(242, 151, 24);
   border-color: rgb(197, 122, 17);
   color: #fff;
+}
+
+.btn-warning:focus {
+  box-shadow: 0 0 2px 2px rgba(240, 173, 78, 0.5);
 }
 
 .btn-danger {
@@ -5327,10 +5346,14 @@ fieldset[disabled] .btn,
   border-color: rgb(212, 64, 58);
 }
 
-.btn-danger:hover, .btn-danger:focus {
+.btn-danger:not([disabled]):hover {
   background-color: rgb(207, 44, 38);
   border-color: rgb(159, 39, 35);
   color: #fff;
+}
+
+.btn-danger:focus {
+  box-shadow: 0 0 2px 2px rgba(217, 83, 79, 0.5);
 }
 
 .btn-link {
@@ -5353,6 +5376,13 @@ fieldset[disabled] .btn,
   border-color: transparent;
   background: none;
   box-shadow: none;
+}
+
+fieldset[disabled] .btn,
+.btn[disabled],
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
 }
 /*doc
 ---
