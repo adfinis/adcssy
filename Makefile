@@ -5,7 +5,7 @@ all: dist
 dist: clean build
 
 build:
-	@BROCCOLI_ENV=production broccoli build build
+	@npm run build
 
 docs: hologram
 
@@ -20,4 +20,4 @@ clean:
 	@rm -rf build docs
 
 watch:
-	@BROCCOLI_ENV=development broccoli serve --host 0.0.0.0
+	@npm start
