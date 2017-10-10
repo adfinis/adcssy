@@ -8,9 +8,10 @@ category: Basics
 This is the [Adfinis SyGroup AG](http://adfinis-sygroup.ch/) CSS Framework Guide
 
 */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300,500');
+
 @import 'variables.css';
 @import 'colors/index.css';
-@import 'fonts/index.css';
 @import 'global/index.css';
 @import 'grid/index.css';
 @import 'typography/index.css';
