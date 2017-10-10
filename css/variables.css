@@ -50,7 +50,7 @@
 
 /* Global Fonts */
 :root {
-  --font-family-sans-serif: 'TheSansLT', 'Open Sans', sans-serif;
+  --font-family-sans-serif: 'Open Sans', sans-serif;
   --font-family-serif: 'Merriweather', 'Times New Roman', serif;
   --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-family-base: var(--font-family-sans-serif);

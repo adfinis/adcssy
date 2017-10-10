@@ -1,7 +1,7 @@
 {
   "name": "adcssy",
   "description": "AdCSSy - Adfinis SyGroup CSS Framework",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "scripts": {
     "start": "BROCCOLI_ENV=development broccoli serve --host 0.0.0.0",
     "build": "BROCCOLI_ENV=production broccoli build build"
