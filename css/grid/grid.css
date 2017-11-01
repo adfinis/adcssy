@@ -180,18 +180,18 @@ Disable cell wrapping:
   padding-right: var(--gutter-width);
 }
 
-.grid--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-.grid--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-.grid--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-.grid--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-.grid--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-.grid--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-.grid--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-.grid--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-.grid--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-.grid--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-.grid--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-.grid--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+.grid--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+.grid--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+.grid--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+.grid--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+.grid--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+.grid--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+.grid--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+.grid--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+.grid--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+.grid--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+.grid--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+.grid--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 
 @media (--xs-viewport) {
   .grid-xs--row { flex-direction: row }
@@ -200,18 +200,18 @@ Disable cell wrapping:
   .grid-xs--row-reverse { flex-direction: row-reverse    }
   .grid-xs--col-reverse { flex-direction: column-reverse }
 
-  .grid-xs--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid-xs--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid-xs--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid-xs--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid-xs--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid-xs--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid-xs--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid-xs--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid-xs--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid-xs--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid-xs--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid-xs--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid-xs--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid-xs--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid-xs--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid-xs--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid-xs--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid-xs--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid-xs--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid-xs--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid-xs--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid-xs--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid-xs--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid-xs--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--sm-viewport) {
@@ -221,18 +221,18 @@ Disable cell wrapping:
   .grid-sm--row-reverse { flex-direction: row-reverse    }
   .grid-sm--col-reverse { flex-direction: column-reverse }
 
-  .grid-sm--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid-sm--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid-sm--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid-sm--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid-sm--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid-sm--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid-sm--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid-sm--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid-sm--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid-sm--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid-sm--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid-sm--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid-sm--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid-sm--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid-sm--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid-sm--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid-sm--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid-sm--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid-sm--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid-sm--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid-sm--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid-sm--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid-sm--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid-sm--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--md-viewport) {
@@ -242,18 +242,18 @@ Disable cell wrapping:
   .grid-md--row-reverse { flex-direction: row-reverse    }
   .grid-md--col-reverse { flex-direction: column-reverse }
 
-  .grid-md--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid-md--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid-md--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid-md--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid-md--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid-md--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid-md--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid-md--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid-md--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid-md--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid-md--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid-md--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid-md--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid-md--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid-md--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid-md--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid-md--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid-md--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid-md--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid-md--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid-md--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid-md--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid-md--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid-md--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--lg-viewport) {
@@ -263,18 +263,18 @@ Disable cell wrapping:
   .grid-lg--row-reverse { flex-direction: row-reverse    }
   .grid-lg--col-reverse { flex-direction: column-reverse }
 
-  .grid-lg--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid-lg--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid-lg--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid-lg--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid-lg--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid-lg--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid-lg--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid-lg--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid-lg--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid-lg--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid-lg--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid-lg--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid-lg--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid-lg--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid-lg--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid-lg--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid-lg--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid-lg--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid-lg--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid-lg--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid-lg--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid-lg--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid-lg--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid-lg--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--xl-viewport) {
@@ -284,104 +284,104 @@ Disable cell wrapping:
   .grid-xl--row-reverse { flex-direction: row-reverse    }
   .grid-xl--col-reverse { flex-direction: column-reverse }
 
-  .grid-xl--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid-xl--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid-xl--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid-xl--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid-xl--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid-xl--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid-xl--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid-xl--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid-xl--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid-xl--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid-xl--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid-xl--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid-xl--1of12  > .grid-cell { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid-xl--2of12  > .grid-cell { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid-xl--3of12  > .grid-cell { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid-xl--4of12  > .grid-cell { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid-xl--5of12  > .grid-cell { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid-xl--6of12  > .grid-cell { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid-xl--7of12  > .grid-cell { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid-xl--8of12  > .grid-cell { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid-xl--9of12  > .grid-cell { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid-xl--10of12 > .grid-cell { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid-xl--11of12 > .grid-cell { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid-xl--12of12 > .grid-cell { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
-.grid > .grid-cell--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-.grid > .grid-cell--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-.grid > .grid-cell--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-.grid > .grid-cell--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-.grid > .grid-cell--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-.grid > .grid-cell--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-.grid > .grid-cell--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-.grid > .grid-cell--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-.grid > .grid-cell--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-.grid > .grid-cell--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-.grid > .grid-cell--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-.grid > .grid-cell--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+.grid > .grid-cell--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+.grid > .grid-cell--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+.grid > .grid-cell--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+.grid > .grid-cell--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+.grid > .grid-cell--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+.grid > .grid-cell--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+.grid > .grid-cell--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+.grid > .grid-cell--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+.grid > .grid-cell--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+.grid > .grid-cell--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+.grid > .grid-cell--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+.grid > .grid-cell--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 
 @media (--xs-viewport) {
-  .grid > .grid-cell-xs--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid > .grid-cell-xs--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid > .grid-cell-xs--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid > .grid-cell-xs--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid > .grid-cell-xs--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid > .grid-cell-xs--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid > .grid-cell-xs--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid > .grid-cell-xs--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid > .grid-cell-xs--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid > .grid-cell-xs--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid > .grid-cell-xs--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid > .grid-cell-xs--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid > .grid-cell-xs--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid > .grid-cell-xs--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid > .grid-cell-xs--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid > .grid-cell-xs--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid > .grid-cell-xs--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid > .grid-cell-xs--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid > .grid-cell-xs--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid > .grid-cell-xs--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid > .grid-cell-xs--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid > .grid-cell-xs--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid > .grid-cell-xs--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid > .grid-cell-xs--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--sm-viewport) {
-  .grid > .grid-cell-sm--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid > .grid-cell-sm--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid > .grid-cell-sm--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid > .grid-cell-sm--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid > .grid-cell-sm--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid > .grid-cell-sm--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid > .grid-cell-sm--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid > .grid-cell-sm--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid > .grid-cell-sm--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid > .grid-cell-sm--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid > .grid-cell-sm--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid > .grid-cell-sm--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid > .grid-cell-sm--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid > .grid-cell-sm--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid > .grid-cell-sm--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid > .grid-cell-sm--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid > .grid-cell-sm--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid > .grid-cell-sm--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid > .grid-cell-sm--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid > .grid-cell-sm--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid > .grid-cell-sm--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid > .grid-cell-sm--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid > .grid-cell-sm--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid > .grid-cell-sm--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--md-viewport) {
-  .grid > .grid-cell-md--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid > .grid-cell-md--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid > .grid-cell-md--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid > .grid-cell-md--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid > .grid-cell-md--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid > .grid-cell-md--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid > .grid-cell-md--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid > .grid-cell-md--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid > .grid-cell-md--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid > .grid-cell-md--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid > .grid-cell-md--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid > .grid-cell-md--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid > .grid-cell-md--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid > .grid-cell-md--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid > .grid-cell-md--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid > .grid-cell-md--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid > .grid-cell-md--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid > .grid-cell-md--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid > .grid-cell-md--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid > .grid-cell-md--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid > .grid-cell-md--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid > .grid-cell-md--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid > .grid-cell-md--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid > .grid-cell-md--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--lg-viewport) {
-  .grid > .grid-cell-lg--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid > .grid-cell-lg--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid > .grid-cell-lg--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid > .grid-cell-lg--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid > .grid-cell-lg--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid > .grid-cell-lg--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid > .grid-cell-lg--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid > .grid-cell-lg--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid > .grid-cell-lg--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid > .grid-cell-lg--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid > .grid-cell-lg--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid > .grid-cell-lg--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid > .grid-cell-lg--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid > .grid-cell-lg--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid > .grid-cell-lg--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid > .grid-cell-lg--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid > .grid-cell-lg--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid > .grid-cell-lg--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid > .grid-cell-lg--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid > .grid-cell-lg--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid > .grid-cell-lg--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid > .grid-cell-lg--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid > .grid-cell-lg--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid > .grid-cell-lg--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 }
 
 @media (--xl-viewport) {
-  .grid > .grid-cell-xl--1of12  { flex: 0 0 calc( 1 / 12 * 100)% }
-  .grid > .grid-cell-xl--2of12  { flex: 0 0 calc( 2 / 12 * 100)% }
-  .grid > .grid-cell-xl--3of12  { flex: 0 0 calc( 3 / 12 * 100)% }
-  .grid > .grid-cell-xl--4of12  { flex: 0 0 calc( 4 / 12 * 100)% }
-  .grid > .grid-cell-xl--5of12  { flex: 0 0 calc( 5 / 12 * 100)% }
-  .grid > .grid-cell-xl--6of12  { flex: 0 0 calc( 6 / 12 * 100)% }
-  .grid > .grid-cell-xl--7of12  { flex: 0 0 calc( 7 / 12 * 100)% }
-  .grid > .grid-cell-xl--8of12  { flex: 0 0 calc( 8 / 12 * 100)% }
-  .grid > .grid-cell-xl--9of12  { flex: 0 0 calc( 9 / 12 * 100)% }
-  .grid > .grid-cell-xl--10of12 { flex: 0 0 calc(10 / 12 * 100)% }
-  .grid > .grid-cell-xl--11of12 { flex: 0 0 calc(11 / 12 * 100)% }
-  .grid > .grid-cell-xl--12of12 { flex: 0 0 calc(12 / 12 * 100)% }
+  .grid > .grid-cell-xl--1of12  { flex: 0 0 calc( 1 / 12 * 100%); }
+  .grid > .grid-cell-xl--2of12  { flex: 0 0 calc( 2 / 12 * 100%); }
+  .grid > .grid-cell-xl--3of12  { flex: 0 0 calc( 3 / 12 * 100%); }
+  .grid > .grid-cell-xl--4of12  { flex: 0 0 calc( 4 / 12 * 100%); }
+  .grid > .grid-cell-xl--5of12  { flex: 0 0 calc( 5 / 12 * 100%); }
+  .grid > .grid-cell-xl--6of12  { flex: 0 0 calc( 6 / 12 * 100%); }
+  .grid > .grid-cell-xl--7of12  { flex: 0 0 calc( 7 / 12 * 100%); }
+  .grid > .grid-cell-xl--8of12  { flex: 0 0 calc( 8 / 12 * 100%); }
+  .grid > .grid-cell-xl--9of12  { flex: 0 0 calc( 9 / 12 * 100%); }
+  .grid > .grid-cell-xl--10of12 { flex: 0 0 calc(10 / 12 * 100%); }
+  .grid > .grid-cell-xl--11of12 { flex: 0 0 calc(11 / 12 * 100%); }
+  .grid > .grid-cell-xl--12of12 { flex: 0 0 calc(12 / 12 * 100%); }
 }
