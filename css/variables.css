@@ -55,7 +55,7 @@
   --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
   --font-family-base: var(--font-family-sans-serif);
   --font-weight-base: 300;
-  --font-size-base: 14px;
+  --font-size-base: 16px;
   --font-size-large: 1.25rem;
   --font-size-small: 0.85rem;
 }
