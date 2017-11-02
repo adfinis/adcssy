@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AdCSSy Styleguide: Form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/adcssy.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+            <span class="nav-toggle-icon"></span>
+          </button>
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+          
+            <li class="nav-side-list-item">
+              <a  href="index.html">
+                <i class="fa fa-basics"></i>
+                Basics
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="components.html">
+                <i class="fa fa-components"></i>
+                Components
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="development.html">
+                <i class="fa fa-development"></i>
+                Development
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a class="active" href="form.html">
+                <i class="fa fa-form"></i>
+                Form
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="grid.html">
+                <i class="fa fa-grid"></i>
+                Grid
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="login.html">
+                <i class="fa fa-login"></i>
+                Login
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="miscellaneous.html">
+                <i class="fa fa-miscellaneous"></i>
+                Miscellaneous
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="table.html">
+                <i class="fa fa-table"></i>
+                Table
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="typography.html">
+                <i class="fa fa-typography"></i>
+                Typography
+              </a>
+            </li>
+          
+          </ul>
+        </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
+      </nav>
+
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title">Form</div>
+          </header>
+          <ul class="nav-side-list">
+            
+              <li class="nav-side-list-item">
+                <a href="#button-groups">Button Group and Toolbar</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#buttons">Buttons</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#checkbox">Checkbox</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#form-group">Form Group</a>
+              </li>
+            
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
+<h1 id="button-groups" class="styleguide">Button Group and Toolbar</h1>
+<p class="styleguide">Simple button group:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="btn-group" role="group">
+  <button type="button" class="btn">Left</button>
+  <button type="button" class="btn">Center</button>
+  <button type="button" class="btn">Right</button>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Center<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Button toolbars grouping multiple button groups together:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="btn-toolbar" role="toolbar">
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">1</button>
+      <button type="button" class="btn">2</button>
+      <button type="button" class="btn">3</button>
+    </div>
+  </div>
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">4</button>
+      <button type="button" class="btn">5</button>
+    </div>
+  </div>
+  <div class="btn-group" role="group">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn">6</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-toolbar"</span> <span class="na">role=</span><span class="s">"toolbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Vertical button group:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="btn-group btn-group--vertical" role="group">
+  <button type="button" class="btn">Top</button>
+  <button type="button" class="btn">Center</button>
+  <button type="button" class="btn">Bottom</button>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group--vertical"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Top<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Center<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Bottom<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="buttons" class="styleguide">Buttons</h1>
+<p class="styleguide">Basic usage:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn">Click me!</button>
+<a class="btn">Click me!</a>
+<input class="btn" type="button" value="Click me!">
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Click me!"</span><span class="nt">&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Button styles:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary">Click me!</button>
+<button class="btn btn-success">Click me!</button>
+<button class="btn btn-info">Click me!</button>
+<button class="btn btn-warning">Click me!</button>
+<button class="btn btn-danger">Click me!</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Loading button:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary loading">Loading</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/button&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Active button:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary active">Click me!</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary active"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Override active class as sometimes it might not be trivial to remove
+the active class.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary active no-active-class">Click me!</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary active no-active-class"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="checkbox" class="styleguide">Checkbox</h1>
+<p class="styleguide">Styled checkboxes</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="checkbox">
+  <input  id="checkboxExample" type="checkbox">
+  <label for="checkboxExample">Check me out</label>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span>  <span class="na">id=</span><span class="s">"checkboxExample"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkboxExample"</span><span class="nt">&gt;</span>Check me out<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Styled radios</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="radio">
+  <input  id="radioExample1" name="radioExample" type="radio">
+  <label for="radioExample1" name="radioExample">Radio 1</label>
+  <input  id="radioExample2" name="radioExample" type="radio">
+  <label for="radioExample2" name="radioExample">Radio 2</label>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span>  <span class="na">id=</span><span class="s">"radioExample1"</span> <span class="na">name=</span><span class="s">"radioExample"</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioExample1"</span> <span class="na">name=</span><span class="s">"radioExample"</span><span class="nt">&gt;</span>Radio 1<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span>  <span class="na">id=</span><span class="s">"radioExample2"</span> <span class="na">name=</span><span class="s">"radioExample"</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radioExample2"</span> <span class="na">name=</span><span class="s">"radioExample"</span><span class="nt">&gt;</span>Radio 2<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="form-group" class="styleguide">Form Group</h1>
+<p class="styleguide">Bootstrap-like Form-Group:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <input  id="checkMeOut" type="checkbox">
+    <label for="checkMeOut">
+      Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>Example block-level help text here.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span>  <span class="na">id=</span><span class="s">"checkMeOut"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkMeOut"</span><span class="nt">&gt;</span>
+      Check me out
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Inline-Form-Group:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <input  id="rememberMe" type="checkbox">
+    <label for="rememberMe">
+      Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputEmail3"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputPassword3"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword3"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span>  <span class="na">id=</span><span class="s">"rememberMe"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"rememberMe"</span><span class="nt">&gt;</span>
+      Remember me
+    <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Disabled form controls:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <form>
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <input id="cant-check-this" type="checkbox">
+      <label for="cant-check-this">
+        Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledTextInput"</span><span class="nt">&gt;</span>Disabled input<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"disabledTextInput"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Disabled input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledSelect"</span><span class="nt">&gt;</span>Disabled select menu<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"disabledSelect"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option&gt;</span>Disabled select<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"cant-check-this"</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"cant-check-this"</span><span class="nt">&gt;</span>
+        Can't check this
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
+        </section>
+      </main>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scrollhash.js"></script>
+  </body>
+</html>

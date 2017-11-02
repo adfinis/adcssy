@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AdCSSy Styleguide: Miscellaneous</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/adcssy.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+            <span class="nav-toggle-icon"></span>
+          </button>
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+          
+            <li class="nav-side-list-item">
+              <a  href="index.html">
+                <i class="fa fa-basics"></i>
+                Basics
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="components.html">
+                <i class="fa fa-components"></i>
+                Components
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="development.html">
+                <i class="fa fa-development"></i>
+                Development
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="form.html">
+                <i class="fa fa-form"></i>
+                Form
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="grid.html">
+                <i class="fa fa-grid"></i>
+                Grid
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="login.html">
+                <i class="fa fa-login"></i>
+                Login
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a class="active" href="miscellaneous.html">
+                <i class="fa fa-miscellaneous"></i>
+                Miscellaneous
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="table.html">
+                <i class="fa fa-table"></i>
+                Table
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="typography.html">
+                <i class="fa fa-typography"></i>
+                Typography
+              </a>
+            </li>
+          
+          </ul>
+        </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
+      </nav>
+
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title">Miscellaneous</div>
+          </header>
+          <ul class="nav-side-list">
+            
+              <li class="nav-side-list-item">
+                <a href="#misc">Miscellaneous</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#responsive-helpers">Responsive Helpers</a>
+              </li>
+            
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
+<h1 id="misc" class="styleguide">Miscellaneous</h1>
+<p class="styleguide">The link prefix can be used to prepend a &#39;&gt;&#39; to a link.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <a href="#" class="link-prefix">Foobar</a>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link-prefix"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/a&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Caret to indicate dropdowns.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <span class="caret"></span>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Loading dots.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div>
+  Loading<span class="loading-dots"><i>.</i><i>.</i><i>.</i></span>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div&gt;</span>
+  Loading<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"loading-dots"</span><span class="nt">&gt;&lt;i&gt;</span>.<span class="nt">&lt;/i&gt;&lt;i&gt;</span>.<span class="nt">&lt;/i&gt;&lt;i&gt;</span>.<span class="nt">&lt;/i&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Loading mask.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <table class="table table--striped">
+  <thead>
+    <tr><th>Foo</th><th>Bar</th><th>Baz</th></tr>
+  </thead>
+  <tbody class="loading-mask">
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table--striped"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;th&gt;</span>Foo<span class="nt">&lt;/th&gt;&lt;th&gt;</span>Bar<span class="nt">&lt;/th&gt;&lt;th&gt;</span>Baz<span class="nt">&lt;/th&gt;&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody</span> <span class="na">class=</span><span class="s">"loading-mask"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Close button.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Text-alignments.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div style="width:100%">
+  <div class="text-left">Text align left</div>
+  <div class="text-center">Text align center</div>
+  <div class="text-right">Text align right</div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width:100%"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Text align left<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Text align center<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Text align right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="responsive-helpers" class="styleguide">Responsive Helpers</h1>
+<p class="styleguide">Hide helpers</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div>
+  <div class="hidden">Hide everywhere</div>
+  <div class="hidden-xs">Hide on xs and upwards devices</div>
+  <div class="hidden-sm">Hide on sm and upwards devices</div>
+  <div class="hidden-md">Hide on md and upwards devices</div>
+  <div class="hidden-lg">Hide on lg and upwards devices</div>
+  <div class="hidden-xl">Hide on xl and upwards devices</div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>Hide everywhere<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-xs"</span><span class="nt">&gt;</span>Hide on xs and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-sm"</span><span class="nt">&gt;</span>Hide on sm and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-md"</span><span class="nt">&gt;</span>Hide on md and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-lg"</span><span class="nt">&gt;</span>Hide on lg and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden-xl"</span><span class="nt">&gt;</span>Hide on xl and upwards devices<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Visible helpers</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div>
+  <div class="visible-xs">Show on xs and upwards devices</div>
+  <div class="visible-sm">Show on sm and upwards devices</div>
+  <div class="visible-md">Show on md and upwards devices</div>
+  <div class="visible-lg">Show on lg and upwards devices</div>
+  <div class="visible-xl">Show on xl and upwards devices</div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-xs"</span><span class="nt">&gt;</span>Show on xs and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-sm"</span><span class="nt">&gt;</span>Show on sm and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-md"</span><span class="nt">&gt;</span>Show on md and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-lg"</span><span class="nt">&gt;</span>Show on lg and upwards devices<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"visible-xl"</span><span class="nt">&gt;</span>Show on xl and upwards devices<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
+        </section>
+      </main>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scrollhash.js"></script>
+  </body>
+</html>
