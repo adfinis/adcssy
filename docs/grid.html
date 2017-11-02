@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AdCSSy Styleguide: Grid</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/adcssy.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+            <span class="nav-toggle-icon"></span>
+          </button>
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+          
+            <li class="nav-side-list-item">
+              <a  href="index.html">
+                <i class="fa fa-basics"></i>
+                Basics
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="components.html">
+                <i class="fa fa-components"></i>
+                Components
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="development.html">
+                <i class="fa fa-development"></i>
+                Development
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="form.html">
+                <i class="fa fa-form"></i>
+                Form
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a class="active" href="grid.html">
+                <i class="fa fa-grid"></i>
+                Grid
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="login.html">
+                <i class="fa fa-login"></i>
+                Login
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="miscellaneous.html">
+                <i class="fa fa-miscellaneous"></i>
+                Miscellaneous
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="table.html">
+                <i class="fa fa-table"></i>
+                Table
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="typography.html">
+                <i class="fa fa-typography"></i>
+                Typography
+              </a>
+            </li>
+          
+          </ul>
+        </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
+      </nav>
+
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title">Grid</div>
+          </header>
+          <ul class="nav-side-list">
+            
+              <li class="nav-side-list-item">
+                <a href="#grid">Grid</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#page">Page</a>
+              </li>
+            
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
+<h1 id="grid" class="styleguide">Grid</h1>
+<p class="styleguide">Basic usage:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">The <code class="styleguide">grid--no-gutters</code> modifier removes the spaces around each grid cell:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid grid--no-gutters">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--no-gutters"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">To display the grid as a column or row (default), use the <code class="styleguide">grid--col</code> or <code class="styleguide">grid--row</code> modifier:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid grid--col">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--col"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Using the <code class="styleguide">grid--row-reverse</code> or <code class="styleguide">grid--col-reverse</code> modifier, the order of the cells can be reversed:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid grid--row-reverse">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--row-reverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Specifying grid cell sizes on the container:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid grid--4of12">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--4of12"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Specifying grid cell sizes on each cell:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid">
+  <div class="grid-cell grid-cell--3of12"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell grid-cell--2of12"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell grid-cell--6of12"><div class="example-grid-content">Cell 3</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell--3of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell--2of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell--6of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Responsive grid:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid grid--12of12 grid-xs--6of12 grid-md--3of12 grid-lg--2of12">
+  <div class="grid-cell"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 3</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 4</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 5</div></div>
+  <div class="grid-cell"><div class="example-grid-content">Cell 6</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--12of12 grid-xs--6of12 grid-md--3of12 grid-lg--2of12"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 4<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 5<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 6<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Responsive grid-cells:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="grid">
+  <div class="grid-cell grid-cell--12of12"><div class="example-grid-content">Cell 1</div></div>
+  <div class="grid-cell grid-cell-xs--1of12"><div class="example-grid-content">Cell 2</div></div>
+  <div class="grid-cell grid-cell-md--6of12 grid-cell-lg--3of12"><div class="example-grid-content">Cell 3</div></div>
+  <div class="grid-cell grid-cell-md--6of12 grid-cell-lg--3of12"><div class="example-grid-content">Cell 4</div></div>
+  <div class="grid-cell grid-cell-lg--3of12"><div class="example-grid-content">Cell 5</div></div>
+  <div class="grid-cell grid-cell-lg--3of12"><div class="example-grid-content">Cell 6</div></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell--12of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 1<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell-xs--1of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 2<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell-md--6of12 grid-cell-lg--3of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 3<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell-md--6of12 grid-cell-lg--3of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 4<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell-lg--3of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 5<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-cell grid-cell-lg--3of12"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"example-grid-content"</span><span class="nt">&gt;</span>Cell 6<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Aligning grid-cell content using the following modifier:</p><ul class="styleguide"><li><code class="styleguide">grid--align-start</code> vertical align cells on &#39;top&#39;</li>
+<li><code class="styleguide">grid--align-center</code> vertical align cells on &#39;center&#39;</li>
+<li><code class="styleguide">grid--align-start</code> vertical align cells on &#39;bottom&#39;</li>
+<li><code class="styleguide">grid--justify-center</code> centering cells horizontally</li>
+<li><code class="styleguide">grid-cell--align-start</code> vertical align single cell on &#39;top&#39;</li>
+<li><code class="styleguide">grid-cell--align-center</code> vertical align single cell on &#39;center&#39;</li>
+<li><code class="styleguide">grid-cell--align-end</code> vertical align single cell on &#39;bottom&#39;</li>
+</ul><p class="styleguide">Responsive cell-order modifier:</p><ul class="styleguide"><li><code class="styleguide">grid-xs--row</code></li>
+<li><code class="styleguide">grid-xs--col</code></li>
+<li><code class="styleguide">grid-xs--row-reverse</code></li>
+<li><code class="styleguide">grid-xs--col-reverse</code></li>
+</ul><p class="styleguide">Disable cell wrapping:</p><ul class="styleguide"><li><code class="styleguide">grid--nowrap</code></li>
+</ul>
+<h1 id="page" class="styleguide">Page</h1>
+<p class="styleguide">The top level of a application / website is the <code class="styleguide">page</code>, it behaves like a much simpler <code class="styleguide">grid</code>:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <!-- the .page element is usually the `body` -->
+<div class="page">
+  <!-- .page-viewport wraps the whole content (for ember applications, this would be the root element -->
+  <div class="page-viewport">
+    <!-- .page-content contains all the page specific content -->
+    <main class="page-main" style="background: #bbb">
+      <section class="page-content">
+        <header class="page-content-header">
+          <h1>Page header</h1>
+        </header>
+        <section class="page-content-main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <footer class="page-content-footer">
+          <small>&copy; Page footer</small>
+        </footer>
+      </section>
+    </main>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="c">&lt;!-- the .page element is usually the `body` --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- .page-viewport wraps the whole content (for ember applications, this would be the root element --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-viewport"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- .page-content contains all the page specific content --&gt;</span>
+    <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page-main"</span> <span class="na">style=</span><span class="s">"background: #bbb"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"page-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"page-content-header"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h1&gt;</span>Page header<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"page-content-main"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+        <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"page-content-footer"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;small&gt;</span><span class="ni">&amp;copy;</span> Page footer<span class="nt">&lt;/small&gt;</span>
+        <span class="nt">&lt;/footer&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Modifiers:</p><ul class="styleguide"><li><code class="styleguide">page-content--scroll</code> Makes page-content scrollable</li>
+<li><code class="styleguide">page-main--scroll</code> Makes page-main scrollable</li>
+</ul>          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
+        </section>
+      </main>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scrollhash.js"></script>
+  </body>
+</html>

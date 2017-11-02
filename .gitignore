@@ -1,6 +1,5 @@
-node_modules
-tmp
-build
-docs
-
-test/index.html
+/node_modules
+/tmp
+/build/fonts
+/build/pictures
+/test/index.html

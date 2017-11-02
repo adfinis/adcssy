@@ -1,0 +1,1183 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AdCSSy Styleguide: Components</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/adcssy.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+            <span class="nav-toggle-icon"></span>
+          </button>
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+          
+            <li class="nav-side-list-item">
+              <a  href="index.html">
+                <i class="fa fa-basics"></i>
+                Basics
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a class="active" href="components.html">
+                <i class="fa fa-components"></i>
+                Components
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="development.html">
+                <i class="fa fa-development"></i>
+                Development
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="form.html">
+                <i class="fa fa-form"></i>
+                Form
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="grid.html">
+                <i class="fa fa-grid"></i>
+                Grid
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="login.html">
+                <i class="fa fa-login"></i>
+                Login
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="miscellaneous.html">
+                <i class="fa fa-miscellaneous"></i>
+                Miscellaneous
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="table.html">
+                <i class="fa fa-table"></i>
+                Table
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="typography.html">
+                <i class="fa fa-typography"></i>
+                Typography
+              </a>
+            </li>
+          
+          </ul>
+        </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
+      </nav>
+
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title">Components</div>
+          </header>
+          <ul class="nav-side-list">
+            
+              <li class="nav-side-list-item">
+                <a href="#alerts">Alerts</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#breadcrumb">Breadcrumb</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#card">Card</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#list-group">List Group</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#modal">Modal</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#nav-side">Sidebar Navigation</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#nav-top">Topbar Navigation</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#pagination">Pagination</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#subnav-side">Sidebar Sub-Navigation</a>
+              </li>
+            
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
+<h1 id="alerts" class="styleguide">Alerts</h1>
+<p class="styleguide">Basic example:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="alert alert-success" role="alert">Success!</div>
+<div class="alert alert-info" role="alert">Information</div>
+<div class="alert alert-warning" role="alert">Warning!</div>
+<div class="alert alert-danger" role="alert">Danger!</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Success!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Information<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Warning!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Danger!<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Example with close button:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  Success!
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success alert-dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+  Success!
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="breadcrumb" class="styleguide">Breadcrumb</h1>
+<p class="styleguide">Basic usage:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <ol class="breadcrumb">
+  <li><a href="#/manage">Manage</a></li>
+  <li><a href="#/manage/hosts">Hosts</a></li>
+  <li><a href="#/manage/hosts/1">topaxi.ch</a></li>
+  <li><a href="#/manage/hosts/1/services">Services</a></li>
+</ol>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage"</span><span class="nt">&gt;</span>Manage<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts"</span><span class="nt">&gt;</span>Hosts<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1"</span><span class="nt">&gt;</span>topaxi.ch<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1/services"</span><span class="nt">&gt;</span>Services<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Hide the first menu point on non-mobile devices:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <ol class="breadcrumb breadcrumb--first-mobileonly">
+  <li><a href="#/manage">Manage</a></li>
+  <li><a href="#/manage/hosts">Hosts</a></li>
+  <li><a href="#/manage/hosts/1">topaxi.ch</a></li>
+  <li><a href="#/manage/hosts/1/services">Services</a></li>
+</ol>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb breadcrumb--first-mobileonly"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage"</span><span class="nt">&gt;</span>Manage<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts"</span><span class="nt">&gt;</span>Hosts<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1"</span><span class="nt">&gt;</span>topaxi.ch<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#/manage/hosts/1/services"</span><span class="nt">&gt;</span>Services<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="card" class="styleguide">Card</h1>
+<p class="styleguide">Bootstrap 4 compatible Cards:</p><p class="styleguide">Example from Bootstrap 4</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card" style="max-width:400px">
+  <img class="card-img-top" src="http://lorempixel.com/400/200" alt="Card image">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group--flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-block">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"max-width:400px"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/400/200"</span> <span class="na">alt=</span><span class="s">"Card image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group--flush"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Card link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Another link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card" style="max-width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+  </div>
+  <img src="http://lorempixel.com/398/200" alt="Card image">
+  <div class="card-block">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"max-width:400px"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"card-subtitle text-muted"</span><span class="nt">&gt;</span>Support card subtitle<span class="nt">&lt;/h6&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/398/200"</span> <span class="na">alt=</span><span class="s">"Card image"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Card link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Another link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card card--inverse card--primary text-center">
+  <div class="card-block">
+    <blockquote class="card-blockquote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card--inverse card--primary text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"card-blockquote"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;footer&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card card--inverse">
+  <div class="card-block">
+    <h3 class="card-title">Special title treatment</h3>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card--inverse"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Special title treatment<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>With supporting text below as a natural lead-in to additional content.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    Featured
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Special title treatment<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>With supporting text below as a natural lead-in to additional content.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Go somewhere<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer text-muted"</span><span class="nt">&gt;</span>
+    2 days ago
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="list-group" class="styleguide">List Group</h1>
+<p class="styleguide">List group:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="list-group">
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item active">An active something</div>
+  <div class="list-group-item">Something</div>
+  <div class="list-group-item" disabled="disabled">A disabled Something</div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Something<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>An active something<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Something<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>A disabled Something<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Remove left and right border from list-group with <code class="styleguide">list-group--flush</code>, for example to be used with a <code class="styleguide">card</code> component:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="card" style="max-width:400px">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <div class="list-group list-group--flush">
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item active">An active something</div>
+    <div class="list-group-item">Something</div>
+    <div class="list-group-item" disabled="disabled">A disabled Something</div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"max-width:400px"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group list-group--flush"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Something<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>An active something<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Something<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>A disabled Something<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="modal" class="styleguide">Modal</h1>
+<p class="styleguide">Basic modal dialog:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary" onclick="document.getElementById('example-modal').classList.add('modal--visible')">
+  Show Modal
+</button>
+<div class="modal" id="example-modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      Example Modal Title
+      <button type="button" class="close" aria-label="Close" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>
+        Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      </p>
+      <p>
+        Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      </p>
+      <p>
+        Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      </p>
+      <p>
+        Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      </p>
+      <p>
+        Curabitur ullamcorper velit et nisl fermentum <a href="#">molestie</a>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <a href="#">consequat justo</a>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('example-modal').classList.add('modal--visible')"</span><span class="nt">&gt;</span>
+  Show Modal
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"example-modal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      Example Modal Title
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Curabitur ullamcorper velit et nisl fermentum <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>molestie<span class="nt">&lt;/a&gt;</span>.
+        Maecenas justo orci, rutrum et vestibulum at, consectetur id ex. Aliquam
+        erat volutpat. Mauris eleifend sed odio eu lacinia. Donec non dolor
+        tempus, finibus velit vel, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>consequat justo<span class="nt">&lt;/a&gt;</span>. Mauris at
+        nisl metus. Donec sit amet lacus tincidunt, pulvinar velit sollicitudin,
+        lacinia urna. Praesent nisi dolor, mollis convallis pellentesque non,
+        blandit quis ligula. Nam sed purus lacinia, blandit felis et, vehicula
+        nisi. Donec consequat augue est, mattis fringilla ipsum facilisis eget.
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        Close
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Modal sizes:</p><ul class="styleguide"><li><code class="styleguide">modal-dialog--small</code></li>
+<li><code class="styleguide">modal-dialog--large</code></li>
+<li><code class="styleguide">modal-dialog--fullscreen</code></li>
+<li><code class="styleguide">modal-dialog--auto</code></li>
+</ul><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn btn-primary" onclick="document.getElementById('example-modal-small').classList.add('modal--visible')">
+  Show Small Modal
+</button>
+<button class="btn btn-primary" onclick="document.getElementById('example-modal-large').classList.add('modal--visible')">
+  Show Large Modal
+</button>
+<button class="btn btn-primary" onclick="document.getElementById('example-modal-fullscreen').classList.add('modal--visible')">
+  Show Fullscreen Modal
+</button>
+<button class="btn btn-primary" onclick="document.getElementById('example-modal-auto').classList.add('modal--visible')">
+  Show Auto Modal
+</button>
+
+<div class="modal" id="example-modal-small">
+  <div class="modal-dialog modal-dialog--small">
+    <div class="modal-header">
+      Small Modal Title
+      <button type="button" class="close" aria-label="Close" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Small modal content!</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="example-modal-large">
+  <div class="modal-dialog modal-dialog--large">
+    <div class="modal-header">
+      Large Modal Title
+      <button type="button" class="close" aria-label="Close" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Large modal content!</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="example-modal-fullscreen">
+  <div class="modal-dialog modal-dialog--fullscreen">
+    <div class="modal-header">
+      Fullscreen Modal Title
+      <button type="button" class="close" aria-label="Close" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Fullscreen modal content!</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="example-modal-auto">
+  <div class="modal-dialog modal-dialog--auto">
+    <div class="modal-header">
+      Auto Modal Title
+      <button type="button" class="close" aria-label="Close" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Auto modal content!</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" onclick="this.parentNode.parentNode.parentNode.classList.remove('modal--visible')">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('example-modal-small').classList.add('modal--visible')"</span><span class="nt">&gt;</span>
+  Show Small Modal
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('example-modal-large').classList.add('modal--visible')"</span><span class="nt">&gt;</span>
+  Show Large Modal
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('example-modal-fullscreen').classList.add('modal--visible')"</span><span class="nt">&gt;</span>
+  Show Fullscreen Modal
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"document.getElementById('example-modal-auto').classList.add('modal--visible')"</span><span class="nt">&gt;</span>
+  Show Auto Modal
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"example-modal-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog--small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      Small Modal Title
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Small modal content!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        Close
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"example-modal-large"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog--large"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      Large Modal Title
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Large modal content!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        Close
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"example-modal-fullscreen"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog--fullscreen"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      Fullscreen Modal Title
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Fullscreen modal content!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        Close
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">id=</span><span class="s">"example-modal-auto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog--auto"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      Auto Modal Title
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Auto modal content!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.parentNode.classList.remove('modal--visible')"</span><span class="nt">&gt;</span>
+        Close
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="nav-side" class="styleguide">Sidebar Navigation</h1>
+<p class="styleguide">Example:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <nav class="nav-side">
+  <header class="nav-side-header">
+    <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+      <span class="nav-toggle-icon"></span>
+    </button>
+    <a href="#">
+      <div class="nav-side-header-logo"></div>
+      <div class="nav-side-header-title">Foobar</div>
+    </a>
+  </header>
+  <section class="nav-side-body">
+    <ul class="nav-side-list">
+      <li class="nav-side-list-header">Settings</li>
+      <li class="nav-side-list-item">
+        <a href="#">
+          <i class="fa fa-user"></i>
+          Users
+        </a>
+      </li>
+      <li class="nav-side-list-item">
+        <a href="#">
+          <i class="fa fa-users"></i>
+          Teams
+        </a>
+      </li>
+    </ul>
+  </section>
+</nav>
+<main class="page-main">
+  <!-- content -->
+</main>
+<div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav-side"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"nav-side-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"nav-toggle nav-side-toggle"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.classList.toggle('nav-side--expand')"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-toggle-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-side-header-logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-side-header-title"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"nav-side-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-side-list"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-header"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Users
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-users"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Teams
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page-main"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- content --&gt;</span>
+<span class="nt">&lt;/main&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-main-overlay"</span> <span class="na">onclick=</span><span class="s">"this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="nav-top" class="styleguide">Topbar Navigation</h1>
+<p class="styleguide">Example:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <nav class="nav-top">
+  <header class="nav-top-header">
+    <button class="nav-toggle nav-top-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-top--expand')">
+      <span class="nav-toggle-icon"></span>
+    </button>
+    <a href="#">
+      <div class="nav-top-header-logo"></div>
+      <div class="nav-top-header-title">Foobar</div>
+    </a>
+  </header>
+  <section class="nav-top-body">
+    <ul class="nav-top-list">
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="fa fa-user"></i>
+          Users
+        </a>
+      </li>
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="fa fa-users"></i>
+          Teams
+        </a>
+      </li>
+    </ul>
+    <ul class="nav-top-list nav-top-list--right">
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+        </a>
+      </li>
+      <li class="nav-top-list-item">
+        <a href="#">
+          <i class="fa fa-power-off"></i>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav-top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"nav-top-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"nav-toggle nav-top-toggle"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.classList.toggle('nav-top--expand')"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-toggle-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-top-header-logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-top-header-title"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"nav-top-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-top-list"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-top-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Users
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-top-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-users"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Teams
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-top-list nav-top-list--right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-top-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Messages
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-top-list-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-power-off"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          Logout
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide">Modifiers:</p><ul class="styleguide"><li><code class="styleguide">nav-top--fixed</code> Sets the navigation fixed on top</li>
+</ul>
+<h1 id="pagination" class="styleguide">Pagination</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <nav>
+  <ul class="pagination">
+    <li class="previous disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li class="next">
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;nav&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"previous disabled"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Next"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;raquo;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="subnav-side" class="styleguide">Sidebar Sub-Navigation</h1>
+<p class="styleguide">Example:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="page-viewport">
+  <nav class="nav-side">
+    <header class="nav-side-header">
+      <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <a href="#">
+        <div class="nav-side-header-logo"></div>
+        <div class="nav-side-header-title">Foobar</div>
+      </a>
+    </header>
+    <section class="nav-side-body">
+      <ul class="nav-side-list">
+        <li class="nav-side-list-header">Settings</li>
+        <li class="nav-side-list-item">
+          <a class="active" href="#">
+            <i class="fa fa-user"></i>
+            Users
+          </a>
+        </li>
+        <li class="nav-side-list-item">
+          <a href="#">
+            <i class="fa fa-users"></i>
+            Teams
+          </a>
+        </li>
+      </ul>
+    </section>
+    <footer class="nav-side-footer">
+      <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+        this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+        this.firstChild.classList.toggle('fa-chevron-left')
+        this.firstChild.classList.toggle('fa-chevron-right')
+      "><i class="fa fa-chevron-left"></i></button>
+    </footer>
+  </nav>
+  <main class="page-main">
+    <nav class="nav-side nav-side--sub">
+      <header class="nav-side-header">
+        <div class="nav-side-header-title">Manage</div>
+      </header>
+      <section class="nav-side-body">
+        <ul class="nav-side-list">
+          <li class="nav-side-list-item">
+            <a href="#">
+              Hosts
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Host Groups
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-side-list">
+          <li class="nav-side-list-item">
+            <a class="active" href="#">
+              Commands
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Services
+            </a>
+          </li>
+          <li class="nav-side-list-item">
+            <a href="#">
+              Service Groups
+            </a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section class="page-content">
+      <!-- content -->
+    </section>
+  </main>
+  <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight codehilite">
+      <pre><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-viewport"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav-side"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"nav-side-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"nav-toggle nav-side-toggle"</span> <span class="na">onclick=</span><span class="s">"this.parentNode.parentNode.classList.toggle('nav-side--expand')"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-toggle-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-side-header-logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-side-header-title"</span><span class="nt">&gt;</span>Foobar<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"nav-side-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-side-list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-header"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-user"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            Users
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-users"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            Teams
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"nav-side-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"nav-hide btn"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">title=</span><span class="s">"Toggle navigation"</span> <span class="na">onclick=</span><span class="s">"
+        this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+        this.firstChild.classList.toggle('fa-chevron-left')
+        this.firstChild.classList.toggle('fa-chevron-right')
+      "</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-chevron-left"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/footer&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"page-main"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav-side nav-side--sub"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"nav-side-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-side-header-title"</span><span class="nt">&gt;</span>Manage<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/header&gt;</span>
+      <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"nav-side-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-side-list"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              Hosts
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              Host Groups
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-side-list"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              Commands
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              Services
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-side-list-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              Service Groups
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"page-content"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- content --&gt;</span>
+    <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;/main&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"page-main-overlay"</span> <span class="na">onclick=</span><span class="s">"this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+    </div>
+  </div>
+</div>
+          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
+        </section>
+      </main>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scrollhash.js"></script>
+  </body>
+</html>

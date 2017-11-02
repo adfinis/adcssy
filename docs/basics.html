@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AdCSSy Styleguide: </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/adcssy.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/github.css">
+  </head>
+  <body class="page">
+    <div class="page-viewport">
+      <nav class="nav-side">
+        <header class="nav-side-header">
+          <button class="nav-toggle nav-side-toggle" onclick="this.parentNode.parentNode.classList.toggle('nav-side--expand')">
+            <span class="nav-toggle-icon"></span>
+          </button>
+          <a href="index.html">
+            <div class="nav-side-header-logo"></div>
+            <div class="nav-side-header-title">AdCSSy<br>Styleguide</div>
+          </a>
+        </header>
+        <section class="nav-side-body">
+          <ul class="nav-side-list">
+            <li class="nav-side-list-header">Categories</li>
+          
+          
+            <li class="nav-side-list-item">
+              <a  href="index.html">
+                <i class="fa fa-basics"></i>
+                Basics
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="components.html">
+                <i class="fa fa-components"></i>
+                Components
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="development.html">
+                <i class="fa fa-development"></i>
+                Development
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="form.html">
+                <i class="fa fa-form"></i>
+                Form
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="grid.html">
+                <i class="fa fa-grid"></i>
+                Grid
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="login.html">
+                <i class="fa fa-login"></i>
+                Login
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="miscellaneous.html">
+                <i class="fa fa-miscellaneous"></i>
+                Miscellaneous
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="table.html">
+                <i class="fa fa-table"></i>
+                Table
+              </a>
+            </li>
+          
+            <li class="nav-side-list-item">
+              <a  href="typography.html">
+                <i class="fa fa-typography"></i>
+                Typography
+              </a>
+            </li>
+          
+          </ul>
+        </section>
+        <footer class="nav-side-footer">
+          <button class="nav-hide btn" type="button" title="Toggle navigation" onclick="
+            this.parentNode.parentNode.classList.toggle('nav-side--autohide')
+            this.firstChild.classList.toggle('fa-chevron-left')
+            this.firstChild.classList.toggle('fa-chevron-right')
+          "><i class="fa fa-chevron-left"></i></button>
+        </footer>
+      </nav>
+
+      <main class="page-main">
+        <nav class="nav-side nav-side--sub">
+          <header class="nav-side-header">
+            <div class="nav-side-header-title"></div>
+          </header>
+          <ul class="nav-side-list">
+            
+              <li class="nav-side-list-item">
+                <a href="#adcssy">AdCSSy - Styleguide</a>
+              </li>
+            
+              <li class="nav-side-list-item">
+                <a href="#colors">Colors</a>
+              </li>
+            
+          </ul>
+        </nav>
+        <section class="page-content page-content--scroll">
+          <section class="page-content-main">
+<h1 id="adcssy" class="styleguide">AdCSSy - Styleguide</h1>
+<p class="styleguide">This is the <a class="styleguide" href="http://adfinis-sygroup.ch/" title="http://adfinis-sygroup.ch/">Adfinis SyGroup AG</a> CSS Framework Guide</p>
+<h1 id="colors" class="styleguide">Colors</h1>
+
+<div class="grid example-color-grid">
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-primary"></div>
+  </div>
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-secondary"></div>
+  </div>
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-tertiary"></div>
+  </div>
+</div>
+
+<div class="grid example-color-grid">
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-success"></div>
+  </div>
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-info"></div>
+  </div>
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-warning"></div>
+  </div>
+  <div class="grid-cell grid-cell--4">
+    <div class="example-color background-color-danger"></div>
+  </div>
+</div>
+
+<script>
+  ;[].slice.call(document.getElementsByClassName('example-color')).forEach(function(el) {
+    var style = window.getComputedStyle(el);
+
+    el.textContent = style.backgroundColor
+  })
+</script>
+          </section>
+          <footer class="page-footer">
+            <p>
+              <small>This documentation was generated using <a href="http://github.com/trulia/hologram">Hologram</a></small>
+            </p>
+          </footer>
+        </section>
+      </main>
+      <div class="page-main-overlay" onclick="this.previousElementSibling.previousElementSibling.classList.toggle('nav-side--expand')"></div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/scrollhash.js"></script>
+  </body>
+</html>
