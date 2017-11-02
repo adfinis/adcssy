@@ -61,5 +61,5 @@ Example login password reset page:
 </div>
 ```
 */
-@import 'page.css';
-@import 'form.css';
+@import 'page';
+@import 'form';
