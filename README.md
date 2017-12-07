@@ -1,6 +1,6 @@
 # Adfinis SyGroup AG - CSS Framework
 
-This project is work in progress.
+**WARNING: This project is deprecated and should not be used anymore. It is not maintained!**
 
 ## Installation
 
