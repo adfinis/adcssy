@@ -17,4 +17,4 @@ Run `npm start` to start the test pages. You should be able to access them at ht
 
 ## Building
 
-To build a new version run `make build`.
+To build a new version run `make dist` and commit to git.

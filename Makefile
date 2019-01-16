@@ -1,4 +1,4 @@
-.PHONY: dist clean watch docs hologram
+.PHONY: dist clean watch build
 
 all: dist
 
@@ -6,10 +6,6 @@ dist: clean build
 
 build:
 	@npm run build
-
-docs: hologram
-
-hologram: dist
 	@hologram
 
 gh-pages: docs
