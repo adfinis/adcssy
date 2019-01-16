@@ -9,15 +9,12 @@ const BrowserSync = require('broccoli-browser-sync')
 const env = require('broccoli-env').getEnv()
 
 let plugins = [
-  { module: require('postcss-import') },
-  {
-    module: require('postcss-cssnext'),
-    options: {
-      browsers: '> 2%, last 2 versions, Firefox ESR',
-      features: { rem: false }
-    }
-  },
-  { module: require('postcss-responsive-type') }
+  require('postcss-import'),
+  require('postcss-preset-env')({
+    stage: 1,
+    browsers: '> 2%, last 2 versions, Firefox ESR'
+  }),
+  require('postcss-responsive-type')
 ]
 
 let icons = new Funnel('node_modules/font-awesome/fonts', {

@@ -4,8 +4,12 @@ html {
   color:       var(--body-color);
   font-weight: var(--body-font-weight);
   font-family: var(--body-font-family);
+  font-size:   responsive 13px 18px;
+  font-range:  420px 1440px;
+  /* postcss-responsive-type doesn't work with variables, cause is unkown
   font-size:   responsive var(--body-min-font-size) var(--body-max-font-size);
   font-range:  var(--body-min-font-size-break) var(--body-max-font-size-break);
+  */
 }
 
 a {

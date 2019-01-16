@@ -15,17 +15,17 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "broccoli": "1.1.2",
+    "broccoli": "2.0.1",
     "broccoli-browser-sync": "^1.0.2",
     "broccoli-cli": "^1.0.0",
     "broccoli-env": "0.0.1",
     "broccoli-funnel": "^2.0.1",
-    "broccoli-merge-trees": "^2.0.0",
-    "broccoli-postcss-single": "^1.4.0",
-    "cssnano": "^3.3.2",
+    "broccoli-merge-trees": "^3.0.2",
+    "broccoli-postcss-single": "^2.1.1",
+    "cssnano": "^4.1.8",
     "font-awesome": "^4.4.0",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
     "postcss-responsive-type": "^1.0.0"
   }
 }
