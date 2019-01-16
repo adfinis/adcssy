@@ -9,5 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
-- Update dependecies ([#17](https://github.com/adfinis-sygroup/adcssy/pull/17))
-- Add changelog
+- Update dependencies ([#17](https://github.com/adfinis-sygroup/adcssy/pull/17))
